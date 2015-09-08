@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{227E4460-6D10-452D-8BA8-C909D6FDB1F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITAcademy.WinForms</RootNamespace>
+    <AssemblyName>ITAcademy.WinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention">
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admission_WinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admission_WinForm.Designer.cs">
+      <DependentUpon>Admission_WinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence_WinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence_WinForm.Designer.cs">
+      <DependentUpon>Attendence_WinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="Fees_WinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fees_WinForm.Designer.cs">
+      <DependentUpon>Fees_WinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_WinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_WinForm.Designer.cs">
+      <DependentUpon>Login_WinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIContanier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIContanier.Designer.cs">
+      <DependentUpon>MDIContanier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search_WinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_WinForm.Designer.cs">
+      <DependentUpon>Search_WinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAllStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowAllStudents.Designer.cs">
+      <DependentUpon>ShowAllStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_WinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_WinForm.Designer.cs">
+      <DependentUpon>Student_WinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestAndExam_WinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestAndExam_WinForm.Designer.cs">
+      <DependentUpon>TestAndExam_WinForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admission_WinForm.resx">
+      <DependentUpon>Admission_WinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence_WinForm.resx">
+      <DependentUpon>Attendence_WinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fees_WinForm.resx">
+      <DependentUpon>Fees_WinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_WinForm.resx">
+      <DependentUpon>Login_WinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIContanier.resx">
+      <DependentUpon>MDIContanier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Search_WinForm.resx">
+      <DependentUpon>Search_WinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowAllStudents.resx">
+      <DependentUpon>ShowAllStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestAndExam_WinForm.resx">
+      <DependentUpon>TestAndExam_WinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\hadith1.jpg" />
+    <Content Include="Images\ItAcademy.png" />
+    <Content Include="Images\ItAcademy1.png" />
+    <Content Include="Images\ItAcademy2.png" />
+    <Content Include="Images\White-Keyboard-Wallpaper-Images-HD-Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ITAcademy.DataAccessLayer\ITAcademy.DataAccessLayer.csproj">
+      <Project>{3fd7beb8-b1ca-4ea1-be29-266d041e8735}</Project>
+      <Name>ITAcademy.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITAcademy.DataModels\ITAcademy.DataModels.csproj">
+      <Project>{156d3936-6686-4790-81f3-881370f23c92}</Project>
+      <Name>ITAcademy.DataModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITAcademy.Repository\ITAcademy.Repository.csproj">
+      <Project>{4899dc5c-6b5a-46e9-b2e4-e9920090272d}</Project>
+      <Name>ITAcademy.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITAcademy.ServiceLayer\ITAcademy.ServiceLayer.csproj">
+      <Project>{40de71b6-24ba-4e59-ab29-6d448c5930d3}</Project>
+      <Name>ITAcademy.ServiceLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
