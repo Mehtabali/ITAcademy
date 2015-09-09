@@ -24,7 +24,7 @@ namespace ITAcademy.WinForms
 
         private void chqngePasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            lblLogoText.Visible = false;
+            //lblLogoText.Visible = false;
         }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -34,9 +34,10 @@ namespace ITAcademy.WinForms
 
         private void admissionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            lblLogoText.Visible = false;
+            //lblLogoText.Visible = false;
             Admission_WinForm _child = new Admission_WinForm();
             _child.MdiParent = this;
+            _child.WindowState = FormWindowState.Maximized;
             _child.Show();
 
         }
@@ -55,8 +56,10 @@ namespace ITAcademy.WinForms
 
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            lblLogoText.Visible = false;
+            //lblLogoText.Visible = false;
             Search_WinForm _child = new Search_WinForm();
+            _child.MdiParent = this;
+            _child.WindowState = FormWindowState.Maximized;
             _child.Show();
         }
 
@@ -67,16 +70,17 @@ namespace ITAcademy.WinForms
 
         private void attendenceToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            lblLogoText.Visible = false;
+            //lblLogoText.Visible = false;
             ShowAllStudents _child = new ShowAllStudents();
             _child.MdiParent = this;
+            _child.WindowState = FormWindowState.Maximized;
             _child.Show();
 
         }
 
         private void testExaminationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            lblLogoText.Visible = false;
+            //lblLogoText.Visible = false;
             TestAndExam_WinForm _child = new TestAndExam_WinForm();
             _child.MdiParent = this;
             _child.Show();
@@ -99,8 +103,8 @@ namespace ITAcademy.WinForms
 
             //for change background image
           //  Image img = Bitmap.FromFile(@"D:\Mehtab\c#\ITAcademy\ITAcademy.WinForms\Images\bg.jpg");
-            Image img = Bitmap.FromFile(@"D:\Mehtab\c#\ITAcademy\ITAcademy.WinForms\Images\ItAcademy2.png");
-            this.BackgroundImage = img;
+           // Image img = Bitmap.FromFile(@"D:\Mehtab\c#\ITAcademy\ITAcademy.WinForms\Images\ItAcademy2.png");
+          //  this.BackgroundImage = img;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -115,25 +119,54 @@ namespace ITAcademy.WinForms
 
         private void attendenceToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            lblLogoText.Visible = false;
+            //lblLogoText.Visible = false;
             Attendence_WinForm _child = new Attendence_WinForm();
+            _child.MdiParent = this;
+            _child.WindowState = FormWindowState.Maximized;
             _child.Show();
         }
 
         private void feeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            lblLogoText.Visible = false;
+            //lblLogoText.Visible = false;
         }
 
         private void salarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            lblLogoText.Visible = false;
+            //lblLogoText.Visible = false;
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            lblLogoText.Visible = false;
+            ////lblLogoText.Visible = false;
+            //TestAndExam_WinForm _child = new TestAndExam_WinForm();
+            //_child.Show();
+        
+        }
+
+        private void feeInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fees_WinForm _child = new Fees_WinForm();
+            _child.MdiParent = this;
+            _child.WindowState = FormWindowState.Maximized;
+            _child.Show();
+        
+        }
+
+        private void scheduleTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //// _child = new Fees_WinForm();
+            //_child.MdiParent = this;
+            //_child.WindowState = FormWindowState.Maximized;
+            //_child.Show();
+        
+        }
+
+        private void testShedulerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             TestAndExam_WinForm _child = new TestAndExam_WinForm();
+            _child.MdiParent = this;
+            _child.WindowState = FormWindowState.Maximized;
             _child.Show();
         
         }

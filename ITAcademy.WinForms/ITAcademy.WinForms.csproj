@@ -105,11 +105,10 @@
     <Compile Include="ShowAllStudents.Designer.cs">
       <DependentUpon>ShowAllStudents.cs</DependentUpon>
     </Compile>
-    <Compile Include="Student_WinForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Student_WinForm.Designer.cs">
-      <DependentUpon>Student_WinForm.cs</DependentUpon>
+    <Compile Include="Student_WinForm1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Student_WinForm.resx</DependentUpon>
     </Compile>
     <Compile Include="TestAndExam_WinForm.cs">
       <SubType>Form</SubType>
@@ -143,12 +142,17 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Search_WinForm.resx">
       <DependentUpon>Search_WinForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ShowAllStudents.resx">
       <DependentUpon>ShowAllStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_WinForm.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Student_WinForm1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="TestAndExam_WinForm.resx">
       <DependentUpon>TestAndExam_WinForm.cs</DependentUpon>
@@ -174,6 +178,7 @@
     <Content Include="Images\ItAcademy1.png" />
     <Content Include="Images\ItAcademy2.png" />
     <Content Include="Images\White-Keyboard-Wallpaper-Images-HD-Background.jpg" />
+    <None Include="Resources\ItAcademy2.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ITAcademy.DataAccessLayer\ITAcademy.DataAccessLayer.csproj">
