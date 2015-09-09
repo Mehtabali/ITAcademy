@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace ITAcademy.DataModels
 {
+    /// <summary>
+    /// This model is responsible for student related activities.
+    /// </summary>
     public class Student
     {
         public int Id { get; set; }
