@@ -24,7 +24,6 @@ namespace ITAcademy.WinForms
             var container = new UnityContainer();
             
             // register all your components with the container here
-
             // e.g. container.RegisterType<ITestService, TestService>();    
             RegisterTypes(container);
             return container;
