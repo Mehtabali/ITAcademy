@@ -33,31 +33,15 @@ namespace ITAcademy.DataAccessLayer
         }
 
         public int Create(String storedProcedure, Dictionary<String, String> parameters)
-        {
-            try
-            {
+        {           
                 AddParameters(parameters, MethodType.Create);
-                return Execute(storedProcedure, parameters);
-            }
-            catch (Exception exception)
-            {
-                throw exception;
-            }
-
+                return Execute(storedProcedure, parameters);           
         }
 
         public int Update(String storedProcedure, Dictionary<String, String> parameters)
-        {
-            try
-            {
+        {           
                 AddParameters(parameters, MethodType.Update);
-                return Execute(storedProcedure, parameters);
-            }
-            catch (Exception exception)
-            {
-                throw exception;
-            }
-
+                return Execute(storedProcedure, parameters);           
         }
 
         /// <summary>
@@ -72,13 +56,16 @@ namespace ITAcademy.DataAccessLayer
                 _command.CommandText = storedProcedure;
                 OpenConnection();
                 _status = _command.ExecuteNonQuery();
-                _connection.Close();
-                return _status;
             }
             catch (Exception exception)
             {
                 throw exception;
             }
+            finally
+            {
+                CloseConnection();
+            }
+            return _status;
         }
 
         public int Delete(String storedProcedure, int id)
@@ -94,6 +81,10 @@ namespace ITAcademy.DataAccessLayer
             {
                 throw exception;
             }
+            finally 
+            {
+                CloseConnection();
+            }
 
         }
         public DataTable GetAll(String storedProcedure)
@@ -108,6 +99,10 @@ namespace ITAcademy.DataAccessLayer
             {
                 throw exception;
             }
+            finally
+            {
+                CloseConnection();
+            }
         }
         public DataTable GetOne(String storedProcedure, int id)
         {
@@ -121,6 +116,10 @@ namespace ITAcademy.DataAccessLayer
             catch (Exception exception)
             {
                 throw exception;
+            }
+            finally
+            {
+                CloseConnection();
             }
         }
         private void AddParameters(Dictionary<String, String> parameters, MethodType methodType)
@@ -156,6 +155,13 @@ namespace ITAcademy.DataAccessLayer
             if (_connection.State != System.Data.ConnectionState.Open)
             {
                 _connection.Open();
+            }
+        }
+        private void CloseConnection()
+        {
+            if (_connection.State == ConnectionState.Open)
+            {
+                _connection.Close();
             }
         }
     }
