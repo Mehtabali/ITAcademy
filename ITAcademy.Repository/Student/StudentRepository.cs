@@ -25,7 +25,11 @@ namespace ITAcademy.Repository
 
         public int Create(Student entity)
         {
-            return _database.Create("sp_CreateStudent", Mapper(entity));
+            Dictionary<String, String> _parameters = new Dictionary<string, string>();
+            _parameters.Add("Name", entity.Name);
+            _parameters.Add("City", entity.City);
+            _parameters.Add("Email", entity.Email);
+            return _database.Create("CreateStudent", _parameters);
         }
 
         public int Delete(int id)

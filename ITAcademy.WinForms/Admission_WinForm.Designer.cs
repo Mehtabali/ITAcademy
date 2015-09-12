@@ -35,11 +35,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.grpButtons = new System.Windows.Forms.GroupBox();
             this.grpWholeAdmissionForm = new System.Windows.Forms.GroupBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPin = new System.Windows.Forms.TextBox();
+            this.txtGender = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
+            this.txtGuardianNumber = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -52,11 +52,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtContactNumber = new System.Windows.Forms.TextBox();
+            this.txtDob = new System.Windows.Forms.TextBox();
+            this.txtFatherName = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.grpButtons.SuspendLayout();
             this.grpWholeAdmissionForm.SuspendLayout();
@@ -126,11 +126,11 @@
             // 
             // grpWholeAdmissionForm
             // 
-            this.grpWholeAdmissionForm.Controls.Add(this.textBox7);
-            this.grpWholeAdmissionForm.Controls.Add(this.textBox5);
-            this.grpWholeAdmissionForm.Controls.Add(this.textBox4);
-            this.grpWholeAdmissionForm.Controls.Add(this.textBox3);
-            this.grpWholeAdmissionForm.Controls.Add(this.textBox2);
+            this.grpWholeAdmissionForm.Controls.Add(this.txtEmail);
+            this.grpWholeAdmissionForm.Controls.Add(this.txtPin);
+            this.grpWholeAdmissionForm.Controls.Add(this.txtGender);
+            this.grpWholeAdmissionForm.Controls.Add(this.txtCity);
+            this.grpWholeAdmissionForm.Controls.Add(this.txtGuardianNumber);
             this.grpWholeAdmissionForm.Controls.Add(this.label13);
             this.grpWholeAdmissionForm.Controls.Add(this.label11);
             this.grpWholeAdmissionForm.Controls.Add(this.label10);
@@ -143,11 +143,11 @@
             this.grpWholeAdmissionForm.Controls.Add(this.label7);
             this.grpWholeAdmissionForm.Controls.Add(this.label6);
             this.grpWholeAdmissionForm.Controls.Add(this.textBox11);
-            this.grpWholeAdmissionForm.Controls.Add(this.textBox10);
-            this.grpWholeAdmissionForm.Controls.Add(this.textBox9);
-            this.grpWholeAdmissionForm.Controls.Add(this.textBox8);
-            this.grpWholeAdmissionForm.Controls.Add(this.textBox6);
-            this.grpWholeAdmissionForm.Controls.Add(this.textBox1);
+            this.grpWholeAdmissionForm.Controls.Add(this.txtContactNumber);
+            this.grpWholeAdmissionForm.Controls.Add(this.txtDob);
+            this.grpWholeAdmissionForm.Controls.Add(this.txtFatherName);
+            this.grpWholeAdmissionForm.Controls.Add(this.txtAddress);
+            this.grpWholeAdmissionForm.Controls.Add(this.txtName);
             this.grpWholeAdmissionForm.Controls.Add(this.groupBox1);
             this.grpWholeAdmissionForm.Location = new System.Drawing.Point(12, 14);
             this.grpWholeAdmissionForm.Name = "grpWholeAdmissionForm";
@@ -157,40 +157,40 @@
             this.grpWholeAdmissionForm.Text = "Admission Form";
             this.grpWholeAdmissionForm.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
-            // textBox7
+            // txtEmail
             // 
-            this.textBox7.Location = new System.Drawing.Point(122, 393);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(179, 20);
-            this.textBox7.TabIndex = 48;
+            this.txtEmail.Location = new System.Drawing.Point(122, 393);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(179, 20);
+            this.txtEmail.TabIndex = 48;
             // 
-            // textBox5
+            // txtPin
             // 
-            this.textBox5.Location = new System.Drawing.Point(524, 232);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(179, 20);
-            this.textBox5.TabIndex = 47;
+            this.txtPin.Location = new System.Drawing.Point(524, 232);
+            this.txtPin.Name = "txtPin";
+            this.txtPin.Size = new System.Drawing.Size(179, 20);
+            this.txtPin.TabIndex = 47;
             // 
-            // textBox4
+            // txtGender
             // 
-            this.textBox4.Location = new System.Drawing.Point(524, 287);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(179, 20);
-            this.textBox4.TabIndex = 46;
+            this.txtGender.Location = new System.Drawing.Point(524, 287);
+            this.txtGender.Name = "txtGender";
+            this.txtGender.Size = new System.Drawing.Size(179, 20);
+            this.txtGender.TabIndex = 46;
             // 
-            // textBox3
+            // txtCity
             // 
-            this.textBox3.Location = new System.Drawing.Point(524, 333);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 20);
-            this.textBox3.TabIndex = 45;
+            this.txtCity.Location = new System.Drawing.Point(524, 333);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(179, 20);
+            this.txtCity.TabIndex = 45;
             // 
-            // textBox2
+            // txtGuardianNumber
             // 
-            this.textBox2.Location = new System.Drawing.Point(524, 393);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 20);
-            this.textBox2.TabIndex = 44;
+            this.txtGuardianNumber.Location = new System.Drawing.Point(524, 393);
+            this.txtGuardianNumber.Name = "txtGuardianNumber";
+            this.txtGuardianNumber.Size = new System.Drawing.Size(179, 20);
+            this.txtGuardianNumber.TabIndex = 44;
             // 
             // label13
             // 
@@ -298,40 +298,40 @@
             this.textBox11.Size = new System.Drawing.Size(179, 20);
             this.textBox11.TabIndex = 32;
             // 
-            // textBox10
+            // txtContactNumber
             // 
-            this.textBox10.Location = new System.Drawing.Point(122, 272);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(179, 20);
-            this.textBox10.TabIndex = 31;
+            this.txtContactNumber.Location = new System.Drawing.Point(122, 272);
+            this.txtContactNumber.Name = "txtContactNumber";
+            this.txtContactNumber.Size = new System.Drawing.Size(179, 20);
+            this.txtContactNumber.TabIndex = 31;
             // 
-            // textBox9
+            // txtDob
             // 
-            this.textBox9.Location = new System.Drawing.Point(122, 166);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(179, 20);
-            this.textBox9.TabIndex = 30;
+            this.txtDob.Location = new System.Drawing.Point(122, 166);
+            this.txtDob.Name = "txtDob";
+            this.txtDob.Size = new System.Drawing.Size(179, 20);
+            this.txtDob.TabIndex = 30;
             // 
-            // textBox8
+            // txtFatherName
             // 
-            this.textBox8.Location = new System.Drawing.Point(122, 332);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(179, 20);
-            this.textBox8.TabIndex = 29;
+            this.txtFatherName.Location = new System.Drawing.Point(122, 332);
+            this.txtFatherName.Name = "txtFatherName";
+            this.txtFatherName.Size = new System.Drawing.Size(179, 20);
+            this.txtFatherName.TabIndex = 29;
             // 
-            // textBox6
+            // txtAddress
             // 
-            this.textBox6.Location = new System.Drawing.Point(122, 212);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(179, 20);
-            this.textBox6.TabIndex = 28;
+            this.txtAddress.Location = new System.Drawing.Point(122, 212);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(179, 20);
+            this.txtAddress.TabIndex = 28;
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(122, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(179, 20);
-            this.textBox1.TabIndex = 27;
+            this.txtName.Location = new System.Drawing.Point(122, 113);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(179, 20);
+            this.txtName.TabIndex = 27;
             // 
             // Admission_WinForm
             // 
@@ -361,11 +361,11 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox grpButtons;
         private System.Windows.Forms.GroupBox grpWholeAdmissionForm;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPin;
+        private System.Windows.Forms.TextBox txtGender;
+        private System.Windows.Forms.TextBox txtCity;
+        private System.Windows.Forms.TextBox txtGuardianNumber;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
@@ -378,10 +378,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtContactNumber;
+        private System.Windows.Forms.TextBox txtDob;
+        private System.Windows.Forms.TextBox txtFatherName;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtName;
     }
 }

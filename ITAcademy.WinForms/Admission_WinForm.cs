@@ -97,12 +97,11 @@ namespace ITAcademy.WinForms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //Take data from user 
+            //Ta1ke data from user 
             Student student = new Student();
-            //  student.Name = "Mehtab";
-            student.City = "Delhi";
-            student.UpdatedBy = 1;
-            student.CreatedBy = 2;
+            student.Name = txtName.Text;
+            student.City = txtCity.Text;
+            student.Email = txtEmail.Text;
 
             ValidationContext context = new ValidationContext(student, null, null);
             IList<ValidationResult> errors = new List<ValidationResult>();

@@ -36,7 +36,7 @@ namespace ITAcademy.DataAccessLayer
         {
             try
             {
-                AddParameters(parameters, MethodType.Create);
+                AddParameters(parameters);
                 return Execute(storedProcedure, parameters);
             }
             catch (Exception exception)
@@ -50,7 +50,7 @@ namespace ITAcademy.DataAccessLayer
         {
             try
             {
-                AddParameters(parameters, MethodType.Update);
+                AddParameters(parameters);
                 return Execute(storedProcedure, parameters);
             }
             catch (Exception exception)
