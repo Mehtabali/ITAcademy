@@ -32,12 +32,11 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.brnSave = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.grpButtons = new System.Windows.Forms.GroupBox();
             this.grpWholeAdmissionForm = new System.Windows.Forms.GroupBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPin = new System.Windows.Forms.TextBox();
-            this.txtGender = new System.Windows.Forms.TextBox();
             this.txtCity = new System.Windows.Forms.TextBox();
             this.txtGuardianNumber = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -51,12 +50,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtRegistrationNumber = new System.Windows.Forms.TextBox();
             this.txtContactNumber = new System.Windows.Forms.TextBox();
             this.txtDob = new System.Windows.Forms.TextBox();
             this.txtFatherName = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
+            this.cmbGender = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.grpButtons.SuspendLayout();
             this.grpWholeAdmissionForm.SuspendLayout();
@@ -103,19 +103,20 @@
             this.brnSave.UseVisualStyleBackColor = true;
             this.brnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // button2
+            // btnReset
             // 
-            this.button2.Location = new System.Drawing.Point(671, 11);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 31);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnReset.Location = new System.Drawing.Point(671, 11);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(92, 31);
+            this.btnReset.TabIndex = 28;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // grpButtons
             // 
             this.grpButtons.Controls.Add(this.brnSave);
-            this.grpButtons.Controls.Add(this.button2);
+            this.grpButtons.Controls.Add(this.btnReset);
             this.grpButtons.Location = new System.Drawing.Point(12, 503);
             this.grpButtons.Name = "grpButtons";
             this.grpButtons.Size = new System.Drawing.Size(777, 47);
@@ -126,9 +127,9 @@
             // 
             // grpWholeAdmissionForm
             // 
+            this.grpWholeAdmissionForm.Controls.Add(this.cmbGender);
             this.grpWholeAdmissionForm.Controls.Add(this.txtEmail);
             this.grpWholeAdmissionForm.Controls.Add(this.txtPin);
-            this.grpWholeAdmissionForm.Controls.Add(this.txtGender);
             this.grpWholeAdmissionForm.Controls.Add(this.txtCity);
             this.grpWholeAdmissionForm.Controls.Add(this.txtGuardianNumber);
             this.grpWholeAdmissionForm.Controls.Add(this.label13);
@@ -142,7 +143,7 @@
             this.grpWholeAdmissionForm.Controls.Add(this.label8);
             this.grpWholeAdmissionForm.Controls.Add(this.label7);
             this.grpWholeAdmissionForm.Controls.Add(this.label6);
-            this.grpWholeAdmissionForm.Controls.Add(this.textBox11);
+            this.grpWholeAdmissionForm.Controls.Add(this.txtRegistrationNumber);
             this.grpWholeAdmissionForm.Controls.Add(this.txtContactNumber);
             this.grpWholeAdmissionForm.Controls.Add(this.txtDob);
             this.grpWholeAdmissionForm.Controls.Add(this.txtFatherName);
@@ -170,13 +171,6 @@
             this.txtPin.Name = "txtPin";
             this.txtPin.Size = new System.Drawing.Size(179, 20);
             this.txtPin.TabIndex = 47;
-            // 
-            // txtGender
-            // 
-            this.txtGender.Location = new System.Drawing.Point(524, 287);
-            this.txtGender.Name = "txtGender";
-            this.txtGender.Size = new System.Drawing.Size(179, 20);
-            this.txtGender.TabIndex = 46;
             // 
             // txtCity
             // 
@@ -291,12 +285,13 @@
             this.label6.TabIndex = 33;
             this.label6.Text = "Father Name";
             // 
-            // textBox11
+            // txtRegistrationNumber
             // 
-            this.textBox11.Location = new System.Drawing.Point(122, 73);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(179, 20);
-            this.textBox11.TabIndex = 32;
+            this.txtRegistrationNumber.Location = new System.Drawing.Point(122, 73);
+            this.txtRegistrationNumber.Name = "txtRegistrationNumber";
+            this.txtRegistrationNumber.Size = new System.Drawing.Size(179, 20);
+            this.txtRegistrationNumber.TabIndex = 32;
+            this.txtRegistrationNumber.TextChanged += new System.EventHandler(this.textBox11_TextChanged_1);
             // 
             // txtContactNumber
             // 
@@ -333,6 +328,18 @@
             this.txtName.Size = new System.Drawing.Size(179, 20);
             this.txtName.TabIndex = 27;
             // 
+            // cmbGender
+            // 
+            this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cmbGender.Location = new System.Drawing.Point(524, 287);
+            this.cmbGender.Name = "cmbGender";
+            this.cmbGender.Size = new System.Drawing.Size(179, 21);
+            this.cmbGender.TabIndex = 49;
+            this.cmbGender.Text = "Select Gender";
+            // 
             // Admission_WinForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -358,12 +365,11 @@
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button brnSave;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.GroupBox grpButtons;
         private System.Windows.Forms.GroupBox grpWholeAdmissionForm;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPin;
-        private System.Windows.Forms.TextBox txtGender;
         private System.Windows.Forms.TextBox txtCity;
         private System.Windows.Forms.TextBox txtGuardianNumber;
         private System.Windows.Forms.Label label13;
@@ -377,11 +383,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtRegistrationNumber;
         private System.Windows.Forms.TextBox txtContactNumber;
         private System.Windows.Forms.TextBox txtDob;
         private System.Windows.Forms.TextBox txtFatherName;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.ComboBox cmbGender;
     }
 }

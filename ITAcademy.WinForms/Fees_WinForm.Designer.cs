@@ -72,6 +72,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Fees_WinForm";
             this.Text = "Fees_WinForm";
+            this.Load += new System.EventHandler(this.Fees_WinForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 

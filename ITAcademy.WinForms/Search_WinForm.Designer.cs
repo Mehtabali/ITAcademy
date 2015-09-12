@@ -30,119 +30,119 @@
         {
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.gridShowStudents = new System.Windows.Forms.DataGridView();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.gridShowStudents = new System.Windows.Forms.DataGridView();
             this.tabSearch = new System.Windows.Forms.TabControl();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
-            this.dataGridView10 = new System.Windows.Forms.DataGridView();
-            this.groupBox24 = new System.Windows.Forms.GroupBox();
-            this.btnCancel4 = new System.Windows.Forms.Button();
-            this.btnSearch4 = new System.Windows.Forms.Button();
             this.groupBox23 = new System.Windows.Forms.GroupBox();
-            this.textBox66 = new System.Windows.Forms.TextBox();
-            this.textBox65 = new System.Windows.Forms.TextBox();
-            this.textBox64 = new System.Windows.Forms.TextBox();
-            this.textBox63 = new System.Windows.Forms.TextBox();
-            this.textBox62 = new System.Windows.Forms.TextBox();
             this.textBox61 = new System.Windows.Forms.TextBox();
+            this.textBox62 = new System.Windows.Forms.TextBox();
+            this.textBox63 = new System.Windows.Forms.TextBox();
+            this.textBox64 = new System.Windows.Forms.TextBox();
+            this.textBox65 = new System.Windows.Forms.TextBox();
+            this.textBox66 = new System.Windows.Forms.TextBox();
+            this.groupBox24 = new System.Windows.Forms.GroupBox();
+            this.btnSearch4 = new System.Windows.Forms.Button();
+            this.btnCancel4 = new System.Windows.Forms.Button();
+            this.dataGridView10 = new System.Windows.Forms.DataGridView();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.dataGridView8 = new System.Windows.Forms.DataGridView();
-            this.groupBox21 = new System.Windows.Forms.GroupBox();
-            this.btnCancel3 = new System.Windows.Forms.Button();
-            this.btnSearch3 = new System.Windows.Forms.Button();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.textBox54 = new System.Windows.Forms.TextBox();
-            this.textBox53 = new System.Windows.Forms.TextBox();
-            this.textBox52 = new System.Windows.Forms.TextBox();
-            this.textBox51 = new System.Windows.Forms.TextBox();
-            this.textBox50 = new System.Windows.Forms.TextBox();
             this.textBox49 = new System.Windows.Forms.TextBox();
+            this.textBox50 = new System.Windows.Forms.TextBox();
+            this.textBox51 = new System.Windows.Forms.TextBox();
+            this.textBox52 = new System.Windows.Forms.TextBox();
+            this.textBox53 = new System.Windows.Forms.TextBox();
+            this.textBox54 = new System.Windows.Forms.TextBox();
+            this.groupBox21 = new System.Windows.Forms.GroupBox();
+            this.btnSearch3 = new System.Windows.Forms.Button();
+            this.btnCancel3 = new System.Windows.Forms.Button();
+            this.dataGridView8 = new System.Windows.Forms.DataGridView();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.btnCancel2 = new System.Windows.Forms.Button();
-            this.btnSearch2 = new System.Windows.Forms.Button();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
             this.textBox37 = new System.Windows.Forms.TextBox();
+            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.textBox41 = new System.Windows.Forms.TextBox();
+            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.btnSearch2 = new System.Windows.Forms.Button();
+            this.btnCancel2 = new System.Windows.Forms.Button();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.btnCancel1 = new System.Windows.Forms.Button();
-            this.btnSearch1 = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
             this.textBox31 = new System.Windows.Forms.TextBox();
+            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.btnSearch1 = new System.Windows.Forms.Button();
+            this.btnCancel1 = new System.Windows.Forms.Button();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.tabCtrlSearch = new System.Windows.Forms.TabControl();
             this.tabPage5.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            this.groupBox6.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPage3.SuspendLayout();
@@ -151,30 +151,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridShowStudents)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridShowStudents)).BeginInit();
             this.tabSearch.SuspendLayout();
             this.tabPage9.SuspendLayout();
             this.groupBox22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
-            this.groupBox24.SuspendLayout();
             this.groupBox23.SuspendLayout();
+            this.groupBox24.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
             this.tabPage8.SuspendLayout();
             this.groupBox19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
-            this.groupBox21.SuspendLayout();
             this.groupBox20.SuspendLayout();
+            this.groupBox21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.tabPage7.SuspendLayout();
             this.groupBox13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
-            this.groupBox15.SuspendLayout();
             this.groupBox14.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
-            this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.tabCtrlSearch.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -200,43 +200,6 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Search Records";
             // 
-            // dataGridView4
-            // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(27, 273);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(727, 221);
-            this.dataGridView4.TabIndex = 6;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.button8);
-            this.groupBox6.Controls.Add(this.button7);
-            this.groupBox6.Location = new System.Drawing.Point(27, 187);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(727, 69);
-            this.groupBox6.TabIndex = 9;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Actions";
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(626, 43);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "Cancel";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(528, 43);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Search";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.textBox25);
@@ -251,33 +214,12 @@
             this.groupBox4.TabIndex = 9;
             this.groupBox4.TabStop = false;
             // 
-            // textBox30
+            // textBox25
             // 
-            this.textBox30.Location = new System.Drawing.Point(36, 40);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(179, 20);
-            this.textBox30.TabIndex = 15;
-            // 
-            // textBox29
-            // 
-            this.textBox29.Location = new System.Drawing.Point(282, 40);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(181, 20);
-            this.textBox29.TabIndex = 16;
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(36, 103);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(179, 20);
-            this.textBox28.TabIndex = 17;
-            // 
-            // textBox27
-            // 
-            this.textBox27.Location = new System.Drawing.Point(512, 40);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(179, 20);
-            this.textBox27.TabIndex = 18;
+            this.textBox25.Location = new System.Drawing.Point(512, 103);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(179, 20);
+            this.textBox25.TabIndex = 20;
             // 
             // textBox26
             // 
@@ -286,12 +228,70 @@
             this.textBox26.Size = new System.Drawing.Size(179, 20);
             this.textBox26.TabIndex = 19;
             // 
-            // textBox25
+            // textBox27
             // 
-            this.textBox25.Location = new System.Drawing.Point(512, 103);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(179, 20);
-            this.textBox25.TabIndex = 20;
+            this.textBox27.Location = new System.Drawing.Point(512, 40);
+            this.textBox27.Name = "textBox27";
+            this.textBox27.Size = new System.Drawing.Size(179, 20);
+            this.textBox27.TabIndex = 18;
+            // 
+            // textBox28
+            // 
+            this.textBox28.Location = new System.Drawing.Point(36, 103);
+            this.textBox28.Name = "textBox28";
+            this.textBox28.Size = new System.Drawing.Size(179, 20);
+            this.textBox28.TabIndex = 17;
+            // 
+            // textBox29
+            // 
+            this.textBox29.Location = new System.Drawing.Point(282, 40);
+            this.textBox29.Name = "textBox29";
+            this.textBox29.Size = new System.Drawing.Size(181, 20);
+            this.textBox29.TabIndex = 16;
+            // 
+            // textBox30
+            // 
+            this.textBox30.Location = new System.Drawing.Point(36, 40);
+            this.textBox30.Name = "textBox30";
+            this.textBox30.Size = new System.Drawing.Size(179, 20);
+            this.textBox30.TabIndex = 15;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.button8);
+            this.groupBox6.Controls.Add(this.button7);
+            this.groupBox6.Location = new System.Drawing.Point(27, 187);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(727, 69);
+            this.groupBox6.TabIndex = 9;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Actions";
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(528, 43);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 7;
+            this.button8.Text = "Search";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(626, 43);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 8;
+            this.button7.Text = "Cancel";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(27, 273);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(727, 221);
+            this.dataGridView4.TabIndex = 6;
             // 
             // tabPage4
             // 
@@ -311,55 +311,14 @@
             this.tabPage4.Text = "Batches";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // textBox24
+            // button5
             // 
-            this.textBox24.Location = new System.Drawing.Point(18, 47);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(179, 20);
-            this.textBox24.TabIndex = 18;
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(264, 47);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(181, 20);
-            this.textBox23.TabIndex = 19;
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(18, 110);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(179, 20);
-            this.textBox22.TabIndex = 20;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(494, 47);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(179, 20);
-            this.textBox21.TabIndex = 21;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(264, 110);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(179, 20);
-            this.textBox20.TabIndex = 22;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(494, 110);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(179, 20);
-            this.textBox19.TabIndex = 23;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(18, 204);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(676, 168);
-            this.dataGridView3.TabIndex = 24;
+            this.button5.Location = new System.Drawing.Point(505, 164);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 26;
+            this.button5.Text = "Cancel";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
@@ -370,14 +329,55 @@
             this.button6.Text = "Search";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // dataGridView3
             // 
-            this.button5.Location = new System.Drawing.Point(505, 164);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 26;
-            this.button5.Text = "Cancel";
-            this.button5.UseVisualStyleBackColor = true;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(18, 204);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(676, 168);
+            this.dataGridView3.TabIndex = 24;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(494, 110);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(179, 20);
+            this.textBox19.TabIndex = 23;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(264, 110);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(179, 20);
+            this.textBox20.TabIndex = 22;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(494, 47);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(179, 20);
+            this.textBox21.TabIndex = 21;
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(18, 110);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(179, 20);
+            this.textBox22.TabIndex = 20;
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(264, 47);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(181, 20);
+            this.textBox23.TabIndex = 19;
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(18, 47);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(179, 20);
+            this.textBox24.TabIndex = 18;
             // 
             // tabPage3
             // 
@@ -397,55 +397,14 @@
             this.tabPage3.Text = "Teacher";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // textBox18
+            // button3
             // 
-            this.textBox18.Location = new System.Drawing.Point(18, 47);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(179, 20);
-            this.textBox18.TabIndex = 18;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(264, 47);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(181, 20);
-            this.textBox17.TabIndex = 19;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(18, 110);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(179, 20);
-            this.textBox16.TabIndex = 20;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(494, 47);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(179, 20);
-            this.textBox15.TabIndex = 21;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(264, 110);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(179, 20);
-            this.textBox14.TabIndex = 22;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(494, 110);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(179, 20);
-            this.textBox13.TabIndex = 23;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(18, 204);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(676, 168);
-            this.dataGridView2.TabIndex = 24;
+            this.button3.Location = new System.Drawing.Point(505, 164);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 26;
+            this.button3.Text = "Cancel";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -456,14 +415,55 @@
             this.button4.Text = "Search";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // dataGridView2
             // 
-            this.button3.Location = new System.Drawing.Point(505, 164);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "Cancel";
-            this.button3.UseVisualStyleBackColor = true;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(18, 204);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(676, 168);
+            this.dataGridView2.TabIndex = 24;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(494, 110);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(179, 20);
+            this.textBox13.TabIndex = 23;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(264, 110);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(179, 20);
+            this.textBox14.TabIndex = 22;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(494, 47);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(179, 20);
+            this.textBox15.TabIndex = 21;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(18, 110);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(179, 20);
+            this.textBox16.TabIndex = 20;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(264, 47);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(181, 20);
+            this.textBox17.TabIndex = 19;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(18, 47);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(179, 20);
+            this.textBox18.TabIndex = 18;
             // 
             // tabPage2
             // 
@@ -484,55 +484,14 @@
             this.tabPage2.Text = "Courses";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // textBox12
+            // button1
             // 
-            this.textBox12.Location = new System.Drawing.Point(18, 47);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(179, 20);
-            this.textBox12.TabIndex = 9;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(264, 47);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(181, 20);
-            this.textBox11.TabIndex = 10;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(18, 110);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(179, 20);
-            this.textBox10.TabIndex = 11;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(494, 47);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(179, 20);
-            this.textBox9.TabIndex = 12;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(264, 110);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(179, 20);
-            this.textBox8.TabIndex = 13;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(494, 110);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(179, 20);
-            this.textBox7.TabIndex = 14;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 204);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(676, 168);
-            this.dataGridView1.TabIndex = 15;
+            this.button1.Location = new System.Drawing.Point(505, 164);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Cancel";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -543,14 +502,55 @@
             this.button2.Text = "Search";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // dataGridView1
             // 
-            this.button1.Location = new System.Drawing.Point(505, 164);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Cancel";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(18, 204);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(676, 168);
+            this.dataGridView1.TabIndex = 15;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(494, 110);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(179, 20);
+            this.textBox7.TabIndex = 14;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(264, 110);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(179, 20);
+            this.textBox8.TabIndex = 13;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(494, 47);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(179, 20);
+            this.textBox9.TabIndex = 12;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(18, 110);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(179, 20);
+            this.textBox10.TabIndex = 11;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(264, 47);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(181, 20);
+            this.textBox11.TabIndex = 10;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(18, 47);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(179, 20);
+            this.textBox12.TabIndex = 9;
             // 
             // tabPage1
             // 
@@ -576,44 +576,6 @@
             this.groupBox1.Text = "Search Records";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // gridShowStudents
-            // 
-            this.gridShowStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridShowStudents.Location = new System.Drawing.Point(27, 273);
-            this.gridShowStudents.Name = "gridShowStudents";
-            this.gridShowStudents.Size = new System.Drawing.Size(727, 221);
-            this.gridShowStudents.TabIndex = 6;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btnSearch);
-            this.groupBox2.Controls.Add(this.btnCancel);
-            this.groupBox2.Location = new System.Drawing.Point(27, 187);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(727, 69);
-            this.groupBox2.TabIndex = 9;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Actions";
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(626, 43);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 8;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(528, 43);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 7;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.textBox1);
@@ -628,33 +590,12 @@
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             // 
-            // textBox6
+            // textBox1
             // 
-            this.textBox6.Location = new System.Drawing.Point(36, 40);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(179, 20);
-            this.textBox6.TabIndex = 15;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(282, 40);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(181, 20);
-            this.textBox5.TabIndex = 16;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(36, 103);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(179, 20);
-            this.textBox4.TabIndex = 17;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(512, 40);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 20);
-            this.textBox3.TabIndex = 18;
+            this.textBox1.Location = new System.Drawing.Point(512, 103);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(179, 20);
+            this.textBox1.TabIndex = 20;
             // 
             // textBox2
             // 
@@ -663,12 +604,71 @@
             this.textBox2.Size = new System.Drawing.Size(179, 20);
             this.textBox2.TabIndex = 19;
             // 
-            // textBox1
+            // textBox3
             // 
-            this.textBox1.Location = new System.Drawing.Point(512, 103);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(179, 20);
-            this.textBox1.TabIndex = 20;
+            this.textBox3.Location = new System.Drawing.Point(512, 40);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(179, 20);
+            this.textBox3.TabIndex = 18;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(36, 103);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(179, 20);
+            this.textBox4.TabIndex = 17;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(282, 40);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(181, 20);
+            this.textBox5.TabIndex = 16;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(36, 40);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(179, 20);
+            this.textBox6.TabIndex = 15;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnSearch);
+            this.groupBox2.Controls.Add(this.btnCancel);
+            this.groupBox2.Location = new System.Drawing.Point(27, 187);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(727, 69);
+            this.groupBox2.TabIndex = 9;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Actions";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(528, 43);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 7;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(626, 43);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 8;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // gridShowStudents
+            // 
+            this.gridShowStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridShowStudents.Location = new System.Drawing.Point(27, 273);
+            this.gridShowStudents.Name = "gridShowStudents";
+            this.gridShowStudents.Size = new System.Drawing.Size(727, 221);
+            this.gridShowStudents.TabIndex = 6;
             // 
             // tabSearch
             // 
@@ -705,43 +705,6 @@
             this.groupBox22.TabStop = false;
             this.groupBox22.Text = "Search Records";
             // 
-            // dataGridView10
-            // 
-            this.dataGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView10.Location = new System.Drawing.Point(27, 273);
-            this.dataGridView10.Name = "dataGridView10";
-            this.dataGridView10.Size = new System.Drawing.Size(727, 221);
-            this.dataGridView10.TabIndex = 6;
-            // 
-            // groupBox24
-            // 
-            this.groupBox24.Controls.Add(this.btnSearch4);
-            this.groupBox24.Controls.Add(this.btnCancel4);
-            this.groupBox24.Location = new System.Drawing.Point(27, 187);
-            this.groupBox24.Name = "groupBox24";
-            this.groupBox24.Size = new System.Drawing.Size(727, 69);
-            this.groupBox24.TabIndex = 9;
-            this.groupBox24.TabStop = false;
-            this.groupBox24.Text = "Actions";
-            // 
-            // btnCancel4
-            // 
-            this.btnCancel4.Location = new System.Drawing.Point(626, 43);
-            this.btnCancel4.Name = "btnCancel4";
-            this.btnCancel4.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel4.TabIndex = 8;
-            this.btnCancel4.Text = "Cancel";
-            this.btnCancel4.UseVisualStyleBackColor = true;
-            // 
-            // btnSearch4
-            // 
-            this.btnSearch4.Location = new System.Drawing.Point(528, 43);
-            this.btnSearch4.Name = "btnSearch4";
-            this.btnSearch4.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch4.TabIndex = 7;
-            this.btnSearch4.Text = "Search";
-            this.btnSearch4.UseVisualStyleBackColor = true;
-            // 
             // groupBox23
             // 
             this.groupBox23.Controls.Add(this.textBox61);
@@ -756,33 +719,12 @@
             this.groupBox23.TabIndex = 9;
             this.groupBox23.TabStop = false;
             // 
-            // textBox66
+            // textBox61
             // 
-            this.textBox66.Location = new System.Drawing.Point(36, 40);
-            this.textBox66.Name = "textBox66";
-            this.textBox66.Size = new System.Drawing.Size(179, 20);
-            this.textBox66.TabIndex = 15;
-            // 
-            // textBox65
-            // 
-            this.textBox65.Location = new System.Drawing.Point(282, 40);
-            this.textBox65.Name = "textBox65";
-            this.textBox65.Size = new System.Drawing.Size(181, 20);
-            this.textBox65.TabIndex = 16;
-            // 
-            // textBox64
-            // 
-            this.textBox64.Location = new System.Drawing.Point(36, 103);
-            this.textBox64.Name = "textBox64";
-            this.textBox64.Size = new System.Drawing.Size(179, 20);
-            this.textBox64.TabIndex = 17;
-            // 
-            // textBox63
-            // 
-            this.textBox63.Location = new System.Drawing.Point(512, 40);
-            this.textBox63.Name = "textBox63";
-            this.textBox63.Size = new System.Drawing.Size(179, 20);
-            this.textBox63.TabIndex = 18;
+            this.textBox61.Location = new System.Drawing.Point(512, 103);
+            this.textBox61.Name = "textBox61";
+            this.textBox61.Size = new System.Drawing.Size(179, 20);
+            this.textBox61.TabIndex = 20;
             // 
             // textBox62
             // 
@@ -791,12 +733,70 @@
             this.textBox62.Size = new System.Drawing.Size(179, 20);
             this.textBox62.TabIndex = 19;
             // 
-            // textBox61
+            // textBox63
             // 
-            this.textBox61.Location = new System.Drawing.Point(512, 103);
-            this.textBox61.Name = "textBox61";
-            this.textBox61.Size = new System.Drawing.Size(179, 20);
-            this.textBox61.TabIndex = 20;
+            this.textBox63.Location = new System.Drawing.Point(512, 40);
+            this.textBox63.Name = "textBox63";
+            this.textBox63.Size = new System.Drawing.Size(179, 20);
+            this.textBox63.TabIndex = 18;
+            // 
+            // textBox64
+            // 
+            this.textBox64.Location = new System.Drawing.Point(36, 103);
+            this.textBox64.Name = "textBox64";
+            this.textBox64.Size = new System.Drawing.Size(179, 20);
+            this.textBox64.TabIndex = 17;
+            // 
+            // textBox65
+            // 
+            this.textBox65.Location = new System.Drawing.Point(282, 40);
+            this.textBox65.Name = "textBox65";
+            this.textBox65.Size = new System.Drawing.Size(181, 20);
+            this.textBox65.TabIndex = 16;
+            // 
+            // textBox66
+            // 
+            this.textBox66.Location = new System.Drawing.Point(36, 40);
+            this.textBox66.Name = "textBox66";
+            this.textBox66.Size = new System.Drawing.Size(179, 20);
+            this.textBox66.TabIndex = 15;
+            // 
+            // groupBox24
+            // 
+            this.groupBox24.Controls.Add(this.btnSearch4);
+            this.groupBox24.Controls.Add(this.btnCancel4);
+            this.groupBox24.Location = new System.Drawing.Point(27, 187);
+            this.groupBox24.Name = "groupBox24";
+            this.groupBox24.Size = new System.Drawing.Size(727, 69);
+            this.groupBox24.TabIndex = 9;
+            this.groupBox24.TabStop = false;
+            this.groupBox24.Text = "Actions";
+            // 
+            // btnSearch4
+            // 
+            this.btnSearch4.Location = new System.Drawing.Point(528, 43);
+            this.btnSearch4.Name = "btnSearch4";
+            this.btnSearch4.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch4.TabIndex = 7;
+            this.btnSearch4.Text = "Search";
+            this.btnSearch4.UseVisualStyleBackColor = true;
+            // 
+            // btnCancel4
+            // 
+            this.btnCancel4.Location = new System.Drawing.Point(626, 43);
+            this.btnCancel4.Name = "btnCancel4";
+            this.btnCancel4.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel4.TabIndex = 8;
+            this.btnCancel4.Text = "Cancel";
+            this.btnCancel4.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView10
+            // 
+            this.dataGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView10.Location = new System.Drawing.Point(27, 273);
+            this.dataGridView10.Name = "dataGridView10";
+            this.dataGridView10.Size = new System.Drawing.Size(727, 221);
+            this.dataGridView10.TabIndex = 6;
             // 
             // tabPage8
             // 
@@ -820,43 +820,6 @@
             this.groupBox19.TabStop = false;
             this.groupBox19.Text = "Search Records";
             // 
-            // dataGridView8
-            // 
-            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.Location = new System.Drawing.Point(27, 273);
-            this.dataGridView8.Name = "dataGridView8";
-            this.dataGridView8.Size = new System.Drawing.Size(727, 221);
-            this.dataGridView8.TabIndex = 6;
-            // 
-            // groupBox21
-            // 
-            this.groupBox21.Controls.Add(this.btnSearch3);
-            this.groupBox21.Controls.Add(this.btnCancel3);
-            this.groupBox21.Location = new System.Drawing.Point(27, 187);
-            this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Size = new System.Drawing.Size(727, 69);
-            this.groupBox21.TabIndex = 9;
-            this.groupBox21.TabStop = false;
-            this.groupBox21.Text = "Actions";
-            // 
-            // btnCancel3
-            // 
-            this.btnCancel3.Location = new System.Drawing.Point(626, 43);
-            this.btnCancel3.Name = "btnCancel3";
-            this.btnCancel3.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel3.TabIndex = 8;
-            this.btnCancel3.Text = "Cancel";
-            this.btnCancel3.UseVisualStyleBackColor = true;
-            // 
-            // btnSearch3
-            // 
-            this.btnSearch3.Location = new System.Drawing.Point(528, 43);
-            this.btnSearch3.Name = "btnSearch3";
-            this.btnSearch3.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch3.TabIndex = 7;
-            this.btnSearch3.Text = "Search";
-            this.btnSearch3.UseVisualStyleBackColor = true;
-            // 
             // groupBox20
             // 
             this.groupBox20.Controls.Add(this.textBox49);
@@ -871,33 +834,12 @@
             this.groupBox20.TabIndex = 9;
             this.groupBox20.TabStop = false;
             // 
-            // textBox54
+            // textBox49
             // 
-            this.textBox54.Location = new System.Drawing.Point(36, 40);
-            this.textBox54.Name = "textBox54";
-            this.textBox54.Size = new System.Drawing.Size(179, 20);
-            this.textBox54.TabIndex = 15;
-            // 
-            // textBox53
-            // 
-            this.textBox53.Location = new System.Drawing.Point(282, 40);
-            this.textBox53.Name = "textBox53";
-            this.textBox53.Size = new System.Drawing.Size(181, 20);
-            this.textBox53.TabIndex = 16;
-            // 
-            // textBox52
-            // 
-            this.textBox52.Location = new System.Drawing.Point(36, 103);
-            this.textBox52.Name = "textBox52";
-            this.textBox52.Size = new System.Drawing.Size(179, 20);
-            this.textBox52.TabIndex = 17;
-            // 
-            // textBox51
-            // 
-            this.textBox51.Location = new System.Drawing.Point(512, 40);
-            this.textBox51.Name = "textBox51";
-            this.textBox51.Size = new System.Drawing.Size(179, 20);
-            this.textBox51.TabIndex = 18;
+            this.textBox49.Location = new System.Drawing.Point(512, 103);
+            this.textBox49.Name = "textBox49";
+            this.textBox49.Size = new System.Drawing.Size(179, 20);
+            this.textBox49.TabIndex = 20;
             // 
             // textBox50
             // 
@@ -906,12 +848,70 @@
             this.textBox50.Size = new System.Drawing.Size(179, 20);
             this.textBox50.TabIndex = 19;
             // 
-            // textBox49
+            // textBox51
             // 
-            this.textBox49.Location = new System.Drawing.Point(512, 103);
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(179, 20);
-            this.textBox49.TabIndex = 20;
+            this.textBox51.Location = new System.Drawing.Point(512, 40);
+            this.textBox51.Name = "textBox51";
+            this.textBox51.Size = new System.Drawing.Size(179, 20);
+            this.textBox51.TabIndex = 18;
+            // 
+            // textBox52
+            // 
+            this.textBox52.Location = new System.Drawing.Point(36, 103);
+            this.textBox52.Name = "textBox52";
+            this.textBox52.Size = new System.Drawing.Size(179, 20);
+            this.textBox52.TabIndex = 17;
+            // 
+            // textBox53
+            // 
+            this.textBox53.Location = new System.Drawing.Point(282, 40);
+            this.textBox53.Name = "textBox53";
+            this.textBox53.Size = new System.Drawing.Size(181, 20);
+            this.textBox53.TabIndex = 16;
+            // 
+            // textBox54
+            // 
+            this.textBox54.Location = new System.Drawing.Point(36, 40);
+            this.textBox54.Name = "textBox54";
+            this.textBox54.Size = new System.Drawing.Size(179, 20);
+            this.textBox54.TabIndex = 15;
+            // 
+            // groupBox21
+            // 
+            this.groupBox21.Controls.Add(this.btnSearch3);
+            this.groupBox21.Controls.Add(this.btnCancel3);
+            this.groupBox21.Location = new System.Drawing.Point(27, 187);
+            this.groupBox21.Name = "groupBox21";
+            this.groupBox21.Size = new System.Drawing.Size(727, 69);
+            this.groupBox21.TabIndex = 9;
+            this.groupBox21.TabStop = false;
+            this.groupBox21.Text = "Actions";
+            // 
+            // btnSearch3
+            // 
+            this.btnSearch3.Location = new System.Drawing.Point(528, 43);
+            this.btnSearch3.Name = "btnSearch3";
+            this.btnSearch3.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch3.TabIndex = 7;
+            this.btnSearch3.Text = "Search";
+            this.btnSearch3.UseVisualStyleBackColor = true;
+            // 
+            // btnCancel3
+            // 
+            this.btnCancel3.Location = new System.Drawing.Point(626, 43);
+            this.btnCancel3.Name = "btnCancel3";
+            this.btnCancel3.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel3.TabIndex = 8;
+            this.btnCancel3.Text = "Cancel";
+            this.btnCancel3.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView8
+            // 
+            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView8.Location = new System.Drawing.Point(27, 273);
+            this.dataGridView8.Name = "dataGridView8";
+            this.dataGridView8.Size = new System.Drawing.Size(727, 221);
+            this.dataGridView8.TabIndex = 6;
             // 
             // tabPage7
             // 
@@ -936,43 +936,6 @@
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Search Records";
             // 
-            // dataGridView6
-            // 
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(27, 273);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(727, 221);
-            this.dataGridView6.TabIndex = 6;
-            // 
-            // groupBox15
-            // 
-            this.groupBox15.Controls.Add(this.btnSearch2);
-            this.groupBox15.Controls.Add(this.btnCancel2);
-            this.groupBox15.Location = new System.Drawing.Point(27, 187);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(727, 69);
-            this.groupBox15.TabIndex = 9;
-            this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "Actions";
-            // 
-            // btnCancel2
-            // 
-            this.btnCancel2.Location = new System.Drawing.Point(626, 43);
-            this.btnCancel2.Name = "btnCancel2";
-            this.btnCancel2.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel2.TabIndex = 8;
-            this.btnCancel2.Text = "Cancel";
-            this.btnCancel2.UseVisualStyleBackColor = true;
-            // 
-            // btnSearch2
-            // 
-            this.btnSearch2.Location = new System.Drawing.Point(528, 43);
-            this.btnSearch2.Name = "btnSearch2";
-            this.btnSearch2.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch2.TabIndex = 7;
-            this.btnSearch2.Text = "Search";
-            this.btnSearch2.UseVisualStyleBackColor = true;
-            // 
             // groupBox14
             // 
             this.groupBox14.Controls.Add(this.textBox37);
@@ -987,33 +950,12 @@
             this.groupBox14.TabIndex = 9;
             this.groupBox14.TabStop = false;
             // 
-            // textBox42
+            // textBox37
             // 
-            this.textBox42.Location = new System.Drawing.Point(36, 40);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(179, 20);
-            this.textBox42.TabIndex = 15;
-            // 
-            // textBox41
-            // 
-            this.textBox41.Location = new System.Drawing.Point(282, 40);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(181, 20);
-            this.textBox41.TabIndex = 16;
-            // 
-            // textBox40
-            // 
-            this.textBox40.Location = new System.Drawing.Point(36, 103);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(179, 20);
-            this.textBox40.TabIndex = 17;
-            // 
-            // textBox39
-            // 
-            this.textBox39.Location = new System.Drawing.Point(512, 40);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(179, 20);
-            this.textBox39.TabIndex = 18;
+            this.textBox37.Location = new System.Drawing.Point(512, 103);
+            this.textBox37.Name = "textBox37";
+            this.textBox37.Size = new System.Drawing.Size(179, 20);
+            this.textBox37.TabIndex = 20;
             // 
             // textBox38
             // 
@@ -1022,12 +964,70 @@
             this.textBox38.Size = new System.Drawing.Size(179, 20);
             this.textBox38.TabIndex = 19;
             // 
-            // textBox37
+            // textBox39
             // 
-            this.textBox37.Location = new System.Drawing.Point(512, 103);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(179, 20);
-            this.textBox37.TabIndex = 20;
+            this.textBox39.Location = new System.Drawing.Point(512, 40);
+            this.textBox39.Name = "textBox39";
+            this.textBox39.Size = new System.Drawing.Size(179, 20);
+            this.textBox39.TabIndex = 18;
+            // 
+            // textBox40
+            // 
+            this.textBox40.Location = new System.Drawing.Point(36, 103);
+            this.textBox40.Name = "textBox40";
+            this.textBox40.Size = new System.Drawing.Size(179, 20);
+            this.textBox40.TabIndex = 17;
+            // 
+            // textBox41
+            // 
+            this.textBox41.Location = new System.Drawing.Point(282, 40);
+            this.textBox41.Name = "textBox41";
+            this.textBox41.Size = new System.Drawing.Size(181, 20);
+            this.textBox41.TabIndex = 16;
+            // 
+            // textBox42
+            // 
+            this.textBox42.Location = new System.Drawing.Point(36, 40);
+            this.textBox42.Name = "textBox42";
+            this.textBox42.Size = new System.Drawing.Size(179, 20);
+            this.textBox42.TabIndex = 15;
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Controls.Add(this.btnSearch2);
+            this.groupBox15.Controls.Add(this.btnCancel2);
+            this.groupBox15.Location = new System.Drawing.Point(27, 187);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(727, 69);
+            this.groupBox15.TabIndex = 9;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "Actions";
+            // 
+            // btnSearch2
+            // 
+            this.btnSearch2.Location = new System.Drawing.Point(528, 43);
+            this.btnSearch2.Name = "btnSearch2";
+            this.btnSearch2.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch2.TabIndex = 7;
+            this.btnSearch2.Text = "Search";
+            this.btnSearch2.UseVisualStyleBackColor = true;
+            // 
+            // btnCancel2
+            // 
+            this.btnCancel2.Location = new System.Drawing.Point(626, 43);
+            this.btnCancel2.Name = "btnCancel2";
+            this.btnCancel2.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel2.TabIndex = 8;
+            this.btnCancel2.Text = "Cancel";
+            this.btnCancel2.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Location = new System.Drawing.Point(27, 273);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.Size = new System.Drawing.Size(727, 221);
+            this.dataGridView6.TabIndex = 6;
             // 
             // tabPage6
             // 
@@ -1053,47 +1053,6 @@
             this.groupBox7.Text = "Search Records";
             this.groupBox7.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // dataGridView5
-            // 
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(27, 273);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(727, 221);
-            this.dataGridView5.TabIndex = 6;
-            this.dataGridView5.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView5_CellContentClick);
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.btnSearch1);
-            this.groupBox9.Controls.Add(this.btnCancel1);
-            this.groupBox9.Location = new System.Drawing.Point(27, 187);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(727, 69);
-            this.groupBox9.TabIndex = 9;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Actions";
-            this.groupBox9.Enter += new System.EventHandler(this.groupBox9_Enter);
-            // 
-            // btnCancel1
-            // 
-            this.btnCancel1.Location = new System.Drawing.Point(626, 43);
-            this.btnCancel1.Name = "btnCancel1";
-            this.btnCancel1.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel1.TabIndex = 8;
-            this.btnCancel1.Text = "Cancel";
-            this.btnCancel1.UseVisualStyleBackColor = true;
-            this.btnCancel1.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // btnSearch1
-            // 
-            this.btnSearch1.Location = new System.Drawing.Point(528, 43);
-            this.btnSearch1.Name = "btnSearch1";
-            this.btnSearch1.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch1.TabIndex = 7;
-            this.btnSearch1.Text = "Search";
-            this.btnSearch1.UseVisualStyleBackColor = true;
-            this.btnSearch1.Click += new System.EventHandler(this.button9_Click);
-            // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.textBox31);
@@ -1109,37 +1068,13 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Enter += new System.EventHandler(this.groupBox8_Enter);
             // 
-            // textBox36
+            // textBox31
             // 
-            this.textBox36.Location = new System.Drawing.Point(36, 40);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(179, 20);
-            this.textBox36.TabIndex = 15;
-            this.textBox36.TextChanged += new System.EventHandler(this.textBox36_TextChanged);
-            // 
-            // textBox35
-            // 
-            this.textBox35.Location = new System.Drawing.Point(282, 40);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(181, 20);
-            this.textBox35.TabIndex = 16;
-            this.textBox35.TextChanged += new System.EventHandler(this.textBox35_TextChanged);
-            // 
-            // textBox34
-            // 
-            this.textBox34.Location = new System.Drawing.Point(36, 103);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(179, 20);
-            this.textBox34.TabIndex = 17;
-            this.textBox34.TextChanged += new System.EventHandler(this.textBox34_TextChanged);
-            // 
-            // textBox33
-            // 
-            this.textBox33.Location = new System.Drawing.Point(512, 40);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(179, 20);
-            this.textBox33.TabIndex = 18;
-            this.textBox33.TextChanged += new System.EventHandler(this.textBox33_TextChanged);
+            this.textBox31.Location = new System.Drawing.Point(512, 103);
+            this.textBox31.Name = "textBox31";
+            this.textBox31.Size = new System.Drawing.Size(179, 20);
+            this.textBox31.TabIndex = 20;
+            this.textBox31.TextChanged += new System.EventHandler(this.textBox31_TextChanged);
             // 
             // textBox32
             // 
@@ -1149,13 +1084,78 @@
             this.textBox32.TabIndex = 19;
             this.textBox32.TextChanged += new System.EventHandler(this.textBox32_TextChanged);
             // 
-            // textBox31
+            // textBox33
             // 
-            this.textBox31.Location = new System.Drawing.Point(512, 103);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(179, 20);
-            this.textBox31.TabIndex = 20;
-            this.textBox31.TextChanged += new System.EventHandler(this.textBox31_TextChanged);
+            this.textBox33.Location = new System.Drawing.Point(512, 40);
+            this.textBox33.Name = "textBox33";
+            this.textBox33.Size = new System.Drawing.Size(179, 20);
+            this.textBox33.TabIndex = 18;
+            this.textBox33.TextChanged += new System.EventHandler(this.textBox33_TextChanged);
+            // 
+            // textBox34
+            // 
+            this.textBox34.Location = new System.Drawing.Point(36, 103);
+            this.textBox34.Name = "textBox34";
+            this.textBox34.Size = new System.Drawing.Size(179, 20);
+            this.textBox34.TabIndex = 17;
+            this.textBox34.TextChanged += new System.EventHandler(this.textBox34_TextChanged);
+            // 
+            // textBox35
+            // 
+            this.textBox35.Location = new System.Drawing.Point(282, 40);
+            this.textBox35.Name = "textBox35";
+            this.textBox35.Size = new System.Drawing.Size(181, 20);
+            this.textBox35.TabIndex = 16;
+            this.textBox35.TextChanged += new System.EventHandler(this.textBox35_TextChanged);
+            // 
+            // textBox36
+            // 
+            this.textBox36.Location = new System.Drawing.Point(36, 40);
+            this.textBox36.Name = "textBox36";
+            this.textBox36.Size = new System.Drawing.Size(179, 20);
+            this.textBox36.TabIndex = 15;
+            this.textBox36.TextChanged += new System.EventHandler(this.textBox36_TextChanged);
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.btnSearch1);
+            this.groupBox9.Controls.Add(this.btnCancel1);
+            this.groupBox9.Location = new System.Drawing.Point(27, 187);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(727, 69);
+            this.groupBox9.TabIndex = 9;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Actions";
+            this.groupBox9.Enter += new System.EventHandler(this.groupBox9_Enter);
+            // 
+            // btnSearch1
+            // 
+            this.btnSearch1.Location = new System.Drawing.Point(528, 43);
+            this.btnSearch1.Name = "btnSearch1";
+            this.btnSearch1.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch1.TabIndex = 7;
+            this.btnSearch1.Text = "Search";
+            this.btnSearch1.UseVisualStyleBackColor = true;
+            this.btnSearch1.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // btnCancel1
+            // 
+            this.btnCancel1.Location = new System.Drawing.Point(626, 43);
+            this.btnCancel1.Name = "btnCancel1";
+            this.btnCancel1.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel1.TabIndex = 8;
+            this.btnCancel1.Text = "Cancel";
+            this.btnCancel1.UseVisualStyleBackColor = true;
+            this.btnCancel1.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Location = new System.Drawing.Point(27, 273);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.Size = new System.Drawing.Size(727, 221);
+            this.dataGridView5.TabIndex = 6;
+            this.dataGridView5.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView5_CellContentClick);
             // 
             // tabCtrlSearch
             // 
@@ -1179,12 +1179,13 @@
             this.Controls.Add(this.tabSearch);
             this.Name = "Search_WinForm";
             this.Text = "Search_WinForm";
+            this.Load += new System.EventHandler(this.Search_WinForm_Load);
             this.tabPage5.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            this.groupBox6.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
@@ -1196,35 +1197,35 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridShowStudents)).EndInit();
-            this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridShowStudents)).EndInit();
             this.tabSearch.ResumeLayout(false);
             this.tabPage9.ResumeLayout(false);
             this.groupBox22.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
-            this.groupBox24.ResumeLayout(false);
             this.groupBox23.ResumeLayout(false);
             this.groupBox23.PerformLayout();
+            this.groupBox24.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
             this.tabPage8.ResumeLayout(false);
             this.groupBox19.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
-            this.groupBox21.ResumeLayout(false);
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
+            this.groupBox21.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.groupBox13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-            this.groupBox15.ResumeLayout(false);
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
+            this.groupBox15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-            this.groupBox9.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.tabCtrlSearch.ResumeLayout(false);
             this.ResumeLayout(false);
 

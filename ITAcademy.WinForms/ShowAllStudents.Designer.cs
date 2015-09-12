@@ -70,6 +70,7 @@
             this.grpAllRecords.TabIndex = 0;
             this.grpAllRecords.TabStop = false;
             this.grpAllRecords.Text = "All Records";
+            this.grpAllRecords.Enter += new System.EventHandler(this.grpAllRecords_Enter);
             // 
             // dataGridView1
             // 

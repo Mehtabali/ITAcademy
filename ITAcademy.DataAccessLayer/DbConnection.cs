@@ -123,7 +123,7 @@ namespace ITAcademy.DataAccessLayer
                 throw exception;
             }
         }
-        private void AddParameters(Dictionary<String, String> parameters, MethodType methodType)
+        private void AddParameters(Dictionary<String, string> parameters, MethodType methodType)
         {
             if (_command.Parameters.Count > 0)
                 _command.Parameters.Clear();
@@ -142,7 +142,7 @@ namespace ITAcademy.DataAccessLayer
 
         }
 
-        private void AddParameters(Dictionary<String, String> parameters)
+        private void AddParameters(Dictionary<String, string> parameters)
         {
             if (_command.Parameters.Count > 0)
                 _command.Parameters.Clear();

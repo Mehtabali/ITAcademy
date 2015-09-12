@@ -9,10 +9,12 @@ namespace ITAcademy.DataModels
 {
     public class Student
     {
+            [Key]
         public int Id { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "First name is required")]
         [StringLength(20, MinimumLength = 5, ErrorMessage = "First name must be between 5 and 20 characters")]
+      
         public String Name { get; set; }
         public String Mobile { get; set; }
         public String Email { get; set; }
@@ -20,7 +22,7 @@ namespace ITAcademy.DataModels
         public String Gender { get; set; }
         public String Address { get; set; }
         public String City { get; set; }
-        public String State { get; set; }
+       // public String State { get; set; }
         public String PIN { get; set; }
         public DateTime DOB { get; set; }
         public String ImagePath { get; set; }

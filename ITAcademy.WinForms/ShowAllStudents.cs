@@ -16,5 +16,10 @@ namespace ITAcademy.WinForms
         {
             InitializeComponent();
         }
+
+        private void grpAllRecords_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

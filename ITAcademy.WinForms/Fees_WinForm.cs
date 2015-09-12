@@ -16,5 +16,10 @@ namespace ITAcademy.WinForms
         {
             InitializeComponent();
         }
+
+        private void Fees_WinForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -86,6 +86,11 @@ namespace ITAcademy.WinForms
         {
 
         }
+
+        private void Search_WinForm_Load(object sender, EventArgs e)
+        {
+
+        }
   
   
   

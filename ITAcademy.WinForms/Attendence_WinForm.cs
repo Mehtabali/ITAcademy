@@ -27,5 +27,10 @@ namespace ITAcademy.WinForms
         {
             
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -17,6 +17,7 @@ namespace ITAcademy.WinForms
     {
         [Dependency]
         public IStudentService _studentService { get; set; }
+        Student student = new Student();
         public Admission_WinForm()
         {
 
@@ -98,10 +99,17 @@ namespace ITAcademy.WinForms
         private void btnSave_Click(object sender, EventArgs e)
         {
             //Ta1ke data from user 
-            Student student = new Student();
+          
             student.Name = txtName.Text;
-            student.City = txtCity.Text;
+            student.Mobile = txtContactNumber.Text;
             student.Email = txtEmail.Text;
+            student.FatherName = txtFatherName.Text;
+            student.Gender = cmbGender.Text;
+            student.Address = txtAddress.Text;
+            student.City = txtCity.Text;
+            student.PIN= txtPin.Text;
+            student.DOB = Convert.ToDateTime(txtDob.Text);
+       
 
             ValidationContext context = new ValidationContext(student, null, null);
             IList<ValidationResult> errors = new List<ValidationResult>();
@@ -116,6 +124,17 @@ namespace ITAcademy.WinForms
                 MessageBox.Show("Validated");
                 _studentService.CreateStudent(student);
             }
+        }
+
+        private void textBox11_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            student.Name = txtName.Text = "";
+           
         }
     }
 }
