@@ -86,26 +86,6 @@ namespace ITAcademy.WinForms
         {
 
         }
-
-        private void Search_WinForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox8_Enter_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox13_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox15_Enter(object sender, EventArgs e)
-        {
-
-        }
   
   
   

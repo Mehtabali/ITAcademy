@@ -7,13 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Microsoft.Practices.Unity;
+using ITAcademy.ServiceLayer;
+using ITAcademy.DataModels;
+using System.ComponentModel.DataAnnotations;
 namespace ITAcademy.WinForms
 {
     public partial class Admission_WinForm : Form
     {
+        [Dependency]
+        public IStudentService _studentService { get; set; }
         public Admission_WinForm()
         {
+
+        }
+        public Admission_WinForm(IStudentService studentService)
+        {
+            _studentService = studentService;
             InitializeComponent();
         }
 
@@ -27,7 +37,7 @@ namespace ITAcademy.WinForms
             //lblLogoText.Visible = false;
             //MDIContanier mdi = new MDIContanier();
             //mdi.lblLogoText.Text = "";
-            
+
         }
 
         private void label13_Click(object sender, EventArgs e)
@@ -83,6 +93,30 @@ namespace ITAcademy.WinForms
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            //Take data from user 
+            Student student = new Student();
+            //  student.Name = "Mehtab";
+            student.City = "Delhi";
+            student.UpdatedBy = 1;
+            student.CreatedBy = 2;
+
+            ValidationContext context = new ValidationContext(student, null, null);
+            IList<ValidationResult> errors = new List<ValidationResult>();
+
+            if (!Validator.TryValidateObject(student, context, errors, true))
+            {
+                foreach (ValidationResult result in errors)
+                    MessageBox.Show(result.ErrorMessage);
+            }
+            else
+            {
+                MessageBox.Show("Validated");
+                _studentService.CreateStudent(student);
+            }
         }
     }
 }

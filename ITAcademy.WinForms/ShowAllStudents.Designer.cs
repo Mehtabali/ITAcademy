@@ -246,7 +246,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 750);
+            this.ClientSize = new System.Drawing.Size(987, 522);
             this.Controls.Add(this.grpAllRecords);
             this.Name = "ShowAllStudents";
             this.Text = "ShowAllStudents";

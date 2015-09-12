@@ -27,20 +27,5 @@ namespace ITAcademy.WinForms
         {
             
         }
-
-        private void groupBox6_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

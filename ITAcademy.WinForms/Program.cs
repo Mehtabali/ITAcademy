@@ -1,4 +1,8 @@
-﻿using System;
+﻿using ITAcademy.DataAccessLayer;
+using ITAcademy.Repository;
+using ITAcademy.ServiceLayer;
+using Microsoft.Practices.Unity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,9 +18,18 @@ namespace ITAcademy.WinForms
         [STAThread]
         static void Main()
         {
+            //UnityContainer container = new UnityContainer();
+            //container.RegisterType<IDbConnection, DbConnection>();
+            //container.Resolve<IDbConnection>();
+            //container.RegisterType<IStudentRepository, StudentRepository>();
+            //container.Resolve<IStudentRepository>();
+            //container.RegisterType<IStudentService, StudentService>();
+            //container.Resolve<IStudentService>();
+
+            var container = Bootstrapper.BuildUnityContainer();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MDIContanier());
+            Application.Run(container.Resolve<Admission_WinForm>());
         }
     }
 }
