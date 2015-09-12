@@ -29,7 +29,7 @@ namespace ITAcademy.WinForms
             var container = Bootstrapper.BuildUnityContainer();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(container.Resolve<Admission_WinForm>());
+            Application.Run(container.Resolve<ShowAllStudents>());
         }
     }
 }

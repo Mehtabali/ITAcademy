@@ -20,7 +20,7 @@ namespace ITAcademy.DataAccessLayer
         private readonly SqlConnection _connection;
         private readonly SqlCommand _command;
         private readonly SqlDataAdapter _adapter;
-        private readonly DataTable _datatable;
+        private  DataTable _datatable;
         private int _status;
         public DbConnection()
         {
@@ -101,6 +101,7 @@ namespace ITAcademy.DataAccessLayer
             try
             {
                 _command.CommandText = storedProcedure;
+                _datatable = new DataTable();
                 _adapter.Fill(_datatable);
                 return _datatable;
             }

@@ -16,12 +16,12 @@ namespace ITAcademy.ServiceLayer
 
         public IEnumerable<Student> GetAllStudents()
         {
-            throw new NotImplementedException();
+            return _studentRepository.List;
         }
 
         public int CreateStudent(Student student)
         {
-            return _studentRepository.Create(student);            
+            return _studentRepository.Create(student);
         }
 
         public Student GetStudent(int id)
