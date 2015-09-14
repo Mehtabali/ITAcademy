@@ -67,6 +67,12 @@
       <DependentUpon>Attendence_WinForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="EditOrDeleteStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditOrDeleteStudent.Designer.cs">
+      <DependentUpon>EditOrDeleteStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fees_WinForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Attendence_WinForm.resx">
       <DependentUpon>Attendence_WinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditOrDeleteStudent.resx">
+      <DependentUpon>EditOrDeleteStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fees_WinForm.resx">
       <DependentUpon>Fees_WinForm.cs</DependentUpon>

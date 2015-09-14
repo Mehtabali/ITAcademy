@@ -26,7 +26,7 @@ namespace ITAcademy.ServiceLayer
 
         public Student GetStudent(int id)
         {
-            throw new NotImplementedException();
+            return _studentRepository.FindById(id);
         }
 
         public int UpdateStudent(Student student)
@@ -36,7 +36,7 @@ namespace ITAcademy.ServiceLayer
 
         public int DeleteStudent(int id)
         {
-            throw new NotImplementedException();
+            return _studentRepository.Delete(id);
         }
     }
 }

@@ -86,7 +86,9 @@ namespace ITAcademy.DataAccessLayer
             try
             {
                 _command.CommandText = storedProcedure;
-                _command.Parameters.AddWithValue("@id", id);
+                if (_command.Parameters.Count > 0)
+                    _command.Parameters.Clear();
+                _command.Parameters.AddWithValue("@id",id);
                 OpenConnection();
                 return _command.ExecuteNonQuery();
             }
@@ -115,7 +117,8 @@ namespace ITAcademy.DataAccessLayer
             try
             {
                 _command.CommandText = storedProcedure;
-                _command.Parameters.AddWithValue("@id", id);
+                _datatable = new DataTable();
+                _command.Parameters.AddWithValue("@id",id);
                 _adapter.Fill(_datatable);
                 return _datatable;
             }

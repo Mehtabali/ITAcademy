@@ -49,9 +49,11 @@ namespace ITAcademy.Repository
             return _database.Update("sp_UpdateStudent", Mapper(entity));
         }
 
-        public Student FindById(int Id)
+        public Student FindById(int id)
         {
-            return _database.GetAll("sp_GetStudent").ToEntity<Student>();
+           // string query = "Select * from Students where Id='"+id+"'";
+
+            return _database.GetOne("sp_GetStudentById", id).ToEntity<Student>();
         }
         private Dictionary<String, String> Mapper(Student entity)
         {

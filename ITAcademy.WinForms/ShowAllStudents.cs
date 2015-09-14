@@ -1,4 +1,5 @@
-﻿using ITAcademy.ServiceLayer;
+﻿using ITAcademy.DataModels;
+using ITAcademy.ServiceLayer;
 using Microsoft.Practices.Unity;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,14 @@ namespace ITAcademy.WinForms
     {
         [Dependency]
         public IStudentService _studentService { get; set; }
-
+        //public int StudentId {
+        //    get
+        //    {
+        //        int studentId;
+        //        Int32.TryParse(Convert.ToString(dgvAllStudents.Rows[e.RowIndex].Cells[0].Value), out studentId);
+        //    }
+        //    set;
+        //}
         public ShowAllStudents()
         {
             InitializeComponent();
@@ -25,7 +33,7 @@ namespace ITAcademy.WinForms
         public ShowAllStudents(IStudentService studentService)
         {
             _studentService = studentService;
-          
+
             InitializeComponent();
             dgvAllStudents.AutoGenerateColumns = false;
         }
@@ -37,8 +45,16 @@ namespace ITAcademy.WinForms
 
         private void dgvAllStudents_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            var id = dgvAllStudents.Rows[e.RowIndex].Cells[0].Value;
-            MessageBox.Show(id.ToString());
+           // int studentId;
+            //Int32.TryParse(Convert.ToString(dgvAllStudents.Rows[e.RowIndex].Cells[0].Value), out studentId);
+            //var id = dgvAllStudents.Rows[e.RowIndex].Cells[0].Value;
+            Student student = dgvAllStudents.Rows[e.RowIndex].DataBoundItem as Student;
+            EditOrDeleteStudent _editOrDeleteStudent = new EditOrDeleteStudent(student);
+
+            _editOrDeleteStudent.Show();
+
+
+            // MessageBox.Show(id.ToString());
         }
     }
 }
