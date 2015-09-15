@@ -52,5 +52,10 @@ namespace ITAcademy.WinForms
         {
 
         }
+
+        private void groupBox9_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
