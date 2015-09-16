@@ -13,18 +13,18 @@ using ITAcademy.DataModels;
 using System.ComponentModel.DataAnnotations;
 namespace ITAcademy.WinForms
 {
-    public partial class Admission_WinForm : Form
+    public partial class Admission : Form
     {
         [Dependency]
         public IStudentService _studentService { get; set; }
         Student student = new Student();
-        public Admission_WinForm()
+        public Admission()
         {
 
         }
 
         //Constructor Injection
-        public Admission_WinForm(IStudentService studentService)
+        public Admission(IStudentService studentService)
         {
             _studentService = studentService;
             InitializeComponent();

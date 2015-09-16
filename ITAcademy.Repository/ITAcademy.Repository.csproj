@@ -48,11 +48,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Batches\BatchRepository.cs" />
+    <Compile Include="Batches\IBatchRepository.cs" />
     <Compile Include="DataTableExtention.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student\IStudentRepository.cs" />
     <Compile Include="Student\StudentRepository.cs" />
+    <Compile Include="Tests\ITestRepository.cs" />
+    <Compile Include="Tests\TestRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ITAcademy.DataAccessLayer\ITAcademy.DataAccessLayer.csproj">

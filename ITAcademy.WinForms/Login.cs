@@ -10,15 +10,17 @@ using System.Windows.Forms;
 
 namespace ITAcademy.WinForms
 {
-    public partial class Fees_WinForm : Form
+    public partial class Login : Form
     {
-        public Fees_WinForm()
+        public Login()
         {
             InitializeComponent();
         }
 
-        private void Fees_WinForm_Load(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
+            MDIContanier _parent = new MDIContanier();
+            _parent.Show();
 
         }
     }

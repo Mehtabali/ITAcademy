@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace ITAcademy.WinForms
 {
-    public partial class Login_WinForm : Form
+    public partial class Batches : Form
     {
-        public Login_WinForm()
+
+            
+        public Batches()
         {
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnCreate_Click(object sender, EventArgs e)
         {
-            MDIContanier _parent = new MDIContanier();
-            _parent.Show();
 
         }
     }

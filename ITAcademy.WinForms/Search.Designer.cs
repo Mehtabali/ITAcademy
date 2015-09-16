@@ -1,6 +1,6 @@
 ﻿namespace ITAcademy.WinForms
 {
-    partial class Search_WinForm
+    partial class Search
     {
         /// <summary>
         /// Required designer variable.

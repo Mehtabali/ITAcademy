@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITAcademy.DataModels
 {
-    class Admission
+  public   class Admission
     {
 
         public int Id { get; set; }

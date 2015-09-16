@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ITAcademy.WinForms
 {
-    public partial class Search_WinForm : Form
+    public partial class Search : Form
     {
-        public Search_WinForm()
+        public Search()
         {
             InitializeComponent();
         }

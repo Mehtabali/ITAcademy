@@ -37,6 +37,7 @@ namespace ITAcademy.Repository
             _parameters.Add("DOB", entity.DOB.ToString());
             _parameters.Add("Address", entity.Address);          
             return _database.Create("sp_CreateStudent", _parameters);
+           
         }
 
         public int Delete(int id)

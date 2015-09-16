@@ -1,6 +1,6 @@
 ﻿namespace ITAcademy.WinForms
 {
-    partial class Attendence_WinForm
+    partial class Attendence
     {
         /// <summary>
         /// Required designer variable.

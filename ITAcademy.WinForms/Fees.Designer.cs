@@ -1,6 +1,6 @@
 ﻿namespace ITAcademy.WinForms
 {
-    partial class Fees_WinForm
+    partial class Fees
     {
         /// <summary>
         /// Required designer variable.

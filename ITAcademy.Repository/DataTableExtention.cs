@@ -89,5 +89,16 @@ namespace ITAcademy.Repository
             }
             return dataList;
         }
+
+        public static DataTable ToDataTable<T>(this IEnumerable<T> collection, string tableName)
+        {
+            DataTable tbl = ToDataTable(collection,tableName);
+            tbl.TableName = tableName;
+            return tbl;
+        }
+
+        
     }
+
+   
 }

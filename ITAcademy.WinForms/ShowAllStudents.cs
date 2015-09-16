@@ -34,7 +34,7 @@ namespace ITAcademy.WinForms
         {
             _studentService = studentService;
 
-            InitializeComponent();
+           // InitializeComponent();
             dgvAllStudents.AutoGenerateColumns = false;
         }
         private void ShowAllStudents_Load(object sender, EventArgs e)

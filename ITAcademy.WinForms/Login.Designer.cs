@@ -1,6 +1,6 @@
 ﻿namespace ITAcademy.WinForms
 {
-    partial class Login_WinForm
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.

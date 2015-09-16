@@ -35,7 +35,7 @@ namespace ITAcademy.WinForms
         private void admissionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             lblLogoText.Visible = false;
-            Admission_WinForm _child = new Admission_WinForm();
+            Admission _child = new Admission();
             _child.MdiParent = this;
             _child.Show();
 
@@ -56,7 +56,7 @@ namespace ITAcademy.WinForms
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
         {
             lblLogoText.Visible = false;
-            Search_WinForm _child = new Search_WinForm();
+            Search _child = new Search();
             _child.Show();
         }
 
@@ -77,7 +77,7 @@ namespace ITAcademy.WinForms
         private void testExaminationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             lblLogoText.Visible = false;
-            TestAndExam_WinForm _child = new TestAndExam_WinForm();
+            TestAndExam _child = new TestAndExam();
             _child.MdiParent = this;
             _child.Show();
         }
@@ -116,7 +116,7 @@ namespace ITAcademy.WinForms
         private void attendenceToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             lblLogoText.Visible = false;
-            Attendence_WinForm _child = new Attendence_WinForm();
+            Attendence _child = new Attendence();
             _child.Show();
         }
 
@@ -133,7 +133,7 @@ namespace ITAcademy.WinForms
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
             lblLogoText.Visible = false;
-            TestAndExam_WinForm _child = new TestAndExam_WinForm();
+            TestAndExam _child = new TestAndExam();
             _child.Show();
         
         }

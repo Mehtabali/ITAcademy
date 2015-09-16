@@ -34,6 +34,12 @@ namespace ITAcademy.WinForms
             container.RegisterType<IDbConnection, DbConnection>();
             container.RegisterType<IStudentRepository, StudentRepository>();
             container.RegisterType<IStudentService, StudentService>();
+            container.RegisterType<ITestRepository, TestRepository>();
+            container.RegisterType<ITestService, TestService>();
+            container.RegisterType<IBatchRepository, BatchRepository>();
+            //container.RegisterType<I>
+
+            
         }
     }
 }

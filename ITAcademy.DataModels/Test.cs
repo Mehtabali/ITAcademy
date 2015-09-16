@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITAcademy.DataModels
 {
-  public class Tests
+  public class Test
     {
 
         public int Id { get; set; }
@@ -16,8 +16,8 @@ namespace ITAcademy.DataModels
         public int PassingMarks { get; set; }
         public int TotalMarks { get; set; }
         public int TestDate { get; set; }
-        public int TotalMarks { get; set; }
-        public int TestDate { get; set; }
+       // public int TotalMarks { get; set; }
+       // public int TestDate { get; set; }
       
         public int CreatedBy { get; set; }
         public int UpdatedBy { get; set; }

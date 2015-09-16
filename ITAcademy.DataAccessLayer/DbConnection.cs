@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
+using System.Windows.Forms;
 
 namespace ITAcademy.DataAccessLayer
 {
@@ -126,6 +127,20 @@ namespace ITAcademy.DataAccessLayer
             {
                 throw exception;
             }
+        }
+        // i did this for the combox present in winfrom
+        // but i want to use service layer and repository us k liye kia karun ??
+        //yes i thouht this too but iqra inst m dekh ker smjha ye ..
+
+        public void BindCombo(ComboBox cmb, string storedProcedure, string columnToBind)
+        {
+            _command.Parameters.Clear();
+            _command.CommandText = storedProcedure;
+            _datatable = new DataTable();
+            _adapter.Fill(_datatable);
+            cmb.DisplayMember = columnToBind;
+            cmb.ValueMember = "id";
+            cmb.DataSource = _datatable;
         }
         private void AddParameters(Dictionary<String, string> parameters, MethodType methodType)
         {

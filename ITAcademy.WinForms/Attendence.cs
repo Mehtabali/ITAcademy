@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ITAcademy.WinForms
 {
-    public partial class Attendence_WinForm : Form
+    public partial class Attendence : Form
     {
-        public Attendence_WinForm()
+        public Attendence()
         {
             InitializeComponent();
         }
