@@ -18,5 +18,7 @@ namespace ITAcademy.ServiceLayer
         Batch GetOne(int Id);
       //  IEnumerable<Course> GetCourses();
 
+
+         GetAllCourses();
     }
 }

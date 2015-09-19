@@ -32,7 +32,7 @@ namespace ITAcademy.WinForms
         }
         private void Batches_Load(object sender, EventArgs e)
         {
-         //   cmbCourseId.Load(_batchService.
+          cmbCourseId.Load(_batchService.GetAllCourses().T
 
 
         }
