@@ -23,7 +23,7 @@ namespace ITAcademy.ServiceLayer
 
         public int CreateTest(Test test)
         {
-            throw new NotImplementedException();
+            return _testRespository.Create(test);
         }
 
         public Test GetTest(int id)
@@ -45,6 +45,13 @@ namespace ITAcademy.ServiceLayer
         public IEnumerable<Batch> GetAllBatches()
         {
             return _testRespository.GetAllBatches("sp_SelectAllBatches");
+        }
+
+
+        public TestTransition GetBatchDetails(int batchId)
+        {
+            return _testRespository.GetBatchDetails(batchId);
+            
         }
     }
 }

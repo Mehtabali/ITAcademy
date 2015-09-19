@@ -35,18 +35,17 @@
             this.studentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.attendenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.attendenceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.feeInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.scheduleTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateTestInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cancelTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.feeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chqngePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblLogoText = new System.Windows.Forms.Label();
-            this.feeInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.scheduleTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateTestInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cancelTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,16 +101,53 @@
             // attendenceToolStripMenuItem
             // 
             this.attendenceToolStripMenuItem.Name = "attendenceToolStripMenuItem";
-            this.attendenceToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.attendenceToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.attendenceToolStripMenuItem.Text = "Student Records";
             this.attendenceToolStripMenuItem.Click += new System.EventHandler(this.attendenceToolStripMenuItem_Click);
             // 
             // attendenceToolStripMenuItem1
             // 
             this.attendenceToolStripMenuItem1.Name = "attendenceToolStripMenuItem1";
-            this.attendenceToolStripMenuItem1.Size = new System.Drawing.Size(177, 22);
+            this.attendenceToolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
             this.attendenceToolStripMenuItem1.Text = "Attendence";
             this.attendenceToolStripMenuItem1.Click += new System.EventHandler(this.attendenceToolStripMenuItem1_Click);
+            // 
+            // feeInformationToolStripMenuItem
+            // 
+            this.feeInformationToolStripMenuItem.Name = "feeInformationToolStripMenuItem";
+            this.feeInformationToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.feeInformationToolStripMenuItem.Text = "Fee Information";
+            this.feeInformationToolStripMenuItem.Click += new System.EventHandler(this.feeInformationToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.scheduleTestToolStripMenuItem,
+            this.updateTestInfoToolStripMenuItem,
+            this.cancelTestToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(96, 20);
+            this.toolStripMenuItem1.Text = "Test Scheduler";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // scheduleTestToolStripMenuItem
+            // 
+            this.scheduleTestToolStripMenuItem.Name = "scheduleTestToolStripMenuItem";
+            this.scheduleTestToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.scheduleTestToolStripMenuItem.Text = "Schedule Test";
+            this.scheduleTestToolStripMenuItem.Click += new System.EventHandler(this.scheduleTestToolStripMenuItem_Click);
+            // 
+            // updateTestInfoToolStripMenuItem
+            // 
+            this.updateTestInfoToolStripMenuItem.Name = "updateTestInfoToolStripMenuItem";
+            this.updateTestInfoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.updateTestInfoToolStripMenuItem.Text = "Update Test Info";
+            // 
+            // cancelTestToolStripMenuItem
+            // 
+            this.cancelTestToolStripMenuItem.Name = "cancelTestToolStripMenuItem";
+            this.cancelTestToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.cancelTestToolStripMenuItem.Text = "Cancel Test";
             // 
             // reportsToolStripMenuItem
             // 
@@ -125,14 +161,14 @@
             // feeToolStripMenuItem
             // 
             this.feeToolStripMenuItem.Name = "feeToolStripMenuItem";
-            this.feeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.feeToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.feeToolStripMenuItem.Text = "Fees";
             this.feeToolStripMenuItem.Click += new System.EventHandler(this.feeToolStripMenuItem_Click);
             // 
             // salarToolStripMenuItem
             // 
             this.salarToolStripMenuItem.Name = "salarToolStripMenuItem";
-            this.salarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salarToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.salarToolStripMenuItem.Text = "Salary";
             this.salarToolStripMenuItem.Click += new System.EventHandler(this.salarToolStripMenuItem_Click);
             // 
@@ -159,62 +195,12 @@
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
-            // lblLogoText
-            // 
-            this.lblLogoText.AutoSize = true;
-            this.lblLogoText.BackColor = System.Drawing.Color.Black;
-            this.lblLogoText.Font = new System.Drawing.Font("Lucida Handwriting", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogoText.ForeColor = System.Drawing.Color.White;
-            this.lblLogoText.Location = new System.Drawing.Point(197, 195);
-            this.lblLogoText.Name = "lblLogoText";
-            this.lblLogoText.Size = new System.Drawing.Size(932, 124);
-            this.lblLogoText.TabIndex = 3;
-            this.lblLogoText.Text = "The IT Academy";
-            this.lblLogoText.Visible = false;
-            this.lblLogoText.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // feeInformationToolStripMenuItem
-            // 
-            this.feeInformationToolStripMenuItem.Name = "feeInformationToolStripMenuItem";
-            this.feeInformationToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.feeInformationToolStripMenuItem.Text = "Fee Information";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.scheduleTestToolStripMenuItem,
-            this.updateTestInfoToolStripMenuItem,
-            this.cancelTestToolStripMenuItem});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(96, 20);
-            this.toolStripMenuItem1.Text = "Test Scheduler";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
-            // scheduleTestToolStripMenuItem
-            // 
-            this.scheduleTestToolStripMenuItem.Name = "scheduleTestToolStripMenuItem";
-            this.scheduleTestToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.scheduleTestToolStripMenuItem.Text = "Schedule Test";
-            // 
-            // updateTestInfoToolStripMenuItem
-            // 
-            this.updateTestInfoToolStripMenuItem.Name = "updateTestInfoToolStripMenuItem";
-            this.updateTestInfoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.updateTestInfoToolStripMenuItem.Text = "Update Test Info";
-            // 
-            // cancelTestToolStripMenuItem
-            // 
-            this.cancelTestToolStripMenuItem.Name = "cancelTestToolStripMenuItem";
-            this.cancelTestToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.cancelTestToolStripMenuItem.Text = "Cancel Test";
-            // 
             // MDIContanier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1370, 750);
-            this.Controls.Add(this.lblLogoText);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -244,7 +230,6 @@
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem attendenceToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem1;
-        public System.Windows.Forms.Label lblLogoText;
         private System.Windows.Forms.ToolStripMenuItem feeInformationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem scheduleTestToolStripMenuItem;

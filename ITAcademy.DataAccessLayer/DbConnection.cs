@@ -119,7 +119,7 @@ namespace ITAcademy.DataAccessLayer
             {
                 _command.CommandText = storedProcedure;
                 _datatable = new DataTable();
-                _command.Parameters.AddWithValue("@id",id);
+                _command.Parameters.AddWithValue("@Id",id);
                 _adapter.Fill(_datatable);
                 return _datatable;
             }

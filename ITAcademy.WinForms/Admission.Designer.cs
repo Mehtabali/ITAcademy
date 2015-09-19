@@ -35,6 +35,7 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.grpButtons = new System.Windows.Forms.GroupBox();
             this.grpWholeAdmissionForm = new System.Windows.Forms.GroupBox();
+            this.cmbGender = new System.Windows.Forms.ComboBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPin = new System.Windows.Forms.TextBox();
             this.txtCity = new System.Windows.Forms.TextBox();
@@ -56,7 +57,6 @@
             this.txtFatherName = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.cmbGender = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.grpButtons.SuspendLayout();
             this.grpWholeAdmissionForm.SuspendLayout();
@@ -157,6 +157,18 @@
             this.grpWholeAdmissionForm.TabStop = false;
             this.grpWholeAdmissionForm.Text = "Admission Form";
             this.grpWholeAdmissionForm.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // cmbGender
+            // 
+            this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cmbGender.Location = new System.Drawing.Point(524, 287);
+            this.cmbGender.Name = "cmbGender";
+            this.cmbGender.Size = new System.Drawing.Size(179, 21);
+            this.cmbGender.TabIndex = 49;
+            this.cmbGender.Text = "Select Gender";
             // 
             // txtEmail
             // 
@@ -327,27 +339,16 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(179, 20);
             this.txtName.TabIndex = 27;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
-            // cmbGender
-            // 
-            this.cmbGender.FormattingEnabled = true;
-            this.cmbGender.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.cmbGender.Location = new System.Drawing.Point(524, 287);
-            this.cmbGender.Name = "cmbGender";
-            this.cmbGender.Size = new System.Drawing.Size(179, 21);
-            this.cmbGender.TabIndex = 49;
-            this.cmbGender.Text = "Select Gender";
-            // 
-            // Admission_WinForm
+            // Admission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(827, 562);
             this.Controls.Add(this.grpWholeAdmissionForm);
             this.Controls.Add(this.grpButtons);
-            this.Name = "Admission_WinForm";
+            this.Name = "Admission";
             this.Text = "Admission_WinForm";
             this.Load += new System.EventHandler(this.Admission_WinForm_Load);
             this.groupBox1.ResumeLayout(false);

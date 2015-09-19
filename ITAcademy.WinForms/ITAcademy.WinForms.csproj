@@ -122,11 +122,11 @@
     <Compile Include="ShowAllStudents.Designer.cs">
       <DependentUpon>ShowAllStudents.cs</DependentUpon>
     </Compile>
-    <Compile Include="TestAndExam.cs">
+    <Compile Include="Tests.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TestAndExam.Designer.cs">
-      <DependentUpon>TestAndExam.cs</DependentUpon>
+    <Compile Include="Tests.Designer.cs">
+      <DependentUpon>Tests.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Admission.resx">
       <DependentUpon>Admission.cs</DependentUpon>
@@ -167,8 +167,8 @@
     <EmbeddedResource Include="ShowAllStudents.resx">
       <DependentUpon>ShowAllStudents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TestAndExam.resx">
-      <DependentUpon>TestAndExam.cs</DependentUpon>
+    <EmbeddedResource Include="Tests.resx">
+      <DependentUpon>Tests.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

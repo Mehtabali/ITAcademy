@@ -138,5 +138,10 @@ namespace ITAcademy.WinForms
             student.Name = txtName.Text = "";
            
         }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

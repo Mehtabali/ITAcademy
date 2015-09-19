@@ -16,6 +16,7 @@ namespace ITAcademy.ServiceLayer
         Batch UpdateBatch(Batch batch);
         int DeleteBatch(Batch batch);
         Batch GetOne(int Id);
+      //  IEnumerable<Course> GetCourses();
 
     }
 }

@@ -10,9 +10,9 @@ namespace ITAcademy.DataModels
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public TimeSpan Timings { get; set; }
+        public string Timings { get; set; }
         public int Courses_Id { get; set; }
-        public int Users_Id { get; set; }
+        public int Users_Id { get; set; }// teacher id 
         public int CreatedBy { get; set; }
         public int UpdatedBy { get; set; }
     }

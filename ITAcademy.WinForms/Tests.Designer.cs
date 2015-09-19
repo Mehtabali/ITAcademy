@@ -1,6 +1,6 @@
 ﻿namespace ITAcademy.WinForms
 {
-    partial class TestAndExam
+    partial class Tests
     {
         /// <summary>
         /// Required designer variable.
@@ -70,6 +70,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabTest.SuspendLayout();
@@ -224,9 +226,12 @@
             this.btnSchedule.TabIndex = 9;
             this.btnSchedule.Text = "Schedule";
             this.btnSchedule.UseVisualStyleBackColor = true;
+            this.btnSchedule.Click += new System.EventHandler(this.btnSchedule_Click);
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.txtDescription);
             this.groupBox3.Controls.Add(this.txtCourse);
             this.groupBox3.Controls.Add(this.txtTeacher);
             this.groupBox3.Controls.Add(this.txtTotalMarks);
@@ -285,6 +290,7 @@
             // 
             // cmbBatch
             // 
+            this.cmbBatch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBatch.FormattingEnabled = true;
             this.cmbBatch.Items.AddRange(new object[] {
             "Select Batch"});
@@ -292,7 +298,6 @@
             this.cmbBatch.Name = "cmbBatch";
             this.cmbBatch.Size = new System.Drawing.Size(207, 21);
             this.cmbBatch.TabIndex = 19;
-            this.cmbBatch.Text = "Select Batch";
             this.cmbBatch.SelectedIndexChanged += new System.EventHandler(this.cmbBatch_SelectedIndexChanged);
             // 
             // label9
@@ -481,13 +486,29 @@
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Search by Test Date";
             // 
-            // TestAndExam
+            // txtDescription
+            // 
+            this.txtDescription.Location = new System.Drawing.Point(133, 155);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(219, 20);
+            this.txtDescription.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(19, 162);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(60, 13);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "Description";
+            // 
+            // Tests
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1128, 583);
             this.Controls.Add(this.groupBox1);
-            this.Name = "TestAndExam";
+            this.Name = "Tests";
             this.Text = "TestAndExam_WinForm";
             this.Load += new System.EventHandler(this.TestAndExam_WinForm_Load);
             this.groupBox1.ResumeLayout(false);
@@ -555,5 +576,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtCourse;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtDescription;
     }
 }

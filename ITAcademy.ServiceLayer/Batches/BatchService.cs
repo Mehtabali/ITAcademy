@@ -4,10 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ITAcademy.DataModels;
-namespace ITAcademy.ServiceLayer.Batches
+using Microsoft.Practices.Unity;
+using ITAcademy.Repository;
+namespace ITAcademy.ServiceLayer
 {
     public class BatchService:IBatchService
     {
+        [Dependency]
+        public IBatchRepository _batchRepository { get; set; }
 
         public IEnumerable<Batch> GetAllBatch()
         {
@@ -16,7 +20,7 @@ namespace ITAcademy.ServiceLayer.Batches
 
         public int CreateBatch(Batch batch)
         {
-            throw new NotImplementedException();
+            return _batchRepository.Create(batch);
         }
 
         public Batch UpdateBatch(Batch batch)
@@ -33,5 +37,6 @@ namespace ITAcademy.ServiceLayer.Batches
         {
             throw new NotImplementedException();
         }
-    }
+
+  }
 }

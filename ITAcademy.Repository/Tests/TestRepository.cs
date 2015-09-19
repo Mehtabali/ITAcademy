@@ -26,7 +26,19 @@ namespace ITAcademy.Repository
 
         public int Create(Test entity)
         {
-            throw new NotImplementedException();
+            Dictionary<String, string> _parameters = new Dictionary<string, string>();
+
+            _parameters.Add("Courses_Id",  entity.Courses_Id.ToString());
+            _parameters.Add("Batches_Id", entity.Batches_Id.ToString());
+            _parameters.Add("Users_Id", entity.Teachers_Id.ToString());
+            _parameters.Add("Description", entity.Description);
+            _parameters.Add("PassingMarks", entity.PassingMarks.ToString());
+            _parameters.Add("TotalMarks", entity.TotalMarks.ToString());
+            
+            _parameters.Add("TestDate", entity.TestDate.ToString());
+            
+            return _database.Create("sp_ScheduleTest", _parameters);
+
         }
 
         public int Delete(int id)
@@ -47,6 +59,12 @@ namespace ITAcademy.Repository
         public IEnumerable<Batch> GetAllBatches(string storedProcedure)
         {
             return _database.GetAll("sp_SelectAllBatches").ToList<Batch>();
+        }
+
+
+        public TestTransition GetBatchDetails(int id)
+        {
+            return _database.GetOne("sp_GetCourseNameFromBatches", id).ToEntity<TestTransition>();
         }
     }
 }

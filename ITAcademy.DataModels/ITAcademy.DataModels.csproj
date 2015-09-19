@@ -48,6 +48,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="Test.cs" />
+    <Compile Include="TestTransition.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Users_Type.cs" />
   </ItemGroup>

@@ -16,6 +16,7 @@ namespace ITAcademy.WinForms
     public partial class ShowAllStudents : Form
     {
         [Dependency]
+        
         public IStudentService _studentService { get; set; }
         //public int StudentId {
         //    get

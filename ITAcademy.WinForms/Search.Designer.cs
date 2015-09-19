@@ -1170,14 +1170,14 @@
             this.tabCtrlSearch.TabIndex = 0;
             this.tabCtrlSearch.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
-            // Search_WinForm
+            // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(827, 562);
             this.Controls.Add(this.tabCtrlSearch);
             this.Controls.Add(this.tabSearch);
-            this.Name = "Search_WinForm";
+            this.Name = "Search";
             this.Text = "Search_WinForm";
             this.Load += new System.EventHandler(this.Search_WinForm_Load);
             this.tabPage5.ResumeLayout(false);
