@@ -10,10 +10,10 @@ using Microsoft.Practices.Unity;
 
 namespace ITAcademy.Repository
 {
-   public class BatchRepository:IBatchRepository
+    public class BatchRepository : IBatchRepository
     {
-       [Dependency]
-       public IDbConnection _database { get; set; }
+        [Dependency]
+        public IDbConnection _database { get; set; }
         public IEnumerable<Batch> List
         {
             get { throw new NotImplementedException(); }
@@ -24,7 +24,7 @@ namespace ITAcademy.Repository
             //data binding 
 
             Dictionary<String, string> _parameters = new Dictionary<string, string>();
-            _parameters.Add("Name",entity.Name);
+            _parameters.Add("Name", entity.Name);
             _parameters.Add("Courses_Id", entity.Courses_Id.ToString());
             _parameters.Add("Users_Id", entity.Users_Id.ToString());
             _parameters.Add("Timings", entity.Timings);
@@ -55,6 +55,24 @@ namespace ITAcademy.Repository
                 _parameters.Add(property.Name, Convert.ToString(property.GetValue(entity)));
             }
             return _parameters;
+        }
+
+        public IEnumerable<Course> GetAllCourses()
+        {
+            return _database.GetAll("sp_GetAllCourses").ToList<Course>();
+        }
+
+
+
+        public IEnumerable<User> GetAllTeachers()
+        {
+            return _database.GetAll("sp_GetAllTeachers").ToList<User>();
+        }
+
+
+        public string  GetDesignation(int userId)
+        {
+            return _database.Getsinglecolumn("sp_GetUserDesignation", userId);
         }
     }
 }

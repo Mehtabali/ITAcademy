@@ -16,7 +16,7 @@ namespace ITAcademy.DataModels
         public string Description { get; set; }
         public int PassingMarks { get; set; }
         public int TotalMarks { get; set; }
-        public int TestDate { get; set; }
+       // public  TestDate { get; set; }
 
        // public int TotalMarks { get; set; }
        // public int TestDate { get; set; }

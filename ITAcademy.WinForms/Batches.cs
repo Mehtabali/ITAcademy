@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ITAcademy.ServiceLayer;
 using ITAcademy.DataModels;
+using ITAcademy.DataAccessLayer;
 
 namespace ITAcademy.WinForms
 {
@@ -32,8 +33,30 @@ namespace ITAcademy.WinForms
         }
         private void Batches_Load(object sender, EventArgs e)
         {
-         //   cmbCourseId.Load(_batchService.
+            cmbCourseName.Load(_batchService.GetAllCourses().ToDataTable(), "Name", "Id");
+            cmbUsersName.Load(_batchService.GetAllTeacher().ToDataTable(), "Name", "Id");
 
+
+        }
+
+    
+        int userId=0;
+        private void cmbUsersName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Int32.TryParse(cmbUsersName.SelectedValue.ToString(), out userId);
+            if (userId != 0) {
+                lblDesignation.Visible = true;
+             lblDesignation.Text=_batchService.GetDesignation(userId); 
+            }
+
+
+          //  var x=cmbUsersName.SelectedValue;
+
+        }
+        int courseId = 0;
+        private void cmbCourseName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Int32.TryParse(cmbCourseName.SelectedValue.ToString(), out courseId);
 
         }
 
@@ -42,13 +65,14 @@ namespace ITAcademy.WinForms
             // data reading  from user in textboxes
             batch.Name = txtName.Text;
             batch.Timings = cmbTimings.Text;
-            batch.Courses_Id = Convert.ToInt32(cmbCourseId.Text); 
-            batch.Users_Id = Convert.ToInt32(cmbUsersId.Text);
+            batch.Courses_Id = userId;
+            batch.Users_Id = courseId;
             //calling functio to create batch
             _batchService.CreateBatch(batch);
 
         }
 
+       
        
     }
 }

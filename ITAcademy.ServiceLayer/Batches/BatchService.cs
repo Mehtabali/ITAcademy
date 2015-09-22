@@ -37,6 +37,26 @@ namespace ITAcademy.ServiceLayer
         {
             throw new NotImplementedException();
         }
+        public IEnumerable<Course> GetAllCourses()
+        {
+            return _batchRepository.GetAllCourses();
+        }
 
-  }
+
+
+
+
+        public IEnumerable<User> GetAllTeacher()
+        {
+            return _batchRepository.GetAllTeachers();
+        }
+
+
+        public string GetDesignation(int userId)
+
+        {
+            string var = _batchRepository.GetDesignation(userId);
+            return var;
+        }
+    }
 }

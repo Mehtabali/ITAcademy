@@ -113,11 +113,33 @@ namespace ITAcademy.DataAccessLayer
                 throw exception;
             }
         }
+
+        public string Getsinglecolumn(String storedProcedure,int id) {
+            try
+            {
+
+                _command.CommandText = storedProcedure;
+                _command.Parameters.Clear();
+                _command.Parameters.AddWithValue("@id", id);
+                _connection.Open();
+                string var = _command.ExecuteScalar().ToString();
+                return var;
+
+            }
+
+
+            catch (Exception exception) {
+
+                throw exception;
+            
+            }
+        }
         public DataTable GetOne(String storedProcedure, int id)
         {
             try
             {
                 _command.CommandText = storedProcedure;
+                _command.Parameters.Clear();
                 _datatable = new DataTable();
                 _command.Parameters.AddWithValue("@Id",id);
                 _adapter.Fill(_datatable);
@@ -132,16 +154,16 @@ namespace ITAcademy.DataAccessLayer
         // but i want to use service layer and repository us k liye kia karun ??
         //yes i thouht this too but iqra inst m dekh ker smjha ye ..
 
-        public void BindCombo(ComboBox cmb, string storedProcedure, string columnToBind)
-        {
-            _command.Parameters.Clear();
-            _command.CommandText = storedProcedure;
-            _datatable = new DataTable();
-            _adapter.Fill(_datatable);
-            cmb.DisplayMember = columnToBind;
-            cmb.ValueMember = "id";
-            cmb.DataSource = _datatable;
-        }
+        //public void BindCombo(ComboBox cmb, string storedProcedure, string columnToBind)
+        //{
+        //    _command.Parameters.Clear();
+        //    _command.CommandText = storedProcedure;
+        //    _datatable = new DataTable();
+        //    _adapter.Fill(_datatable);
+        //    cmb.DisplayMember = columnToBind;
+        //    cmb.ValueMember = "id";
+        //    cmb.DataSource = _datatable;
+        //}
         private void AddParameters(Dictionary<String, string> parameters, MethodType methodType)
         {
             if (_command.Parameters.Count > 0)

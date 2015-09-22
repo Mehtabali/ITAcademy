@@ -10,7 +10,7 @@ namespace ITAcademy.Repository
 {
    public interface ITestRepository:IRepository<Test>
     {
-       IEnumerable<Batch> GetAllBatches(string storedProcedure);
+       IEnumerable<Batch> GetAllBatches();
         //Test specific methods can be declared here
         //It is because the the Interface segregation principle of SOLID oops states so
 

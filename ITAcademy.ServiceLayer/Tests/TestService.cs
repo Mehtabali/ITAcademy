@@ -44,7 +44,7 @@ namespace ITAcademy.ServiceLayer
 
         public IEnumerable<Batch> GetAllBatches()
         {
-            return _testRespository.GetAllBatches("sp_SelectAllBatches");
+            return _testRespository.GetAllBatches();
         }
 
 
@@ -53,5 +53,10 @@ namespace ITAcademy.ServiceLayer
             return _testRespository.GetBatchDetails(batchId);
             
         }
+
+
+
+
+
     }
 }

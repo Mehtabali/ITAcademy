@@ -80,6 +80,7 @@
             this.dgvAllStudents.ShowRowErrors = false;
             this.dgvAllStudents.Size = new System.Drawing.Size(954, 278);
             this.dgvAllStudents.TabIndex = 0;
+            this.dgvAllStudents.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAllStudents_CellContentClick);
             this.dgvAllStudents.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAllStudents_CellDoubleClick);
             // 
             // colId

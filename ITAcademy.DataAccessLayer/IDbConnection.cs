@@ -14,5 +14,6 @@ namespace ITAcademy.DataAccessLayer
         int Delete(String storedProcedure, int id);
         DataTable GetAll(String storedProcedure);
         DataTable GetOne(String storedProcedure, int id);
+        string Getsinglecolumn(string p, int userId);
     }
 }

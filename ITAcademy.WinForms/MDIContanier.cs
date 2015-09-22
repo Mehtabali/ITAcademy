@@ -40,7 +40,7 @@ namespace ITAcademy.WinForms
             _child.MdiParent = this;
             _child.WindowState = FormWindowState.Maximized;
             _child.Show();
-
+            
         }
         //private void viewToolStripMenuItem_Click(object sender, EventArgs e)
         //{

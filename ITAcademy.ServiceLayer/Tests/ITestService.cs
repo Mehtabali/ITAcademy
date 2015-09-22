@@ -14,7 +14,6 @@ namespace ITAcademy.ServiceLayer
         int Update(Test test);
         int Delete(int id);
         IEnumerable<Batch> GetAllBatches();
-
         TestTransition GetBatchDetails(int batchId);
     }
 }

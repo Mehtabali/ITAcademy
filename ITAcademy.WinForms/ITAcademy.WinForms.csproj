@@ -75,6 +75,12 @@
     <Compile Include="Batches.Designer.cs">
       <DependentUpon>Batches.cs</DependentUpon>
     </Compile>
+    <Compile Include="Batches\AllBatches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Batches\AllBatches.Designer.cs">
+      <DependentUpon>AllBatches.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="ControlExtentions.cs" />
     <Compile Include="EditOrDeleteStudent.cs">
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Batches.resx">
       <DependentUpon>Batches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Batches\AllBatches.resx">
+      <DependentUpon>AllBatches.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditOrDeleteStudent.resx">
       <DependentUpon>EditOrDeleteStudent.cs</DependentUpon>
