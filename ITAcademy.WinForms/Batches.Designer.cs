@@ -47,8 +47,8 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmbSearch = new System.Windows.Forms.ComboBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.colmId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +59,16 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.lblEnableSearch = new System.Windows.Forms.Label();
+            this.btnSearchf = new System.Windows.Forms.Button();
+            this.dgvList = new System.Windows.Forms.DataGridView();
+            this.clmId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmTimings = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmCourseName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmbSearchf = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -67,6 +77,8 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvList)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -219,6 +231,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -239,8 +252,8 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.comboBox1);
-            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.cmbSearch);
+            this.groupBox3.Controls.Add(this.btnSearch);
             this.groupBox3.Location = new System.Drawing.Point(8, 23);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(585, 84);
@@ -248,25 +261,25 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
             // 
-            // comboBox1
+            // cmbSearch
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSearch.FormattingEnabled = true;
+            this.cmbSearch.Items.AddRange(new object[] {
             "Select Batch"});
-            this.comboBox1.Location = new System.Drawing.Point(176, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(257, 21);
-            this.comboBox1.TabIndex = 1;
+            this.cmbSearch.Location = new System.Drawing.Point(176, 19);
+            this.cmbSearch.Name = "cmbSearch";
+            this.cmbSearch.Size = new System.Drawing.Size(257, 21);
+            this.cmbSearch.TabIndex = 1;
             // 
-            // button1
+            // btnSearch
             // 
-            this.button1.Location = new System.Drawing.Point(342, 55);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSearch.Location = new System.Drawing.Point(342, 55);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 0;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -291,6 +304,8 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(573, 150);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvList_DoubleClick);
             // 
             // colmId
             // 
@@ -346,6 +361,93 @@
             this.tabPage4.Text = "Delete";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.lblEnableSearch);
+            this.tabPage5.Controls.Add(this.btnSearchf);
+            this.tabPage5.Controls.Add(this.dgvList);
+            this.tabPage5.Controls.Add(this.cmbSearchf);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(693, 364);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Final";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // lblEnableSearch
+            // 
+            this.lblEnableSearch.AutoSize = true;
+            this.lblEnableSearch.Location = new System.Drawing.Point(88, 23);
+            this.lblEnableSearch.Name = "lblEnableSearch";
+            this.lblEnableSearch.Size = new System.Drawing.Size(76, 13);
+            this.lblEnableSearch.TabIndex = 3;
+            this.lblEnableSearch.Text = "enable Search";
+            this.lblEnableSearch.Click += new System.EventHandler(this.lblEnableSearch_Click);
+            // 
+            // btnSearchf
+            // 
+            this.btnSearchf.Location = new System.Drawing.Point(323, 55);
+            this.btnSearchf.Name = "btnSearchf";
+            this.btnSearchf.Size = new System.Drawing.Size(75, 23);
+            this.btnSearchf.TabIndex = 2;
+            this.btnSearchf.Text = "Search";
+            this.btnSearchf.UseVisualStyleBackColor = true;
+            this.btnSearchf.Click += new System.EventHandler(this.btnSearchf_Click);
+            // 
+            // dgvList
+            // 
+            this.dgvList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clmId,
+            this.clmName,
+            this.clmTimings,
+            this.clmCourseName,
+            this.clmUserName});
+            this.dgvList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvList.Location = new System.Drawing.Point(34, 108);
+            this.dgvList.Name = "dgvList";
+            this.dgvList.Size = new System.Drawing.Size(560, 150);
+            this.dgvList.TabIndex = 1;
+        //    this.dgvList.DoubleClick += new System.EventHandler(this.dgvList_DoubleClick);
+            // 
+            // clmId
+            // 
+            this.clmId.DataPropertyName = "Id";
+            this.clmId.HeaderText = "Id";
+            this.clmId.Name = "clmId";
+            // 
+            // clmName
+            // 
+            this.clmName.DataPropertyName = "Name";
+            this.clmName.HeaderText = "Name";
+            this.clmName.Name = "clmName";
+            // 
+            // clmTimings
+            // 
+            this.clmTimings.DataPropertyName = "Timings";
+            this.clmTimings.HeaderText = "Timings";
+            this.clmTimings.Name = "clmTimings";
+            // 
+            // clmCourseName
+            // 
+            this.clmCourseName.DataPropertyName = "Courses";
+            this.clmCourseName.HeaderText = "Courses";
+            this.clmCourseName.Name = "clmCourseName";
+            // 
+            // clmUserName
+            // 
+            this.clmUserName.DataPropertyName = "UsersName";
+            this.clmUserName.HeaderText = "User Name";
+            this.clmUserName.Name = "clmUserName";
+            // 
+            // cmbSearchf
+            // 
+            this.cmbSearchf.FormattingEnabled = true;
+            this.cmbSearchf.Location = new System.Drawing.Point(197, 15);
+            this.cmbSearchf.Name = "cmbSearchf";
+            this.cmbSearchf.Size = new System.Drawing.Size(201, 21);
+            this.cmbSearchf.TabIndex = 0;
+            // 
             // Batches
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -365,6 +467,9 @@
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -388,8 +493,8 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cmbSearch;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colmId;
@@ -401,5 +506,15 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label lblDesignation;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Button btnSearchf;
+        private System.Windows.Forms.DataGridView dgvList;
+        private System.Windows.Forms.ComboBox cmbSearchf;
+        private System.Windows.Forms.Label lblEnableSearch;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmTimings;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmCourseName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmUserName;
     }
 }

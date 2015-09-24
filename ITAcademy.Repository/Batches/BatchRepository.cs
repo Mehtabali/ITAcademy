@@ -74,5 +74,11 @@ namespace ITAcademy.Repository
         {
             return _database.Getsinglecolumn("sp_GetUserDesignation", userId);
         }
+
+
+        public IEnumerable<Batch> GetAllBatches()
+        {
+            return _database.GetAll("sp_ShowBatcheDetails").ToList<Batch>();
+        }
     }
 }

@@ -30,12 +30,16 @@ namespace ITAcademy.WinForms
         {
             batchServices = _batchService;
             InitializeComponent();
+            dgvList.AutoGenerateColumns = false;
         }
         private void Batches_Load(object sender, EventArgs e)
         {
-            cmbCourseName.Load(_batchService.GetAllCourses().ToDataTable(), "Name", "Id");
-            cmbUsersName.Load(_batchService.GetAllTeacher().ToDataTable(), "Name", "Id");
-
+            
+            
+       //     cmbCourseName.Load(_batchService.GetAllCourses().ToDataTable(), "Name", "Id");
+         //   cmbUsersName.Load(_batchService.GetAllTeacher().ToDataTable(), "Name", "Id");
+            dgvList.DataSource= _batchService.GetAllBatches();
+            
 
         }
 
@@ -71,6 +75,34 @@ namespace ITAcademy.WinForms
             _batchService.CreateBatch(batch);
 
         }
+
+      
+      
+        private void btnSearchf_Click(object sender, EventArgs e)
+        {
+
+        }
+
+      
+    
+        private void lblEnableSearch_Click(object sender, EventArgs e)
+        {
+            cmbSearchf.Load(_batchService.GetAllBatches().ToDataTable(), "Name", "Id");
+        }
+
+        private void dgvList_DoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        
+
+       
 
        
        

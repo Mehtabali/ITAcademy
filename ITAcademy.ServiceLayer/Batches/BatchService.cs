@@ -13,9 +13,9 @@ namespace ITAcademy.ServiceLayer
         [Dependency]
         public IBatchRepository _batchRepository { get; set; }
 
-        public IEnumerable<Batch> GetAllBatch()
+        public IEnumerable<Batch> GetAllBatches()
         {
-            throw new NotImplementedException();
+            return _batchRepository.GetAllBatches();
         }
 
         public int CreateBatch(Batch batch)

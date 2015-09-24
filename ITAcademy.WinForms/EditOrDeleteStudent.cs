@@ -39,8 +39,9 @@ namespace ITAcademy.WinForms
         {
             if (student != null)
             {
-                //txtName.Text = student.Name;
-                textBox1.Text = student.Name;
+                txtName.Text = student.Name;
+               textBox1.Text = student.Name;
+
             }
         }
         private void EditOrDeleteStudent_Load(object sender, EventArgs e)

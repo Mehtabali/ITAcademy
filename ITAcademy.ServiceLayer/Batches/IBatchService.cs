@@ -11,7 +11,7 @@ namespace ITAcademy.ServiceLayer
     {
 
 
-        IEnumerable<Batch> GetAllBatch();
+        IEnumerable<Batch> GetAllBatches();
         int CreateBatch(Batch batch);
         Batch UpdateBatch(Batch batch);
         int DeleteBatch(Batch batch);

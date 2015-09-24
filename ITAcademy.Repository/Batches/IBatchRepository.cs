@@ -17,5 +17,7 @@ namespace ITAcademy.Repository
         IEnumerable<User> GetAllTeachers();
 
         string GetDesignation(int userId);
+
+        IEnumerable<Batch> GetAllBatches();
     }
 }

@@ -43,11 +43,11 @@ namespace ITAcademy.WinForms
             //Load all students from here
             dgvAllStudents.DataSource = _studentService.GetAllStudents();
         }
-
+        int studentId = 0;
         private void dgvAllStudents_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-           // int studentId;
-            //Int32.TryParse(Convert.ToString(dgvAllStudents.Rows[e.RowIndex].Cells[0].Value), out studentId);
+           
+            Int32.TryParse(Convert.ToString(dgvAllStudents.Rows[e.RowIndex].Cells[0].Value), out studentId);
             //var id = dgvAllStudents.Rows[e.RowIndex].Cells[0].Value;
             Student student = dgvAllStudents.Rows[e.RowIndex].DataBoundItem as Student;
             EditOrDeleteStudent _editOrDeleteStudent = new EditOrDeleteStudent(student);
