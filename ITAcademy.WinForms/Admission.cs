@@ -13,91 +13,23 @@ using ITAcademy.DataModels;
 using System.ComponentModel.DataAnnotations;
 namespace ITAcademy.WinForms
 {
-    public partial class Admission : Form
+    public partial class AdmissionForm : Form
     {
         [Dependency]
         public IStudentService _studentService { get; set; }
         Student student = new Student();
-        public Admission()
+        public AdmissionForm()
         {
+            InitializeComponent();
 
         }
 
         //Constructor Injection
-        public Admission(IStudentService studentService)
+        public AdmissionForm(IStudentService studentService)
         {
             _studentService = studentService;
             InitializeComponent();
         }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Admission_WinForm_Load(object sender, EventArgs e)
-        {
-            //lblLogoText.Visible = false;
-            //MDIContanier mdi = new MDIContanier();
-            //mdi.lblLogoText.Text = "";
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox11_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox9_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             //Ta1ke data from user 
@@ -128,20 +60,23 @@ namespace ITAcademy.WinForms
             }
         }
 
-        private void textBox11_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
             student.Name = txtName.Text = "";
-           
+
         }
 
-        private void txtName_TextChanged(object sender, EventArgs e)
+        private void txtRegistrationNumber_TextChanged(object sender, EventArgs e)
         {
 
         }
+
+        private void AdmissionForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+    
     }
 }

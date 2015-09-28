@@ -35,6 +35,10 @@
     <Reference Include="ControlsDemo">
       <HintPath>..\..\..\..\Downloads\Compressed\ControlsDemo\ControlsDemo\ControlsDemo\bin\Debug\ControlsDemo.dll</HintPath>
     </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.Unity">
       <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
     </Reference>
@@ -74,12 +78,6 @@
     </Compile>
     <Compile Include="Batches.Designer.cs">
       <DependentUpon>Batches.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Batches\AllBatches.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Batches\AllBatches.Designer.cs">
-      <DependentUpon>AllBatches.cs</DependentUpon>
     </Compile>
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="ControlExtentions.cs" />
@@ -128,11 +126,23 @@
     <Compile Include="ShowAllStudents.Designer.cs">
       <DependentUpon>ShowAllStudents.cs</DependentUpon>
     </Compile>
+    <Compile Include="Students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students.Designer.cs">
+      <DependentUpon>Students.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tests.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tests.Designer.cs">
       <DependentUpon>Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Admission.resx">
       <DependentUpon>Admission.cs</DependentUpon>
@@ -142,9 +152,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Batches.resx">
       <DependentUpon>Batches.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Batches\AllBatches.resx">
-      <DependentUpon>AllBatches.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditOrDeleteStudent.resx">
       <DependentUpon>EditOrDeleteStudent.cs</DependentUpon>
@@ -178,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tests.resx">
       <DependentUpon>Tests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

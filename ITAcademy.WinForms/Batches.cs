@@ -32,7 +32,7 @@ namespace ITAcademy.WinForms
             InitializeComponent();
             dgvList.AutoGenerateColumns = false;
         }
-        private void Batches_Load(object sender, EventArgs e)
+       private void Batches_Load(object sender, EventArgs e)
         {
             
             
@@ -100,8 +100,17 @@ namespace ITAcademy.WinForms
 
         }
 
-        
+        private void dgvList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
+
+        private void txtCourseName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+      
        
 
        

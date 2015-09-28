@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITAcademy.Repository", "ITA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITAcademy.ServiceLayer", "ITAcademy.ServiceLayer\ITAcademy.ServiceLayer.csproj", "{40DE71B6-24BA-4E59-AB29-6D448C5930D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogConsole", "LogConsole\LogConsole.csproj", "{BB26AD49-5AD5-41D5-BC2D-E5E93613238D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{40DE71B6-24BA-4E59-AB29-6D448C5930D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40DE71B6-24BA-4E59-AB29-6D448C5930D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40DE71B6-24BA-4E59-AB29-6D448C5930D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB26AD49-5AD5-41D5-BC2D-E5E93613238D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB26AD49-5AD5-41D5-BC2D-E5E93613238D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB26AD49-5AD5-41D5-BC2D-E5E93613238D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB26AD49-5AD5-41D5-BC2D-E5E93613238D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

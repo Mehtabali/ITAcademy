@@ -1,6 +1,6 @@
 ﻿namespace ITAcademy.WinForms
 {
-    partial class AllBatches
+    partial class Students
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // AllBatches
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Name = "AllBatches";
-            this.Text = "AllBatches";
-            this.Load += new System.EventHandler(this.AllBatches_Load);
-            this.ResumeLayout(false);
-
+            this.Text = "Students";
         }
 
         #endregion

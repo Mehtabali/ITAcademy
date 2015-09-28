@@ -17,68 +17,26 @@ namespace ITAcademy.WinForms
             InitializeComponent();
         }
 
-        private void studentToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chqngePasswordToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //lblLogoText.Visible = false;
-        }
-
+    
+    
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void admissionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.LayoutMdi(System.Windows.Forms.MdiLayout.Cascade);
-
-            Admission _child = new Admission();
-            _child.MdiParent = this;
-            _child.WindowState = FormWindowState.Maximized;
-            _child.Show();
-            
-        }
-        //private void viewToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    Student_WinForm _child = new Student_WinForm();
-        //    _child.MdiParent = this;
-        //    _child.Show();
-
-        //}
-
-        private void viewToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+    
+    
+        private void batchToolStripMenuItem_Click(object sender, EventArgs e)
         {
            // lblLogoText.Visible = false;
-            Search _child = new Search();
+            Batches _child = new Batches();
             _child.MdiParent = this;
             _child.WindowState = FormWindowState.Maximized;
             _child.Show();
         }
 
-        private void staffToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void attendenceToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //lblLogoText.Visible = false;
-            ShowAllStudents _child = new ShowAllStudents();
-            _child.MdiParent = this;
-            _child.WindowState = FormWindowState.Maximized;
-            _child.Show();
-
-        }
-
+    
+       
         private void testExaminationToolStripMenuItem_Click(object sender, EventArgs e)
         {
            // lblLogoText.Visible = false;
@@ -108,17 +66,9 @@ namespace ITAcademy.WinForms
             this.BackgroundImage = img;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void administratorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void attendenceToolStripMenuItem1_Click(object sender, EventArgs e)
+    
+      
+        private void attendenceToolStripMenuItem_Click(object sender, EventArgs e)
         {
            // lblLogoText.Visible = false;
             Attendence _child = new Attendence();
@@ -127,24 +77,7 @@ namespace ITAcademy.WinForms
             _child.Show();
         }
 
-        private void feeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           // lblLogoText.Visible = false;
-        }
-
-        private void salarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           // lblLogoText.Visible = false;
-        }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-           // lblLogoText.Visible = false;
-            Tests _child = new Tests();
-            _child.Show();
         
-        }
-
         private void feeInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Fees _child = new Fees();
@@ -157,7 +90,48 @@ namespace ITAcademy.WinForms
         private void scheduleTestToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+            Tests _child = new Tests();
+            _child.MdiParent = this;
+            _child.Show();
+
         }
+
+        private void admissionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AdmissionForm _child = new AdmissionForm();
+            _child.MdiParent = this;
+            _child.Show();
+           
+        }
+
+        private void studentRecordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowAllStudents _child = new ShowAllStudents();
+            _child.MdiParent = this;
+            _child.Show();
+        }
+
+        private void coursesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Users _child = new Users();
+            _child.MdiParent = this;
+            _child.Show();
+        
+        }
+
+        private void studentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+     
+      
+       
      
     }
 }

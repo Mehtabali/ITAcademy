@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace ITAcademy.WinForms
 {
-    public partial class AllBatches : Form
+    public partial class Users : Form
     {
-        public AllBatches()
+        public Users()
         {
             InitializeComponent();
-        }
-
-        private void AllBatches_Load(object sender, EventArgs e)
-        {
-            AllBatches childBatch = new AllBatches();
-            //childBatch.ismdi
         }
     }
 }
