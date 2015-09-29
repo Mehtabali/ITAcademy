@@ -16,16 +16,9 @@ namespace ITAcademy.WinForms
     public partial class ShowAllStudents : Form
     {
         [Dependency]
-        
+
         public IStudentService _studentService { get; set; }
-        //public int StudentId {
-        //    get
-        //    {
-        //        int studentId;
-        //        Int32.TryParse(Convert.ToString(dgvAllStudents.Rows[e.RowIndex].Cells[0].Value), out studentId);
-        //    }
-        //    set;
-        //}
+
         public ShowAllStudents()
         {
             InitializeComponent();
@@ -43,14 +36,16 @@ namespace ITAcademy.WinForms
             //Load all students from here
             dgvAllStudents.DataSource = _studentService.GetAllStudents();
         }
-        int studentId = 0;
+        public int studentId = 0;
         private void dgvAllStudents_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+
             Int32.TryParse(Convert.ToString(dgvAllStudents.Rows[e.RowIndex].Cells[0].Value), out studentId);
+            //Ise comment hi rkhte hain ..taaki u should remember and reference bhi rahe ki kese id nikalte hian grid k colun se
+            //oky
             //var id = dgvAllStudents.Rows[e.RowIndex].Cells[0].Value;
             Student student = dgvAllStudents.Rows[e.RowIndex].DataBoundItem as Student;
-            EditOrDeleteStudent _editOrDeleteStudent = new EditOrDeleteStudent(student);
+            EditOrDelete _editOrDeleteStudent = new EditOrDelete(_studentService,student);
 
             _editOrDeleteStudent.Show();
 

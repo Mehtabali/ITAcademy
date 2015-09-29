@@ -33,12 +33,18 @@ namespace ITAcademy.Repository
 
         public int Delete(int id)
         {
-            throw new NotImplementedException();
+            return _database.Delete("sp_DeleteBatch", id);
         }
 
         public int Update(Batch entity)
         {
-            throw new NotImplementedException();
+            Dictionary<String, string> _parameters = new Dictionary<string, string>();
+            _parameters.Add("Id",Convert.ToString(entity.Id));
+            _parameters.Add("Name", entity.Name);
+            _parameters.Add("Courses_Id", entity.Courses_Id.ToString());
+            _parameters.Add("Users_Id", entity.Users_Id.ToString());
+            _parameters.Add("Timings", entity.Timings);
+            return _database.Update("sp_UpdateBatch", _parameters);
         }
 
         public Batch FindById(int Id)

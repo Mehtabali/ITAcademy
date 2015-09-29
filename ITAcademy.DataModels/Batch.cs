@@ -15,5 +15,7 @@ namespace ITAcademy.DataModels
         public int Users_Id { get; set; }// teacher id 
         public int CreatedBy { get; set; }
         public int UpdatedBy { get; set; }
+        public string CourseName { get; set; }
+        public string UserName { get; set; }
     }
 }

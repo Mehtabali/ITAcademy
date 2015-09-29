@@ -31,7 +31,8 @@ namespace ITAcademy.ServiceLayer
 
         public int UpdateStudent(Student student)
         {
-            throw new NotImplementedException();
+           // return _studentRepository.Update(student);
+            return _studentRepository.Update(student);
         }
 
         public int DeleteStudent(int id)

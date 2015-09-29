@@ -81,11 +81,11 @@
     </Compile>
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="ControlExtentions.cs" />
-    <Compile Include="EditOrDeleteStudent.cs">
+    <Compile Include="EditOrDelete.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditOrDeleteStudent.Designer.cs">
-      <DependentUpon>EditOrDeleteStudent.cs</DependentUpon>
+    <Compile Include="EditOrDelete.Designer.cs">
+      <DependentUpon>EditOrDelete.cs</DependentUpon>
     </Compile>
     <Compile Include="Extenders.cs" />
     <Compile Include="Fees.cs">
@@ -138,6 +138,12 @@
     <Compile Include="Tests.Designer.cs">
       <DependentUpon>Tests.cs</DependentUpon>
     </Compile>
+    <Compile Include="UD_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UD_Student.Designer.cs">
+      <DependentUpon>UD_Student.cs</DependentUpon>
+    </Compile>
     <Compile Include="Users.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,8 +159,8 @@
     <EmbeddedResource Include="Batches.resx">
       <DependentUpon>Batches.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditOrDeleteStudent.resx">
-      <DependentUpon>EditOrDeleteStudent.cs</DependentUpon>
+    <EmbeddedResource Include="EditOrDelete.resx">
+      <DependentUpon>EditOrDelete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fees.resx">
       <DependentUpon>Fees.cs</DependentUpon>
@@ -183,8 +189,14 @@
     <EmbeddedResource Include="ShowAllStudents.resx">
       <DependentUpon>ShowAllStudents.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Students.resx">
+      <DependentUpon>Students.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tests.resx">
       <DependentUpon>Tests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UD_Student.resx">
+      <DependentUpon>UD_Student.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users.resx">
       <DependentUpon>Users.cs</DependentUpon>

@@ -68,7 +68,7 @@
             this.txtRegistrationNumber.Location = new System.Drawing.Point(33, 66);
             this.txtRegistrationNumber.Name = "txtRegistrationNumber";
             this.txtRegistrationNumber.Size = new System.Drawing.Size(234, 20);
-            this.txtRegistrationNumber.TabIndex = 32;
+            this.txtRegistrationNumber.TabIndex = 0;
             this.txtRegistrationNumber.TextChanged += new System.EventHandler(this.txtRegistrationNumber_TextChanged);
             // 
             // txtName
@@ -77,7 +77,7 @@
             this.txtName.Location = new System.Drawing.Point(33, 116);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(234, 20);
-            this.txtName.TabIndex = 2;
+            this.txtName.TabIndex = 1;
             // 
             // txtDob
             // 
@@ -85,7 +85,7 @@
             this.txtDob.Location = new System.Drawing.Point(33, 171);
             this.txtDob.Name = "txtDob";
             this.txtDob.Size = new System.Drawing.Size(234, 20);
-            this.txtDob.TabIndex = 30;
+            this.txtDob.TabIndex = 2;
             // 
             // txtAddress
             // 
@@ -93,7 +93,7 @@
             this.txtAddress.Location = new System.Drawing.Point(33, 219);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(234, 20);
-            this.txtAddress.TabIndex = 28;
+            this.txtAddress.TabIndex = 3;
             // 
             // txtContactNumber
             // 
@@ -101,7 +101,7 @@
             this.txtContactNumber.Location = new System.Drawing.Point(33, 267);
             this.txtContactNumber.Name = "txtContactNumber";
             this.txtContactNumber.Size = new System.Drawing.Size(234, 20);
-            this.txtContactNumber.TabIndex = 31;
+            this.txtContactNumber.TabIndex = 4;
             // 
             // txtFatherName
             // 
@@ -109,7 +109,7 @@
             this.txtFatherName.Location = new System.Drawing.Point(33, 313);
             this.txtFatherName.Name = "txtFatherName";
             this.txtFatherName.Size = new System.Drawing.Size(234, 20);
-            this.txtFatherName.TabIndex = 29;
+            this.txtFatherName.TabIndex = 5;
             // 
             // txtEmail
             // 
@@ -117,7 +117,7 @@
             this.txtEmail.Location = new System.Drawing.Point(33, 363);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(234, 20);
-            this.txtEmail.TabIndex = 48;
+            this.txtEmail.TabIndex = 7;
             // 
             // txtPin
             // 

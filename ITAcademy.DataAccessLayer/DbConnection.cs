@@ -51,7 +51,7 @@ namespace ITAcademy.DataAccessLayer
         {
             try
             {
-                AddParameters(parameters);
+               AddParameters(parameters);
                 return Execute(storedProcedure, parameters);
             }
             catch (Exception exception)
@@ -191,7 +191,7 @@ namespace ITAcademy.DataAccessLayer
             {
                 _command.Parameters.AddWithValue("@" + parameter.Key, parameter.Value);
             }
-        }
+          }
         private void OpenConnection()
         {
             if (_connection.State != System.Data.ConnectionState.Open)

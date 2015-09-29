@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace ITAcademy.Repository
 {
-   public class StudentRepository : IStudentRepository
-    {     
+    public class StudentRepository : IStudentRepository
+    {
         [Dependency]
         public IDbConnection _database { get; set; }
-        
+
         public IEnumerable<Student> List
         {
             get
@@ -26,7 +26,7 @@ namespace ITAcademy.Repository
         public int Create(Student entity)
         {
             Dictionary<String, string> _parameters = new Dictionary<string, string>();
-          
+
             _parameters.Add("Mobile", entity.Mobile);
             _parameters.Add("Name", entity.Name);
             _parameters.Add("City", entity.City);
@@ -35,9 +35,9 @@ namespace ITAcademy.Repository
             _parameters.Add("PIN", entity.PIN);
             _parameters.Add("Gender", entity.Gender);
             _parameters.Add("DOB", entity.DOB.ToString());
-            _parameters.Add("Address", entity.Address);          
+            _parameters.Add("Address", entity.Address);
             return _database.Create("sp_CreateStudent", _parameters);
-           
+
         }
 
         public int Delete(int id)
@@ -47,12 +47,23 @@ namespace ITAcademy.Repository
 
         public int Update(Student entity)
         {
-            return _database.Update("sp_UpdateStudent", Mapper(entity));
+            Dictionary<String, string> _parameters = new Dictionary<string, string>();
+            _parameters.Add("Id", Convert.ToString(entity.Id));
+            _parameters.Add("Mobile", entity.Mobile);
+            _parameters.Add("Name", entity.Name);
+            _parameters.Add("City", entity.City);
+            _parameters.Add("Email", entity.Email);
+            _parameters.Add("FatherName", entity.FatherName);
+            _parameters.Add("PIN", entity.PIN);
+            _parameters.Add("Gender", entity.Gender);
+            _parameters.Add("DOB", entity.DOB.ToString());
+            _parameters.Add("Address", entity.Address);
+            return _database.Update("sp_UpdateStudent", _parameters);
         }
 
         public Student FindById(int id)
         {
-           // string query = "Select * from Students where Id='"+id+"'";
+            // string query = "Select * from Students where Id='"+id+"'";
 
             return _database.GetOne("sp_GetStudentById", id).ToEntity<Student>();
         }

@@ -17,7 +17,7 @@ namespace ITAcademy.WinForms
     {
         [Dependency]
         public IStudentService _studentService { get; set; }
-        Student student = new Student();
+        Student student;
         public AdmissionForm()
         {
             InitializeComponent();

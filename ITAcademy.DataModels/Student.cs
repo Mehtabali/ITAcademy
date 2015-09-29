@@ -21,12 +21,14 @@ namespace ITAcademy.DataModels
         public String FatherName { get; set; }
         public String Gender { get; set; }
         public String Address { get; set; }
+        public DateTime AdmissionDate{ get; set; }
+     //   public string GuardianNumber { get; set; }
         public String City { get; set; }
        // public String State { get; set; }
         public String PIN { get; set; }
         public DateTime DOB { get; set; }
-        public String ImagePath { get; set; }
-        public int CreatedBy { get; set; }
-        public int UpdatedBy { get; set; }
+    //    public String ImagePath { get; set; }
+     //   public int CreatedBy { get; set; }
+      //  public int UpdatedBy { get; set; }
     }
 }

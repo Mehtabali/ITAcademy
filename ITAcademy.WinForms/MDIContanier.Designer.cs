@@ -35,7 +35,6 @@
             this.coursesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.studentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.attendenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.attendenceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.feeInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -109,19 +108,11 @@
             // studentToolStripMenuItem
             // 
             this.studentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.attendenceToolStripMenuItem,
             this.attendenceToolStripMenuItem1,
             this.feeInformationToolStripMenuItem});
             this.studentToolStripMenuItem.Name = "studentToolStripMenuItem";
             this.studentToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
             this.studentToolStripMenuItem.Text = "Student Information";
-            // 
-            // attendenceToolStripMenuItem
-            // 
-            this.attendenceToolStripMenuItem.Name = "attendenceToolStripMenuItem";
-            this.attendenceToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.attendenceToolStripMenuItem.Text = "Student Records";
-            this.attendenceToolStripMenuItem.Click += new System.EventHandler(this.studentRecordToolStripMenuItem_Click);
             // 
             // attendenceToolStripMenuItem1
             // 
@@ -245,7 +236,6 @@
         private System.Windows.Forms.ToolStripMenuItem studentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem attendenceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem feeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem chqngePasswordToolStripMenuItem;

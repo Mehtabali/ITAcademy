@@ -106,10 +106,7 @@ namespace ITAcademy.WinForms
 
         private void studentRecordToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ShowAllStudents _child = new ShowAllStudents();
-            _child.MdiParent = this;
-            _child.Show();
-        }
+                   }
 
         private void coursesToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -126,6 +123,9 @@ namespace ITAcademy.WinForms
 
         private void studentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ShowAllStudents _child = new ShowAllStudents();
+            _child.MdiParent = this;
+            _child.Show();
 
         }
 

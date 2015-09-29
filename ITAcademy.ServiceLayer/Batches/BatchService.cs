@@ -23,14 +23,14 @@ namespace ITAcademy.ServiceLayer
             return _batchRepository.Create(batch);
         }
 
-        public Batch UpdateBatch(Batch batch)
+        public int UpdateBatch(Batch batch)
         {
-            throw new NotImplementedException();
+            return _batchRepository.Update(batch);
         }
 
-        public int DeleteBatch(Batch batch)
+        public int DeleteBatch(int id)
         {
-            throw new NotImplementedException();
+            return _batchRepository.Delete(id);
         }
 
         public Batch GetOne(int Id)

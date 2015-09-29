@@ -13,8 +13,8 @@ namespace ITAcademy.ServiceLayer
 
         IEnumerable<Batch> GetAllBatches();
         int CreateBatch(Batch batch);
-        Batch UpdateBatch(Batch batch);
-        int DeleteBatch(Batch batch);
+        int UpdateBatch(Batch batch);
+        int DeleteBatch(int id);
         Batch GetOne(int Id);
       //  IEnumerable<Course> GetCourses();
          IEnumerable<Course> GetAllCourses();
