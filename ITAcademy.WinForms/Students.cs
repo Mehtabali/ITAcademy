@@ -18,18 +18,20 @@ namespace ITAcademy.WinForms
     {
 
         [Dependency]
-        Student student;
+      
         public IStudentService _studentService { get; set; }
-     
+       private  Student _student;
+       private Student student; // to get value of select row from data list
         public Students()
         {
             InitializeComponent();
         }
 
         //Constructor injection
-        public Students(IStudentService studentService)
+        public Students(IStudentService studentService,Student student)
         {
             _studentService = studentService;
+            _student = student;
             InitializeComponent();
             dgvAllStudents.AutoGenerateColumns = false;
 
@@ -40,7 +42,7 @@ namespace ITAcademy.WinForms
         }
         private void dgvAllStudents_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            Student student = dgvAllStudents.Rows[e.RowIndex].DataBoundItem as Student;
+            student = dgvAllStudents.Rows[e.RowIndex].DataBoundItem as Student;
 
             txtNameud.Text = student.Name;
             txtudAddress.Text = student.Address;
@@ -49,28 +51,31 @@ namespace ITAcademy.WinForms
             txtudDob.Text =   Convert.ToString(student.DOB);
             txtudEmail.Text = student.Email;
             txtudFather.Text = student.FatherName;
-            dtpudAdmission.Text = Convert.ToString(student.AdmissionDate);
+         //   dtpudAdmission.MinDate = new System.DateTime();
+                Convert.ToString(student.AdmissionDate);
             tabStudent.SelectedTab = tabStudent.TabPages[2];
 
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            student.Name = txtName.Text;
-            student.Mobile = txtContactNumber.Text;
-            student.Email = txtEmail.Text;
-            student.FatherName = txtFatherName.Text;
-            student.Gender = cmbGender.Text;
-            student.Address = txtAddress.Text;
-            student.City = txtCity.Text;
-            student.PIN= txtPin.Text;
-            student.DOB = Convert.ToDateTime(txtDob.Text);
+            _student.Name = txtName.Text;
+            _student.Mobile = txtContactNumber.Text;
+            _student.Email = txtEmail.Text;
+            _student.FatherName = txtFatherName.Text;
+            _student.Gender = cmbGender.Text;
+            _student.Address = txtAddress.Text;
+            _student.City = txtCity.Text;
+            _student.PIN = txtPin.Text;
+            DateTime date;
+            DateTime.TryParse(dtpudAdmission.Text, out date);
+            _student.DOB = date;
        
 
-            ValidationContext context = new ValidationContext(student, null, null);
+            ValidationContext context = new ValidationContext(_student, null, null);
             IList<ValidationResult> errors = new List<ValidationResult>();
 
-            if (!Validator.TryValidateObject(student, context, errors, true))
+            if (!Validator.TryValidateObject(_student, context, errors, true))
             {
                 foreach (ValidationResult result in errors)
                     MessageBox.Show(result.ErrorMessage);
@@ -78,13 +83,47 @@ namespace ITAcademy.WinForms
             else
             {
                 MessageBox.Show("Validated");
-                _studentService.CreateStudent(student);
+                _studentService.CreateStudent(_student);
             }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-        
+            _student.Name = txtNameud.Text;
+            _student.Mobile = txtudContact.Text =
+            _student.PIN = txtudPin.Text;
+            _student.Gender = cmbudGender.Text;
+            _student.DOB = Convert.ToDateTime(txtudDob.Text);
+            _student.Email = txtudEmail.Text;
+            _student.Address = txtudAddress.Text;
+            _student.AdmissionDate = Convert.ToDateTime(dtpudAdmission.Text);
+            _student.FatherName = txtudFather.Text;
+            _student.City = txtudCity.Text;
+            _studentService.UpdateStudent(_student);
+            MessageBox.Show("Updated");
+
+        }
+
+        private void txtRegistrationNumber_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            txtNameud.Clear();
+            txtudAddress.Clear();
+            txtudCity.Clear();
+            txtudFather.Clear();
+            txtudDob.Clear();
+            txtudContact.Clear();
+            txtudPin.Clear();
+            txtudCity.Clear();
+            txtudEmail.Clear();
+            dtpudAdmission.Text = "";
+            _studentService.DeleteStudent(student.Id);
+           
+            MessageBox.Show("Deleted");
         }
 
     
@@ -94,4 +133,4 @@ namespace ITAcademy.WinForms
 
    
     }
-}
+

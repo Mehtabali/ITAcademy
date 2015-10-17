@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attendance\AttendanceService.cs" />
+    <Compile Include="Attendance\IAttendanceService.cs" />
     <Compile Include="Batches\BatchService.cs" />
     <Compile Include="Batches\IBatchService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -55,6 +57,8 @@
     <Compile Include="Students\StudentService.cs" />
     <Compile Include="Tests\ITestService.cs" />
     <Compile Include="Tests\TestService.cs" />
+    <Compile Include="Users\IUserService.cs" />
+    <Compile Include="Users\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ITAcademy.DataModels\ITAcademy.DataModels.csproj">

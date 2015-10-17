@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attendance\AttendanceRepository.cs" />
+    <Compile Include="Attendance\IAttendanceRepository.cs" />
     <Compile Include="Batches\BatchRepository.cs" />
     <Compile Include="Batches\IBatchRepository.cs" />
     <Compile Include="DataTableExtention.cs" />
@@ -57,6 +59,8 @@
     <Compile Include="Student\StudentRepository.cs" />
     <Compile Include="Tests\ITestRepository.cs" />
     <Compile Include="Tests\TestRepository.cs" />
+    <Compile Include="User\IUserRepository.cs" />
+    <Compile Include="User\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ITAcademy.DataAccessLayer\ITAcademy.DataAccessLayer.csproj">

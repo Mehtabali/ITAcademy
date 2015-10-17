@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ITAcademy.DataAccessLayer
 {
     public interface IDbConnection
@@ -15,5 +16,7 @@ namespace ITAcademy.DataAccessLayer
         DataTable GetAll(String storedProcedure);
         DataTable GetOne(String storedProcedure, int id);
         string Getsinglecolumn(string p, int userId);
+     //   DataTable GetAllOnId(String storedProcedure, int id);
+       // DataTable Select(string storedProcedure, params string[] parameters);
     }
 }

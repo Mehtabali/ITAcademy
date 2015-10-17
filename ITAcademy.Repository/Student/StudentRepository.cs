@@ -47,6 +47,8 @@ namespace ITAcademy.Repository
 
         public int Update(Student entity)
         {
+
+            // entity k ander sara data bind hua wa hai but jb individual assign krny jarai hun tou empty hai sn kuch 
             Dictionary<String, string> _parameters = new Dictionary<string, string>();
             _parameters.Add("Id", Convert.ToString(entity.Id));
             _parameters.Add("Mobile", entity.Mobile);

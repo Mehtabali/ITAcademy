@@ -32,7 +32,7 @@ namespace ITAcademy.ServiceLayer
         public int UpdateStudent(Student student)
         {
            // return _studentRepository.Update(student);
-            return _studentRepository.Update(student);
+             return _studentRepository.Update(student);
         }
 
         public int DeleteStudent(int id)

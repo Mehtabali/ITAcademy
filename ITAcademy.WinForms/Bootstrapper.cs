@@ -38,8 +38,10 @@ namespace ITAcademy.WinForms
             container.RegisterType<ITestService, TestService>();
             container.RegisterType<IBatchRepository, BatchRepository>();
             container.RegisterType<IBatchService, BatchService>();
-        //    container.RegisterType<EditOrDeleteStudent,StudentService>();
-          //  container.RegisterType<IBatchService, BatchService>();
+            container.RegisterType<IUserRepository,UserRepository>();
+            container.RegisterType<IUserService, UserService>();
+            container.RegisterType<IAttendanceRepository, AttendanceRepository>();
+            container.RegisterType<IAttendanceService, AttendanceService>();
           
             //container.RegisterType<I>
 

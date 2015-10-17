@@ -41,12 +41,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admission.cs" />
+    <Compile Include="Attendance.cs" />
     <Compile Include="Batch.cs" />
     <Compile Include="Course.cs" />
     <Compile Include="Fees.cs" />
     <Compile Include="PayRoll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs" />
+    <Compile Include="StudentTransition.cs" />
     <Compile Include="Test.cs" />
     <Compile Include="TestTransition.cs" />
     <Compile Include="User.cs" />

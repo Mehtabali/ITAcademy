@@ -32,14 +32,21 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.btnCancel1 = new System.Windows.Forms.Button();
-            this.btnSearch1 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.gridStudents = new System.Windows.Forms.DataGridView();
+            this.btnView = new System.Windows.Forms.Button();
+            this.grpStudents = new System.Windows.Forms.GroupBox();
+            this.lblIdHeader = new System.Windows.Forms.Label();
+            this.lblNameHeader = new System.Windows.Forms.Label();
+            this.lblIsAttendHeader = new System.Windows.Forms.Label();
+            this.lblSerialHeader = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.txtTodayDate = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dtpToday = new System.Windows.Forms.DateTimePicker();
+            this.txtTeacher = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblBatch = new System.Windows.Forms.Label();
+            this.cmbBatch = new System.Windows.Forms.ComboBox();
+            this.txtCourse = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -53,8 +60,7 @@
             this.tabCtrlAttendence.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridStudents)).BeginInit();
+            this.grpStudents.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -76,7 +82,7 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.groupBox6);
-            this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Controls.Add(this.grpStudents);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -85,102 +91,170 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Attendence Sheet";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.btnCancel1);
-            this.groupBox6.Controls.Add(this.btnSearch1);
+            this.groupBox6.Controls.Add(this.btnView);
             this.groupBox6.Location = new System.Drawing.Point(143, 179);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(695, 72);
+            this.groupBox6.Size = new System.Drawing.Size(695, 58);
             this.groupBox6.TabIndex = 13;
             this.groupBox6.TabStop = false;
             // 
             // btnCancel1
             // 
-            this.btnCancel1.Location = new System.Drawing.Point(548, 31);
+            this.btnCancel1.Location = new System.Drawing.Point(525, 19);
             this.btnCancel1.Name = "btnCancel1";
             this.btnCancel1.Size = new System.Drawing.Size(75, 23);
             this.btnCancel1.TabIndex = 1;
             this.btnCancel1.Text = "Cancel";
             this.btnCancel1.UseVisualStyleBackColor = true;
             // 
-            // btnSearch1
+            // btnView
             // 
-            this.btnSearch1.Location = new System.Drawing.Point(431, 31);
-            this.btnSearch1.Name = "btnSearch1";
-            this.btnSearch1.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch1.TabIndex = 0;
-            this.btnSearch1.Text = "View";
-            this.btnSearch1.UseVisualStyleBackColor = true;
+            this.btnView.Location = new System.Drawing.Point(444, 19);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(75, 23);
+            this.btnView.TabIndex = 0;
+            this.btnView.Text = "Get Details";
+            this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
-            // groupBox2
+            // grpStudents
             // 
-            this.groupBox2.Controls.Add(this.gridStudents);
-            this.groupBox2.Location = new System.Drawing.Point(143, 274);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(695, 335);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Students in this Batch";
+            this.grpStudents.Controls.Add(this.lblIdHeader);
+            this.grpStudents.Controls.Add(this.lblNameHeader);
+            this.grpStudents.Controls.Add(this.lblIsAttendHeader);
+            this.grpStudents.Controls.Add(this.lblSerialHeader);
+            this.grpStudents.Location = new System.Drawing.Point(143, 243);
+            this.grpStudents.Name = "grpStudents";
+            this.grpStudents.Size = new System.Drawing.Size(695, 335);
+            this.grpStudents.TabIndex = 0;
+            this.grpStudents.TabStop = false;
+            this.grpStudents.Text = "Students in this Batch";
             // 
-            // gridStudents
+            // lblIdHeader
             // 
-            this.gridStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridStudents.Location = new System.Drawing.Point(18, 19);
-            this.gridStudents.Name = "gridStudents";
-            this.gridStudents.Size = new System.Drawing.Size(649, 272);
-            this.gridStudents.TabIndex = 0;
+            this.lblIdHeader.AutoSize = true;
+            this.lblIdHeader.Location = new System.Drawing.Point(102, 16);
+            this.lblIdHeader.Name = "lblIdHeader";
+            this.lblIdHeader.Size = new System.Drawing.Size(56, 13);
+            this.lblIdHeader.TabIndex = 3;
+            this.lblIdHeader.Text = "Student Id";
+            // 
+            // lblNameHeader
+            // 
+            this.lblNameHeader.AutoSize = true;
+            this.lblNameHeader.Location = new System.Drawing.Point(218, 16);
+            this.lblNameHeader.Name = "lblNameHeader";
+            this.lblNameHeader.Size = new System.Drawing.Size(75, 13);
+            this.lblNameHeader.TabIndex = 2;
+            this.lblNameHeader.Text = "Student Name";
+            // 
+            // lblIsAttendHeader
+            // 
+            this.lblIsAttendHeader.AutoSize = true;
+            this.lblIsAttendHeader.Location = new System.Drawing.Point(441, 16);
+            this.lblIsAttendHeader.Name = "lblIsAttendHeader";
+            this.lblIsAttendHeader.Size = new System.Drawing.Size(46, 13);
+            this.lblIsAttendHeader.TabIndex = 1;
+            this.lblIsAttendHeader.Text = "IsAttend";
+            // 
+            // lblSerialHeader
+            // 
+            this.lblSerialHeader.AutoSize = true;
+            this.lblSerialHeader.Location = new System.Drawing.Point(6, 16);
+            this.lblSerialHeader.Name = "lblSerialHeader";
+            this.lblSerialHeader.Size = new System.Drawing.Size(53, 13);
+            this.lblSerialHeader.TabIndex = 0;
+            this.lblSerialHeader.Text = "Serial No.";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox4);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.txtTodayDate);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.dtpToday);
+            this.groupBox1.Controls.Add(this.txtTeacher);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.lblBatch);
+            this.groupBox1.Controls.Add(this.cmbBatch);
+            this.groupBox1.Controls.Add(this.txtCourse);
             this.groupBox1.Location = new System.Drawing.Point(143, 21);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(695, 152);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // comboBox4
+            // label3
             // 
-            this.comboBox4.AllowDrop = true;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(370, 19);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(177, 21);
-            this.comboBox4.TabIndex = 7;
-            this.comboBox4.Text = "Select Teacher ";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(367, 70);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Select Date";
             // 
-            // comboBox1
+            // dtpToday
             // 
-            this.comboBox1.AllowDrop = true;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(45, 18);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(177, 21);
-            this.comboBox1.TabIndex = 6;
-            this.comboBox1.Text = "Select Batch";
+            this.dtpToday.Location = new System.Drawing.Point(370, 86);
+            this.dtpToday.Name = "dtpToday";
+            this.dtpToday.Size = new System.Drawing.Size(230, 20);
+            this.dtpToday.TabIndex = 12;
             // 
-            // textBox6
+            // txtTeacher
             // 
-            this.textBox6.Location = new System.Drawing.Point(45, 66);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(177, 20);
-            this.textBox6.TabIndex = 5;
-            this.textBox6.Text = "Select Course";
+            this.txtTeacher.Location = new System.Drawing.Point(370, 31);
+            this.txtTeacher.Name = "txtTeacher";
+            this.txtTeacher.ReadOnly = true;
+            this.txtTeacher.Size = new System.Drawing.Size(230, 20);
+            this.txtTeacher.TabIndex = 11;
             // 
-            // txtTodayDate
+            // label2
             // 
-            this.txtTodayDate.Location = new System.Drawing.Point(370, 66);
-            this.txtTodayDate.Name = "txtTodayDate";
-            this.txtTodayDate.ReadOnly = true;
-            this.txtTodayDate.Size = new System.Drawing.Size(177, 20);
-            this.txtTodayDate.TabIndex = 4;
-            this.txtTodayDate.TextChanged += new System.EventHandler(this.txtAttenenceDate_TextChanged);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(367, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Teacher";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(42, 69);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Course";
+            // 
+            // lblBatch
+            // 
+            this.lblBatch.AutoSize = true;
+            this.lblBatch.Location = new System.Drawing.Point(42, 14);
+            this.lblBatch.Name = "lblBatch";
+            this.lblBatch.Size = new System.Drawing.Size(68, 13);
+            this.lblBatch.TabIndex = 8;
+            this.lblBatch.Text = "Select Batch";
+            // 
+            // cmbBatch
+            // 
+            this.cmbBatch.AllowDrop = true;
+            this.cmbBatch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBatch.FormattingEnabled = true;
+            this.cmbBatch.Location = new System.Drawing.Point(45, 30);
+            this.cmbBatch.Name = "cmbBatch";
+            this.cmbBatch.Size = new System.Drawing.Size(248, 21);
+            this.cmbBatch.TabIndex = 6;
+            this.cmbBatch.SelectedIndexChanged += new System.EventHandler(this.cmbBatch_SelectedIndexChanged);
+            // 
+            // txtCourse
+            // 
+            this.txtCourse.Location = new System.Drawing.Point(45, 86);
+            this.txtCourse.Name = "txtCourse";
+            this.txtCourse.ReadOnly = true;
+            this.txtCourse.Size = new System.Drawing.Size(248, 20);
+            this.txtCourse.TabIndex = 5;
             // 
             // tabPage2
             // 
@@ -280,20 +354,20 @@
             this.textBox2.TabIndex = 8;
             this.textBox2.Text = "Select Date";
             // 
-            // Attendence_WinForm
+            // Attendence
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 750);
             this.Controls.Add(this.tabCtrlAttendence);
-            this.Name = "Attendence_WinForm";
+            this.Name = "Attendence";
             this.Text = "Attendence_WinForm";
             this.Load += new System.EventHandler(this.Attendence_WinForm_Load);
             this.tabCtrlAttendence.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridStudents)).EndInit();
+            this.grpStudents.ResumeLayout(false);
+            this.grpStudents.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -311,11 +385,10 @@
         private System.Windows.Forms.TabControl tabCtrlAttendence;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView gridStudents;
+        private System.Windows.Forms.GroupBox grpStudents;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.ComboBox cmbBatch;
+        private System.Windows.Forms.TextBox txtCourse;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -324,11 +397,19 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button btnCancel1;
-        private System.Windows.Forms.Button btnSearch1;
+        private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.TextBox txtTodayDate;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label lblBatch;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker dtpToday;
+        private System.Windows.Forms.TextBox txtTeacher;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblIdHeader;
+        private System.Windows.Forms.Label lblNameHeader;
+        private System.Windows.Forms.Label lblIsAttendHeader;
+        private System.Windows.Forms.Label lblSerialHeader;
     }
 }

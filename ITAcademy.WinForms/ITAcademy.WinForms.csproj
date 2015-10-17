@@ -81,12 +81,6 @@
     </Compile>
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="ControlExtentions.cs" />
-    <Compile Include="EditOrDelete.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EditOrDelete.Designer.cs">
-      <DependentUpon>EditOrDelete.cs</DependentUpon>
-    </Compile>
     <Compile Include="Extenders.cs" />
     <Compile Include="Fees.cs">
       <SubType>Form</SubType>
@@ -119,12 +113,6 @@
     </Compile>
     <Compile Include="Search.Designer.cs">
       <DependentUpon>Search.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ShowAllStudents.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ShowAllStudents.Designer.cs">
-      <DependentUpon>ShowAllStudents.cs</DependentUpon>
     </Compile>
     <Compile Include="Students.cs">
       <SubType>Form</SubType>
@@ -159,9 +147,6 @@
     <EmbeddedResource Include="Batches.resx">
       <DependentUpon>Batches.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditOrDelete.resx">
-      <DependentUpon>EditOrDelete.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Fees.resx">
       <DependentUpon>Fees.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,9 +170,6 @@
     </Compile>
     <EmbeddedResource Include="Search.resx">
       <DependentUpon>Search.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ShowAllStudents.resx">
-      <DependentUpon>ShowAllStudents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Students.resx">
       <DependentUpon>Students.cs</DependentUpon>

@@ -99,6 +99,7 @@ namespace ITAcademy.DataAccessLayer
             }
 
         }
+       
         public DataTable GetAll(String storedProcedure)
         {
             try
@@ -199,5 +200,8 @@ namespace ITAcademy.DataAccessLayer
                 _connection.Open();
             }
         }
+
+
+
     }
 }

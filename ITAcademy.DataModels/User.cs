@@ -16,11 +16,13 @@ namespace ITAcademy.DataModels
         public string Qualification { get; set; }
         public float Salary { get; set; }
         public string ImagePath { get; set; }
-        public string Password { get; set; }
+    //    public string Password { get; set; }
         public int Users_Type_Id { get; set; }
-        public DateTime LastLoginDate { get; set; }
+        public DateTime HiringDate { get; set; }
         public int CreatedBy { get; set; }
         public int UpdatedBy { get; set; }
+        public string UserType { get; set; }
+        public string Designation { get; set; }
     
     }
 }
