@@ -34,20 +34,18 @@
             this.batchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.coursesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.studentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.studentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.attendenceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.feeInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.scheduleTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateTestInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cancelTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.feeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chqngePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.studentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,6 +103,13 @@
             this.usersToolStripMenuItem.Text = "Users";
             this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
+            // studentsToolStripMenuItem
+            // 
+            this.studentsToolStripMenuItem.Name = "studentsToolStripMenuItem";
+            this.studentsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.studentsToolStripMenuItem.Text = "Students";
+            this.studentsToolStripMenuItem.Click += new System.EventHandler(this.studentsToolStripMenuItem_Click);
+            // 
             // studentToolStripMenuItem
             // 
             this.studentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -117,23 +122,21 @@
             // attendenceToolStripMenuItem1
             // 
             this.attendenceToolStripMenuItem1.Name = "attendenceToolStripMenuItem1";
-            this.attendenceToolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
+            this.attendenceToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
             this.attendenceToolStripMenuItem1.Text = "Attendence";
             this.attendenceToolStripMenuItem1.Click += new System.EventHandler(this.attendenceToolStripMenuItem_Click);
             // 
             // feeInformationToolStripMenuItem
             // 
             this.feeInformationToolStripMenuItem.Name = "feeInformationToolStripMenuItem";
-            this.feeInformationToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.feeInformationToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.feeInformationToolStripMenuItem.Text = "Fee Information";
             this.feeInformationToolStripMenuItem.Click += new System.EventHandler(this.feeInformationToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.scheduleTestToolStripMenuItem,
-            this.updateTestInfoToolStripMenuItem,
-            this.cancelTestToolStripMenuItem});
+            this.scheduleTestToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(96, 20);
             this.toolStripMenuItem1.Text = "Test Scheduler";
@@ -144,19 +147,6 @@
             this.scheduleTestToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.scheduleTestToolStripMenuItem.Text = "Schedule Test";
             this.scheduleTestToolStripMenuItem.Click += new System.EventHandler(this.scheduleTestToolStripMenuItem_Click);
-            // 
-            // updateTestInfoToolStripMenuItem
-            // 
-            this.updateTestInfoToolStripMenuItem.Name = "updateTestInfoToolStripMenuItem";
-            this.updateTestInfoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.updateTestInfoToolStripMenuItem.Text = "Update Test Info";
-            this.updateTestInfoToolStripMenuItem.Click += new System.EventHandler(this.feeInformationToolStripMenuItem_Click);
-            // 
-            // cancelTestToolStripMenuItem
-            // 
-            this.cancelTestToolStripMenuItem.Name = "cancelTestToolStripMenuItem";
-            this.cancelTestToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.cancelTestToolStripMenuItem.Text = "Cancel Test";
             // 
             // reportsToolStripMenuItem
             // 
@@ -201,13 +191,6 @@
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
-            // studentsToolStripMenuItem
-            // 
-            this.studentsToolStripMenuItem.Name = "studentsToolStripMenuItem";
-            this.studentsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.studentsToolStripMenuItem.Text = "Students";
-            this.studentsToolStripMenuItem.Click += new System.EventHandler(this.studentsToolStripMenuItem_Click);
-            // 
             // MDIContanier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,8 +228,6 @@
         private System.Windows.Forms.ToolStripMenuItem feeInformationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem scheduleTestToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem updateTestInfoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cancelTestToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem coursesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem studentsToolStripMenuItem;

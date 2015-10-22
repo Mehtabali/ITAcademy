@@ -110,7 +110,10 @@ namespace ITAcademy.WinForms
 
         private void coursesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Courses _child = new Courses();
+            _child.MdiParent = this;
+            _child.Show();
+        
         }
 
         private void usersToolStripMenuItem_Click(object sender, EventArgs e)
@@ -123,7 +126,16 @@ namespace ITAcademy.WinForms
 
         private void studentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            Students _child = new Students();
+            _child.MdiParent = this;
+            _child.Show();
+        
+
+        }
+
+        private void cancelTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
      

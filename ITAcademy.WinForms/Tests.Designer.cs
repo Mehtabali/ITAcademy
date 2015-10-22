@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.listViewTest = new System.Windows.Forms.ListView();
             this.tabTest = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnGenerateNotification = new System.Windows.Forms.Button();
             this.btnSchedule = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtDescription = new System.Windows.Forms.TextBox();
             this.txtCourse = new System.Windows.Forms.TextBox();
             this.txtTeacher = new System.Windows.Forms.TextBox();
             this.txtTotalMarks = new System.Windows.Forms.TextBox();
@@ -57,34 +58,38 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.tabUpdateDelete = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtDescription = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtDescriptionud = new System.Windows.Forms.TextBox();
+            this.txtCourseud = new System.Windows.Forms.TextBox();
+            this.txtTeacherud = new System.Windows.Forms.TextBox();
+            this.txtTotalMarksud = new System.Windows.Forms.TextBox();
+            this.txtPassingMarksud = new System.Windows.Forms.TextBox();
+            this.dtpTestDateud = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtBatchNameud = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.btnInActive = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.tabTest.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox9.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.tabUpdateDelete.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -97,7 +102,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // tabControl1
             // 
@@ -110,6 +114,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.listViewTest);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -118,10 +123,23 @@
             this.tabPage4.Text = "Test Updates";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // listViewTest
+            // 
+            this.listViewTest.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3});
+            this.listViewTest.Location = new System.Drawing.Point(16, 20);
+            this.listViewTest.Name = "listViewTest";
+            this.listViewTest.Size = new System.Drawing.Size(231, 488);
+            this.listViewTest.TabIndex = 0;
+            this.listViewTest.UseCompatibleStateImageBehavior = false;
+            this.listViewTest.View = System.Windows.Forms.View.List;
+            // 
             // tabTest
             // 
             this.tabTest.Controls.Add(this.tabPage2);
-            this.tabTest.Controls.Add(this.tabPage3);
+            this.tabTest.Controls.Add(this.tabUpdateDelete);
             this.tabTest.Location = new System.Drawing.Point(6, 12);
             this.tabTest.Name = "tabTest";
             this.tabTest.SelectedIndex = 0;
@@ -141,7 +159,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.groupBox9);
             this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Location = new System.Drawing.Point(14, 20);
@@ -151,49 +168,12 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Schedule Test";
             // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.btnDelete);
-            this.groupBox9.Controls.Add(this.label6);
-            this.groupBox9.Controls.Add(this.txtId);
-            this.groupBox9.Location = new System.Drawing.Point(25, 314);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(727, 164);
-            this.groupBox9.TabIndex = 0;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Cancel Test";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(607, 115);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(99, 23);
-            this.btnDelete.TabIndex = 11;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(73, 42);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(142, 13);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "Enter Test Id To Delete Test";
-            // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(238, 35);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(207, 20);
-            this.txtId.TabIndex = 29;
-            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.btnReset);
             this.groupBox4.Controls.Add(this.btnGenerateNotification);
             this.groupBox4.Controls.Add(this.btnSchedule);
-            this.groupBox4.Location = new System.Drawing.Point(25, 226);
+            this.groupBox4.Location = new System.Drawing.Point(25, 351);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(727, 59);
             this.groupBox4.TabIndex = 1;
@@ -247,9 +227,26 @@
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Location = new System.Drawing.Point(25, 19);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(727, 191);
+            this.groupBox3.Size = new System.Drawing.Size(727, 314);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(27, 187);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(60, 13);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "Description";
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.Location = new System.Drawing.Point(114, 187);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(574, 66);
+            this.txtDescription.TabIndex = 1;
             // 
             // txtCourse
             // 
@@ -312,7 +309,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(370, 42);
+            this.label8.Location = new System.Drawing.Point(408, 42);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(40, 13);
             this.label8.TabIndex = 17;
@@ -362,145 +359,202 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Select Batch";
             // 
-            // tabPage3
+            // tabUpdateDelete
             // 
-            this.tabPage3.Controls.Add(this.button7);
-            this.tabPage3.Controls.Add(this.groupBox7);
-            this.tabPage3.Controls.Add(this.groupBox6);
-            this.tabPage3.Controls.Add(this.groupBox5);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(825, 527);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Marks Records";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(862, 498);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(110, 23);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "Update Marks";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.button5);
-            this.groupBox7.Controls.Add(this.textBox11);
-            this.groupBox7.Controls.Add(this.textBox12);
-            this.groupBox7.Location = new System.Drawing.Point(14, 147);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(981, 91);
-            this.groupBox7.TabIndex = 0;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Marks of Particular Student In a Particular Test";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(883, 53);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Search ";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(366, 29);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(184, 20);
-            this.textBox11.TabIndex = 4;
-            this.textBox11.Text = "Enter Test Id";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(105, 29);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(184, 20);
-            this.textBox12.TabIndex = 5;
-            this.textBox12.Text = "Select  Red Number";
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.dataGridView2);
-            this.groupBox6.Location = new System.Drawing.Point(14, 244);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(981, 251);
-            this.groupBox6.TabIndex = 0;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Marks Details";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 16);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(955, 209);
-            this.dataGridView2.TabIndex = 0;
+            this.tabUpdateDelete.Controls.Add(this.groupBox6);
+            this.tabUpdateDelete.Controls.Add(this.groupBox5);
+            this.tabUpdateDelete.Location = new System.Drawing.Point(4, 22);
+            this.tabUpdateDelete.Name = "tabUpdateDelete";
+            this.tabUpdateDelete.Size = new System.Drawing.Size(825, 527);
+            this.tabUpdateDelete.TabIndex = 2;
+            this.tabUpdateDelete.Text = "Update/Delete";
+            this.tabUpdateDelete.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.textBox10);
-            this.groupBox5.Controls.Add(this.button4);
-            this.groupBox5.Controls.Add(this.textBox9);
-            this.groupBox5.Controls.Add(this.textBox1);
-            this.groupBox5.Location = new System.Drawing.Point(14, 20);
+            this.groupBox5.Controls.Add(this.txtBatchNameud);
+            this.groupBox5.Controls.Add(this.label6);
+            this.groupBox5.Controls.Add(this.txtDescriptionud);
+            this.groupBox5.Controls.Add(this.txtCourseud);
+            this.groupBox5.Controls.Add(this.txtTeacherud);
+            this.groupBox5.Controls.Add(this.txtTotalMarksud);
+            this.groupBox5.Controls.Add(this.txtPassingMarksud);
+            this.groupBox5.Controls.Add(this.dtpTestDateud);
+            this.groupBox5.Controls.Add(this.label10);
+            this.groupBox5.Controls.Add(this.label11);
+            this.groupBox5.Controls.Add(this.label12);
+            this.groupBox5.Controls.Add(this.label13);
+            this.groupBox5.Controls.Add(this.label14);
+            this.groupBox5.Controls.Add(this.label15);
+            this.groupBox5.Controls.Add(this.label16);
+            this.groupBox5.Location = new System.Drawing.Point(61, 88);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(981, 105);
-            this.groupBox5.TabIndex = 0;
+            this.groupBox5.Size = new System.Drawing.Size(727, 314);
+            this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Marks Of All Students In A Particular Test";
             // 
-            // textBox10
+            // label6
             // 
-            this.textBox10.Location = new System.Drawing.Point(105, 19);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(184, 20);
-            this.textBox10.TabIndex = 3;
-            this.textBox10.Text = "Search by Course";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(27, 187);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(60, 13);
+            this.label6.TabIndex = 32;
+            this.label6.Text = "Description";
             // 
-            // button4
+            // txtDescriptionud
             // 
-            this.button4.Location = new System.Drawing.Point(883, 63);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Search ";
-            this.button4.UseVisualStyleBackColor = true;
+            this.txtDescriptionud.Location = new System.Drawing.Point(114, 187);
+            this.txtDescriptionud.Multiline = true;
+            this.txtDescriptionud.Name = "txtDescriptionud";
+            this.txtDescriptionud.Size = new System.Drawing.Size(574, 66);
+            this.txtDescriptionud.TabIndex = 1;
             // 
-            // textBox9
+            // txtCourseud
             // 
-            this.textBox9.Location = new System.Drawing.Point(652, 19);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(177, 20);
-            this.textBox9.TabIndex = 1;
-            this.textBox9.Text = "Search by Test Id";
+            this.txtCourseud.Location = new System.Drawing.Point(481, 39);
+            this.txtCourseud.Name = "txtCourseud";
+            this.txtCourseud.ReadOnly = true;
+            this.txtCourseud.Size = new System.Drawing.Size(207, 20);
+            this.txtCourseud.TabIndex = 31;
             // 
-            // textBox1
+            // txtTeacherud
             // 
-            this.textBox1.Location = new System.Drawing.Point(366, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Search by Test Date";
+            this.txtTeacherud.Location = new System.Drawing.Point(133, 79);
+            this.txtTeacherud.Name = "txtTeacherud";
+            this.txtTeacherud.ReadOnly = true;
+            this.txtTeacherud.Size = new System.Drawing.Size(207, 20);
+            this.txtTeacherud.TabIndex = 30;
             // 
-            // txtDescription
+            // txtTotalMarksud
             // 
-            this.txtDescription.Location = new System.Drawing.Point(133, 155);
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(219, 20);
-            this.txtDescription.TabIndex = 1;
+            this.txtTotalMarksud.Location = new System.Drawing.Point(133, 129);
+            this.txtTotalMarksud.Name = "txtTotalMarksud";
+            this.txtTotalMarksud.Size = new System.Drawing.Size(207, 20);
+            this.txtTotalMarksud.TabIndex = 29;
             // 
-            // label7
+            // txtPassingMarksud
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(19, 162);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 13);
-            this.label7.TabIndex = 32;
-            this.label7.Text = "Description";
+            this.txtPassingMarksud.Location = new System.Drawing.Point(481, 136);
+            this.txtPassingMarksud.Name = "txtPassingMarksud";
+            this.txtPassingMarksud.Size = new System.Drawing.Size(207, 20);
+            this.txtPassingMarksud.TabIndex = 28;
+            // 
+            // dtpTestDateud
+            // 
+            this.dtpTestDateud.Location = new System.Drawing.Point(481, 84);
+            this.dtpTestDateud.Name = "dtpTestDateud";
+            this.dtpTestDateud.Size = new System.Drawing.Size(207, 20);
+            this.dtpTestDateud.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(394, 86);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(54, 13);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Test Date";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(408, 42);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(40, 13);
+            this.label11.TabIndex = 17;
+            this.label11.Text = "Course";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 90);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(102, 13);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "Associated Teacher";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(372, 136);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(76, 13);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "Passing Marks";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(19, 136);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(63, 13);
+            this.label14.TabIndex = 12;
+            this.label14.Text = "Total Marks";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(19, 111);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(0, 13);
+            this.label15.TabIndex = 11;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(19, 37);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(35, 13);
+            this.label16.TabIndex = 8;
+            this.label16.Text = "Batch";
+            // 
+            // txtBatchNameud
+            // 
+            this.txtBatchNameud.Location = new System.Drawing.Point(133, 34);
+            this.txtBatchNameud.Name = "txtBatchNameud";
+            this.txtBatchNameud.ReadOnly = true;
+            this.txtBatchNameud.Size = new System.Drawing.Size(207, 20);
+            this.txtBatchNameud.TabIndex = 33;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.btnInActive);
+            this.groupBox6.Controls.Add(this.button2);
+            this.groupBox6.Controls.Add(this.btnUpdate);
+            this.groupBox6.Location = new System.Drawing.Point(61, 408);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(727, 59);
+            this.groupBox6.TabIndex = 2;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Actions ";
+            // 
+            // btnInActive
+            // 
+            this.btnInActive.Location = new System.Drawing.Point(631, 23);
+            this.btnInActive.Name = "btnInActive";
+            this.btnInActive.Size = new System.Drawing.Size(75, 23);
+            this.btnInActive.TabIndex = 0;
+            this.btnInActive.Text = "Inactive";
+            this.btnInActive.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(456, 23);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(144, 23);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Generate Notification";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(351, 23);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 9;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
             // Tests
             // 
@@ -513,32 +567,26 @@
             this.Load += new System.EventHandler(this.TestAndExam_WinForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
             this.tabTest.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.tabUpdateDelete.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TabControl tabTest;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label1;
@@ -553,30 +601,36 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.ComboBox cmbBatch;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.TextBox txtTeacher;
         private System.Windows.Forms.TextBox txtTotalMarks;
         private System.Windows.Forms.TextBox txtPassingMarks;
         private System.Windows.Forms.DateTimePicker dtpTestDate;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtCourse;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.ListView listViewTest;
+        private System.Windows.Forms.TabPage tabUpdateDelete;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button btnInActive;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.TextBox txtBatchNameud;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtDescriptionud;
+        private System.Windows.Forms.TextBox txtCourseud;
+        private System.Windows.Forms.TextBox txtTeacherud;
+        private System.Windows.Forms.TextBox txtTotalMarksud;
+        private System.Windows.Forms.TextBox txtPassingMarksud;
+        private System.Windows.Forms.DateTimePicker dtpTestDateud;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
     }
 }

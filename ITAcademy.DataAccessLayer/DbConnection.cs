@@ -22,6 +22,7 @@ namespace ITAcademy.DataAccessLayer
         private readonly SqlCommand _command;
         private readonly SqlDataAdapter _adapter;
         private  DataTable _datatable;
+        private ListView _listview;
         private int _status;
         public DbConnection()
         {
@@ -114,6 +115,20 @@ namespace ITAcademy.DataAccessLayer
                 throw exception;
             }
         }
+        //public ListView GetAll(String storedProcedure)
+        //{
+        //    try
+        //    {
+        //        _command.CommandText = storedProcedure;
+        //        _listview= new ListView();
+        //        //_adapter.Fill(_listview);
+        //        return _listview;
+        //    }
+        //    catch (Exception exception)
+        //    {
+        //        throw exception;
+        //    }
+        //}
 
         public string Getsinglecolumn(String storedProcedure,int id) {
             try
@@ -203,5 +218,27 @@ namespace ITAcademy.DataAccessLayer
 
 
 
+
+
+        ListView GetList(string storedProcedure)
+        {
+            try
+            {
+                _command.CommandText = storedProcedure;
+                _listview = new ListView();
+               // _adapter.Fill(_datatable);
+                return _listview;
+            }
+            catch (Exception exception)
+            {
+                throw exception;
+            }  
+        }
+
+
+        ListView IDbConnection.GetList(string storedProcedure)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

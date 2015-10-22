@@ -54,9 +54,9 @@ namespace ITAcademy.ServiceLayer
             
         }
 
-
-
-
-
+          public IEnumerable<TestTransition> GetAllTests()
+        {
+            return _testRespository.GetAllTests();
+        }
     }
 }

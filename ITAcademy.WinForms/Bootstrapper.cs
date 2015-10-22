@@ -42,6 +42,8 @@ namespace ITAcademy.WinForms
             container.RegisterType<IUserService, UserService>();
             container.RegisterType<IAttendanceRepository, AttendanceRepository>();
             container.RegisterType<IAttendanceService, AttendanceService>();
+            container.RegisterType<ICourseRepository, CourseRepository>();
+            container.RegisterType<ICourseService, CourseService>();
           
             //container.RegisterType<I>
 

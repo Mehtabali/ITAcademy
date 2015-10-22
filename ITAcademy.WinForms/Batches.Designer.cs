@@ -317,12 +317,12 @@
             this.groupBox1.Controls.Add(this.btnSearchf);
             this.groupBox1.Controls.Add(this.cmbSearch);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox1.Location = new System.Drawing.Point(235, 98);
+            this.groupBox1.Location = new System.Drawing.Point(235, 111);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(898, 131);
+            this.groupBox1.Size = new System.Drawing.Size(898, 118);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Search Student";
+            this.groupBox1.Text = "Search Batch";
             // 
             // lblEnableSearch
             // 

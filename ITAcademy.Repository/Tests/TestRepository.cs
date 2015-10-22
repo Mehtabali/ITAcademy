@@ -66,5 +66,11 @@ namespace ITAcademy.Repository
         {
             return _database.GetOne("sp_GetCourseNameFromBatches", id).ToEntity<TestTransition>();
         }
+
+
+        public IEnumerable<TestTransition> GetAllTests()
+        {
+            return _database.GetAll("sp_ShowTestDetails").ToList<TestTransition>();
+        }
     }
 }

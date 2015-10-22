@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 
 namespace ITAcademy.DataAccessLayer
@@ -14,6 +15,7 @@ namespace ITAcademy.DataAccessLayer
         int Update(String storedProcedure, Dictionary<String, String> parameters);
         int Delete(String storedProcedure, int id);
         DataTable GetAll(String storedProcedure);
+        ListView GetList(String storedProcedure); 
         DataTable GetOne(String storedProcedure, int id);
         string Getsinglecolumn(string p, int userId);
      //   DataTable GetAllOnId(String storedProcedure, int id);
