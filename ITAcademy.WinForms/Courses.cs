@@ -78,6 +78,11 @@ namespace ITAcademy.WinForms
          //   MessageBox.Show("Updated");
         }
 
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
       
     
     

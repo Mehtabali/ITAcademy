@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cmbudDesignation = new System.Windows.Forms.ComboBox();
             this.cmbudGender = new System.Windows.Forms.ComboBox();
             this.txtudUserName = new System.Windows.Forms.TextBox();
             this.txtudHiringDate = new System.Windows.Forms.TextBox();
@@ -80,6 +81,7 @@
             this.brnSave = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.grpWholeAdmissionForm = new System.Windows.Forms.GroupBox();
+            this.cmbDesignation = new System.Windows.Forms.ComboBox();
             this.dtpHiring = new System.Windows.Forms.DateTimePicker();
             this.cmbUserType = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -104,8 +106,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.cmbDesignation = new System.Windows.Forms.ComboBox();
-            this.cmbudDesignation = new System.Windows.Forms.ComboBox();
             this.tabPage3.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -123,41 +123,42 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.DimGray;
             this.tabPage3.Controls.Add(this.groupBox6);
             this.tabPage3.Controls.Add(this.groupBox3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1212, 605);
+            this.tabPage3.Size = new System.Drawing.Size(1336, 630);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Update/Delete";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.btnUpdate);
             this.groupBox6.Controls.Add(this.btnDelete);
-            this.groupBox6.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox6.Location = new System.Drawing.Point(234, 499);
+            this.groupBox6.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.ForeColor = System.Drawing.Color.Black;
+            this.groupBox6.Location = new System.Drawing.Point(319, 567);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(745, 71);
+            this.groupBox6.Size = new System.Drawing.Size(745, 60);
             this.groupBox6.TabIndex = 57;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Actions";
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(532, 30);
+            this.btnUpdate.Location = new System.Drawing.Point(532, 27);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.Size = new System.Drawing.Size(75, 33);
             this.btnUpdate.TabIndex = 1;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(613, 30);
+            this.btnDelete.Location = new System.Drawing.Point(613, 27);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(75, 33);
             this.btnDelete.TabIndex = 0;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -187,218 +188,233 @@
             this.groupBox3.Controls.Add(this.txtudFather);
             this.groupBox3.Controls.Add(this.txtudSalary);
             this.groupBox3.Controls.Add(this.groupBox5);
-            this.groupBox3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox3.Location = new System.Drawing.Point(234, 76);
+            this.groupBox3.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.ForeColor = System.Drawing.Color.Black;
+            this.groupBox3.Location = new System.Drawing.Point(319, 115);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(745, 417);
+            this.groupBox3.Size = new System.Drawing.Size(745, 446);
             this.groupBox3.TabIndex = 31;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "User Hiring Form";
             // 
+            // cmbudDesignation
+            // 
+            this.cmbudDesignation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbudDesignation.ForeColor = System.Drawing.Color.White;
+            this.cmbudDesignation.FormattingEnabled = true;
+            this.cmbudDesignation.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cmbudDesignation.Location = new System.Drawing.Point(453, 295);
+            this.cmbudDesignation.Name = "cmbudDesignation";
+            this.cmbudDesignation.Size = new System.Drawing.Size(249, 28);
+            this.cmbudDesignation.TabIndex = 58;
+            // 
             // cmbudGender
             // 
             this.cmbudGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbudGender.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.cmbudGender.ForeColor = System.Drawing.Color.White;
             this.cmbudGender.FormattingEnabled = true;
             this.cmbudGender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.cmbudGender.Location = new System.Drawing.Point(453, 215);
+            this.cmbudGender.Location = new System.Drawing.Point(453, 240);
             this.cmbudGender.Name = "cmbudGender";
-            this.cmbudGender.Size = new System.Drawing.Size(249, 21);
+            this.cmbudGender.Size = new System.Drawing.Size(249, 28);
             this.cmbudGender.TabIndex = 57;
             // 
             // txtudUserName
             // 
-            this.txtudUserName.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtudUserName.Location = new System.Drawing.Point(452, 361);
+            this.txtudUserName.ForeColor = System.Drawing.Color.White;
+            this.txtudUserName.Location = new System.Drawing.Point(452, 403);
             this.txtudUserName.Name = "txtudUserName";
-            this.txtudUserName.Size = new System.Drawing.Size(234, 20);
+            this.txtudUserName.Size = new System.Drawing.Size(249, 28);
             this.txtudUserName.TabIndex = 56;
             // 
             // txtudHiringDate
             // 
-            this.txtudHiringDate.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtudHiringDate.Location = new System.Drawing.Point(454, 311);
+            this.txtudHiringDate.ForeColor = System.Drawing.Color.White;
+            this.txtudHiringDate.Location = new System.Drawing.Point(452, 349);
             this.txtudHiringDate.Name = "txtudHiringDate";
-            this.txtudHiringDate.Size = new System.Drawing.Size(234, 20);
+            this.txtudHiringDate.Size = new System.Drawing.Size(250, 28);
             this.txtudHiringDate.TabIndex = 54;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label4.Location = new System.Drawing.Point(449, 345);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(448, 380);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 13);
+            this.label4.Size = new System.Drawing.Size(87, 20);
             this.label4.TabIndex = 51;
             this.label4.Text = "User Type";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label5.Location = new System.Drawing.Point(450, 295);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(449, 326);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 13);
+            this.label5.Size = new System.Drawing.Size(113, 20);
             this.label5.TabIndex = 50;
             this.label5.Text = "Hiring Date";
             // 
             // txtudReg
             // 
-            this.txtudReg.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtudReg.Location = new System.Drawing.Point(33, 66);
+            this.txtudReg.ForeColor = System.Drawing.Color.White;
+            this.txtudReg.Location = new System.Drawing.Point(33, 76);
             this.txtudReg.Name = "txtudReg";
-            this.txtudReg.Size = new System.Drawing.Size(234, 20);
+            this.txtudReg.Size = new System.Drawing.Size(234, 28);
             this.txtudReg.TabIndex = 32;
             // 
             // txtudName
             // 
-            this.txtudName.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtudName.Location = new System.Drawing.Point(32, 116);
+            this.txtudName.ForeColor = System.Drawing.Color.White;
+            this.txtudName.Location = new System.Drawing.Point(34, 130);
             this.txtudName.Name = "txtudName";
-            this.txtudName.Size = new System.Drawing.Size(234, 20);
+            this.txtudName.Size = new System.Drawing.Size(234, 28);
             this.txtudName.TabIndex = 2;
             // 
             // txtudQualification
             // 
-            this.txtudQualification.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtudQualification.Location = new System.Drawing.Point(33, 171);
+            this.txtudQualification.ForeColor = System.Drawing.Color.White;
+            this.txtudQualification.Location = new System.Drawing.Point(33, 184);
             this.txtudQualification.Name = "txtudQualification";
-            this.txtudQualification.Size = new System.Drawing.Size(234, 20);
+            this.txtudQualification.Size = new System.Drawing.Size(234, 28);
             this.txtudQualification.TabIndex = 30;
             this.txtudQualification.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // txtudEmail
             // 
-            this.txtudEmail.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtudEmail.Location = new System.Drawing.Point(33, 363);
+            this.txtudEmail.ForeColor = System.Drawing.Color.White;
+            this.txtudEmail.Location = new System.Drawing.Point(33, 403);
             this.txtudEmail.Name = "txtudEmail";
-            this.txtudEmail.Size = new System.Drawing.Size(234, 20);
+            this.txtudEmail.Size = new System.Drawing.Size(234, 28);
             this.txtudEmail.TabIndex = 48;
+            this.txtudEmail.TextChanged += new System.EventHandler(this.txtudEmail_TextChanged);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label11.Location = new System.Drawing.Point(36, 347);
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(29, 380);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(32, 13);
+            this.label11.Size = new System.Drawing.Size(59, 20);
             this.label11.TabIndex = 43;
             this.label11.Text = "Email";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label12.Location = new System.Drawing.Point(451, 249);
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(449, 271);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(63, 13);
+            this.label12.Size = new System.Drawing.Size(115, 20);
             this.label12.TabIndex = 41;
             this.label12.Text = "Designation";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label15.Location = new System.Drawing.Point(457, 199);
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(457, 215);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(42, 13);
+            this.label15.Size = new System.Drawing.Size(70, 20);
             this.label15.TabIndex = 40;
             this.label15.Text = "Gender";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label16.Location = new System.Drawing.Point(30, 50);
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(30, 53);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(103, 13);
+            this.label16.Size = new System.Drawing.Size(189, 20);
             this.label16.TabIndex = 38;
             this.label16.Text = "Registration Number";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label17.Location = new System.Drawing.Point(30, 251);
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(30, 271);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(84, 13);
+            this.label17.Size = new System.Drawing.Size(149, 20);
             this.label17.TabIndex = 37;
             this.label17.Text = "Contact Number";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label18.Location = new System.Drawing.Point(30, 100);
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(30, 107);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(38, 13);
+            this.label18.Size = new System.Drawing.Size(63, 20);
             this.label18.TabIndex = 36;
             this.label18.Text = " Name";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label19.Location = new System.Drawing.Point(30, 154);
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(28, 161);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(65, 13);
+            this.label19.Size = new System.Drawing.Size(128, 20);
             this.label19.TabIndex = 35;
             this.label19.Text = "Qualification";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label20.Location = new System.Drawing.Point(30, 203);
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(30, 215);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(36, 13);
+            this.label20.Size = new System.Drawing.Size(64, 20);
             this.label20.TabIndex = 34;
             this.label20.Text = "Salary";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label21.Location = new System.Drawing.Point(30, 297);
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(28, 326);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(68, 13);
+            this.label21.Size = new System.Drawing.Size(119, 20);
             this.label21.TabIndex = 33;
             this.label21.Text = "Father Name";
             // 
             // txtudContact
             // 
-            this.txtudContact.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtudContact.Location = new System.Drawing.Point(33, 267);
+            this.txtudContact.ForeColor = System.Drawing.Color.White;
+            this.txtudContact.Location = new System.Drawing.Point(33, 295);
             this.txtudContact.Name = "txtudContact";
-            this.txtudContact.Size = new System.Drawing.Size(234, 20);
+            this.txtudContact.Size = new System.Drawing.Size(234, 28);
             this.txtudContact.TabIndex = 31;
             // 
             // txtudFather
             // 
-            this.txtudFather.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtudFather.Location = new System.Drawing.Point(33, 313);
+            this.txtudFather.ForeColor = System.Drawing.Color.White;
+            this.txtudFather.Location = new System.Drawing.Point(34, 349);
             this.txtudFather.Name = "txtudFather";
-            this.txtudFather.Size = new System.Drawing.Size(234, 20);
+            this.txtudFather.Size = new System.Drawing.Size(234, 28);
             this.txtudFather.TabIndex = 29;
             // 
             // txtudSalary
             // 
-            this.txtudSalary.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtudSalary.Location = new System.Drawing.Point(33, 219);
+            this.txtudSalary.ForeColor = System.Drawing.Color.White;
+            this.txtudSalary.Location = new System.Drawing.Point(34, 240);
             this.txtudSalary.Name = "txtudSalary";
-            this.txtudSalary.Size = new System.Drawing.Size(234, 20);
+            this.txtudSalary.Size = new System.Drawing.Size(234, 28);
             this.txtudSalary.TabIndex = 28;
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.linkLabel3);
             this.groupBox5.Controls.Add(this.linkLabel4);
-            this.groupBox5.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox5.Location = new System.Drawing.Point(452, 50);
+            this.groupBox5.ForeColor = System.Drawing.Color.White;
+            this.groupBox5.Location = new System.Drawing.Point(452, 53);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(249, 125);
+            this.groupBox5.Size = new System.Drawing.Size(249, 141);
             this.groupBox5.TabIndex = 26;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Employee Photo";
@@ -408,7 +424,7 @@
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.Location = new System.Drawing.Point(149, 105);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(34, 13);
+            this.linkLabel3.Size = new System.Drawing.Size(55, 20);
             this.linkLabel3.TabIndex = 1;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Zoom";
@@ -418,28 +434,29 @@
             this.linkLabel4.AutoSize = true;
             this.linkLabel4.Location = new System.Drawing.Point(6, 105);
             this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(73, 13);
+            this.linkLabel4.Size = new System.Drawing.Size(119, 20);
             this.linkLabel4.TabIndex = 0;
             this.linkLabel4.TabStop = true;
             this.linkLabel4.Text = "Browse Photo";
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.DimGray;
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1212, 605);
+            this.tabPage2.Size = new System.Drawing.Size(1336, 630);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "View All";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.dgvUsersList);
-            this.groupBox4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox4.Location = new System.Drawing.Point(232, 225);
+            this.groupBox4.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.ForeColor = System.Drawing.Color.Black;
+            this.groupBox4.Location = new System.Drawing.Point(319, 263);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(898, 268);
             this.groupBox4.TabIndex = 5;
@@ -448,7 +465,7 @@
             // 
             // dgvUsersList
             // 
-            this.dgvUsersList.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dgvUsersList.BackgroundColor = System.Drawing.Color.DimGray;
             this.dgvUsersList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvUsersList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.dgvUsersList.ColumnHeadersHeight = 25;
@@ -468,9 +485,9 @@
             this.dgvUsersList.Location = new System.Drawing.Point(28, 26);
             this.dgvUsersList.Name = "dgvUsersList";
             this.dgvUsersList.RowHeadersWidth = 50;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(5);
-            this.dgvUsersList.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(5);
+            this.dgvUsersList.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvUsersList.Size = new System.Drawing.Size(864, 229);
             this.dgvUsersList.TabIndex = 1;
             this.dgvUsersList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsersList_CellDoubleClick);
@@ -543,8 +560,9 @@
             this.groupBox2.Controls.Add(this.lblEnableSearch);
             this.groupBox2.Controls.Add(this.btnSearchf);
             this.groupBox2.Controls.Add(this.cmbSearchUser);
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox2.Location = new System.Drawing.Point(232, 77);
+            this.groupBox2.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
+            this.groupBox2.Location = new System.Drawing.Point(319, 115);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(898, 131);
             this.groupBox2.TabIndex = 6;
@@ -554,17 +572,17 @@
             // lblEnableSearch
             // 
             this.lblEnableSearch.AutoSize = true;
-            this.lblEnableSearch.Location = new System.Drawing.Point(329, 16);
+            this.lblEnableSearch.Location = new System.Drawing.Point(258, 31);
             this.lblEnableSearch.Name = "lblEnableSearch";
-            this.lblEnableSearch.Size = new System.Drawing.Size(76, 13);
+            this.lblEnableSearch.Size = new System.Drawing.Size(129, 20);
             this.lblEnableSearch.TabIndex = 3;
             this.lblEnableSearch.Text = "enable Search";
             // 
             // btnSearchf
             // 
-            this.btnSearchf.Location = new System.Drawing.Point(522, 74);
+            this.btnSearchf.Location = new System.Drawing.Point(547, 54);
             this.btnSearchf.Name = "btnSearchf";
-            this.btnSearchf.Size = new System.Drawing.Size(82, 23);
+            this.btnSearchf.Size = new System.Drawing.Size(82, 28);
             this.btnSearchf.TabIndex = 2;
             this.btnSearchf.Text = "Search";
             this.btnSearchf.UseVisualStyleBackColor = true;
@@ -573,31 +591,32 @@
             // 
             this.cmbSearchUser.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSearchUser.FormattingEnabled = true;
-            this.cmbSearchUser.Location = new System.Drawing.Point(325, 47);
+            this.cmbSearchUser.Location = new System.Drawing.Point(262, 54);
             this.cmbSearchUser.Name = "cmbSearchUser";
-            this.cmbSearchUser.Size = new System.Drawing.Size(279, 21);
+            this.cmbSearchUser.Size = new System.Drawing.Size(279, 28);
             this.cmbSearchUser.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.DimGray;
             this.tabPage1.Controls.Add(this.grpButtons);
             this.tabPage1.Controls.Add(this.grpWholeAdmissionForm);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1212, 605);
+            this.tabPage1.Size = new System.Drawing.Size(1336, 630);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Hire";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // grpButtons
             // 
             this.grpButtons.Controls.Add(this.brnSave);
             this.grpButtons.Controls.Add(this.btnReset);
-            this.grpButtons.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.grpButtons.Location = new System.Drawing.Point(228, 511);
+            this.grpButtons.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpButtons.ForeColor = System.Drawing.Color.Black;
+            this.grpButtons.Location = new System.Drawing.Point(319, 564);
             this.grpButtons.Name = "grpButtons";
-            this.grpButtons.Size = new System.Drawing.Size(745, 47);
+            this.grpButtons.Size = new System.Drawing.Size(745, 60);
             this.grpButtons.TabIndex = 31;
             this.grpButtons.TabStop = false;
             this.grpButtons.Text = "Actions";
@@ -606,7 +625,7 @@
             // 
             this.brnSave.Location = new System.Drawing.Point(500, 19);
             this.brnSave.Name = "brnSave";
-            this.brnSave.Size = new System.Drawing.Size(88, 22);
+            this.brnSave.Size = new System.Drawing.Size(88, 35);
             this.brnSave.TabIndex = 27;
             this.brnSave.Text = "Save";
             this.brnSave.UseVisualStyleBackColor = true;
@@ -615,7 +634,7 @@
             // 
             this.btnReset.Location = new System.Drawing.Point(619, 19);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(84, 22);
+            this.btnReset.Size = new System.Drawing.Size(84, 35);
             this.btnReset.TabIndex = 28;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
@@ -645,19 +664,33 @@
             this.grpWholeAdmissionForm.Controls.Add(this.txtFatherName);
             this.grpWholeAdmissionForm.Controls.Add(this.txtSalary);
             this.grpWholeAdmissionForm.Controls.Add(this.groupBox1);
-            this.grpWholeAdmissionForm.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.grpWholeAdmissionForm.Location = new System.Drawing.Point(228, 78);
+            this.grpWholeAdmissionForm.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpWholeAdmissionForm.ForeColor = System.Drawing.Color.Black;
+            this.grpWholeAdmissionForm.Location = new System.Drawing.Point(319, 115);
             this.grpWholeAdmissionForm.Name = "grpWholeAdmissionForm";
-            this.grpWholeAdmissionForm.Size = new System.Drawing.Size(745, 417);
+            this.grpWholeAdmissionForm.Size = new System.Drawing.Size(745, 438);
             this.grpWholeAdmissionForm.TabIndex = 30;
             this.grpWholeAdmissionForm.TabStop = false;
             this.grpWholeAdmissionForm.Text = "User Hiring Form";
             // 
+            // cmbDesignation
+            // 
+            this.cmbDesignation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDesignation.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.cmbDesignation.FormattingEnabled = true;
+            this.cmbDesignation.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cmbDesignation.Location = new System.Drawing.Point(455, 276);
+            this.cmbDesignation.Name = "cmbDesignation";
+            this.cmbDesignation.Size = new System.Drawing.Size(249, 28);
+            this.cmbDesignation.TabIndex = 54;
+            // 
             // dtpHiring
             // 
-            this.dtpHiring.Location = new System.Drawing.Point(454, 311);
+            this.dtpHiring.Location = new System.Drawing.Point(452, 330);
             this.dtpHiring.Name = "dtpHiring";
-            this.dtpHiring.Size = new System.Drawing.Size(249, 20);
+            this.dtpHiring.Size = new System.Drawing.Size(249, 28);
             this.dtpHiring.TabIndex = 53;
             // 
             // cmbUserType
@@ -665,188 +698,188 @@
             this.cmbUserType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbUserType.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.cmbUserType.FormattingEnabled = true;
-            this.cmbUserType.Location = new System.Drawing.Point(454, 361);
+            this.cmbUserType.Location = new System.Drawing.Point(455, 387);
             this.cmbUserType.Name = "cmbUserType";
-            this.cmbUserType.Size = new System.Drawing.Size(249, 21);
+            this.cmbUserType.Size = new System.Drawing.Size(249, 28);
             this.cmbUserType.TabIndex = 52;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(449, 345);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(457, 364);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.Size = new System.Drawing.Size(87, 20);
             this.label1.TabIndex = 51;
             this.label1.Text = "User Type";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label2.Location = new System.Drawing.Point(450, 295);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(450, 307);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.Size = new System.Drawing.Size(113, 20);
             this.label2.TabIndex = 50;
             this.label2.Text = "Hiring Date";
             // 
             // txtRegistrationNumber
             // 
-            this.txtRegistrationNumber.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtRegistrationNumber.Location = new System.Drawing.Point(33, 66);
+            this.txtRegistrationNumber.ForeColor = System.Drawing.Color.White;
+            this.txtRegistrationNumber.Location = new System.Drawing.Point(34, 73);
             this.txtRegistrationNumber.Name = "txtRegistrationNumber";
-            this.txtRegistrationNumber.Size = new System.Drawing.Size(234, 20);
+            this.txtRegistrationNumber.Size = new System.Drawing.Size(234, 28);
             this.txtRegistrationNumber.TabIndex = 32;
             // 
             // txtName
             // 
-            this.txtName.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtName.Location = new System.Drawing.Point(33, 116);
+            this.txtName.ForeColor = System.Drawing.Color.White;
+            this.txtName.Location = new System.Drawing.Point(34, 123);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(234, 20);
+            this.txtName.Size = new System.Drawing.Size(234, 28);
             this.txtName.TabIndex = 2;
             // 
             // txtQualification
             // 
-            this.txtQualification.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtQualification.Location = new System.Drawing.Point(33, 171);
+            this.txtQualification.ForeColor = System.Drawing.Color.White;
+            this.txtQualification.Location = new System.Drawing.Point(34, 177);
             this.txtQualification.Name = "txtQualification";
-            this.txtQualification.Size = new System.Drawing.Size(234, 20);
+            this.txtQualification.Size = new System.Drawing.Size(234, 28);
             this.txtQualification.TabIndex = 30;
             // 
             // cmbGender
             // 
             this.cmbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbGender.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.cmbGender.ForeColor = System.Drawing.Color.White;
             this.cmbGender.FormattingEnabled = true;
             this.cmbGender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.cmbGender.Location = new System.Drawing.Point(454, 215);
+            this.cmbGender.Location = new System.Drawing.Point(455, 222);
             this.cmbGender.Name = "cmbGender";
-            this.cmbGender.Size = new System.Drawing.Size(249, 21);
+            this.cmbGender.Size = new System.Drawing.Size(249, 28);
             this.cmbGender.TabIndex = 1;
             // 
             // txtEmail
             // 
-            this.txtEmail.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtEmail.Location = new System.Drawing.Point(33, 363);
+            this.txtEmail.ForeColor = System.Drawing.Color.White;
+            this.txtEmail.Location = new System.Drawing.Point(33, 387);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(234, 20);
+            this.txtEmail.Size = new System.Drawing.Size(234, 28);
             this.txtEmail.TabIndex = 48;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label13.Location = new System.Drawing.Point(36, 347);
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(29, 364);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(32, 13);
+            this.label13.Size = new System.Drawing.Size(59, 20);
             this.label13.TabIndex = 43;
             this.label13.Text = "Email";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label10.Location = new System.Drawing.Point(451, 249);
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(451, 257);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(63, 13);
+            this.label10.Size = new System.Drawing.Size(115, 20);
             this.label10.TabIndex = 41;
             this.label10.Text = "Designation";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(457, 199);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.Size = new System.Drawing.Size(70, 20);
             this.label3.TabIndex = 40;
             this.label3.Text = "Gender";
             // 
             // lblRegistration
             // 
             this.lblRegistration.AutoSize = true;
-            this.lblRegistration.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblRegistration.ForeColor = System.Drawing.Color.White;
             this.lblRegistration.Location = new System.Drawing.Point(30, 50);
             this.lblRegistration.Name = "lblRegistration";
-            this.lblRegistration.Size = new System.Drawing.Size(103, 13);
+            this.lblRegistration.Size = new System.Drawing.Size(189, 20);
             this.lblRegistration.TabIndex = 38;
             this.lblRegistration.Text = "Registration Number";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label14.Location = new System.Drawing.Point(30, 251);
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(29, 257);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(84, 13);
+            this.label14.Size = new System.Drawing.Size(149, 20);
             this.label14.TabIndex = 37;
             this.label14.Text = "Contact Number";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(30, 100);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 13);
+            this.label9.Size = new System.Drawing.Size(63, 20);
             this.label9.TabIndex = 36;
             this.label9.Text = " Name";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(30, 154);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 13);
+            this.label8.Size = new System.Drawing.Size(128, 20);
             this.label8.TabIndex = 35;
             this.label8.Text = "Qualification";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(30, 203);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(36, 13);
+            this.label7.Size = new System.Drawing.Size(64, 20);
             this.label7.TabIndex = 34;
             this.label7.Text = "Salary";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label6.Location = new System.Drawing.Point(30, 297);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(29, 311);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 13);
+            this.label6.Size = new System.Drawing.Size(119, 20);
             this.label6.TabIndex = 33;
             this.label6.Text = "Father Name";
             // 
             // txtContactNumber
             // 
-            this.txtContactNumber.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtContactNumber.Location = new System.Drawing.Point(33, 267);
+            this.txtContactNumber.ForeColor = System.Drawing.Color.White;
+            this.txtContactNumber.Location = new System.Drawing.Point(33, 280);
             this.txtContactNumber.Name = "txtContactNumber";
-            this.txtContactNumber.Size = new System.Drawing.Size(234, 20);
+            this.txtContactNumber.Size = new System.Drawing.Size(234, 28);
             this.txtContactNumber.TabIndex = 31;
             // 
             // txtFatherName
             // 
-            this.txtFatherName.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtFatherName.Location = new System.Drawing.Point(33, 313);
+            this.txtFatherName.ForeColor = System.Drawing.Color.White;
+            this.txtFatherName.Location = new System.Drawing.Point(33, 333);
             this.txtFatherName.Name = "txtFatherName";
-            this.txtFatherName.Size = new System.Drawing.Size(234, 20);
+            this.txtFatherName.Size = new System.Drawing.Size(234, 28);
             this.txtFatherName.TabIndex = 29;
             // 
             // txtSalary
             // 
-            this.txtSalary.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtSalary.Location = new System.Drawing.Point(33, 219);
+            this.txtSalary.ForeColor = System.Drawing.Color.White;
+            this.txtSalary.Location = new System.Drawing.Point(33, 226);
             this.txtSalary.Name = "txtSalary";
-            this.txtSalary.Size = new System.Drawing.Size(234, 20);
+            this.txtSalary.Size = new System.Drawing.Size(234, 28);
             this.txtSalary.TabIndex = 28;
             // 
             // groupBox1
@@ -855,7 +888,7 @@
             this.groupBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBox1.Location = new System.Drawing.Point(452, 50);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(249, 125);
+            this.groupBox1.Size = new System.Drawing.Size(249, 146);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Student Photo";
@@ -865,7 +898,7 @@
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Location = new System.Drawing.Point(19, 104);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(34, 13);
+            this.linkLabel2.Size = new System.Drawing.Size(55, 20);
             this.linkLabel2.TabIndex = 1;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Zoom";
@@ -878,43 +911,19 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1220, 631);
+            this.tabControl1.Size = new System.Drawing.Size(1344, 656);
             this.tabControl1.TabIndex = 2;
-            // 
-            // cmbDesignation
-            // 
-            this.cmbDesignation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbDesignation.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.cmbDesignation.FormattingEnabled = true;
-            this.cmbDesignation.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.cmbDesignation.Location = new System.Drawing.Point(454, 271);
-            this.cmbDesignation.Name = "cmbDesignation";
-            this.cmbDesignation.Size = new System.Drawing.Size(249, 21);
-            this.cmbDesignation.TabIndex = 54;
-            // 
-            // cmbudDesignation
-            // 
-            this.cmbudDesignation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbudDesignation.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.cmbudDesignation.FormattingEnabled = true;
-            this.cmbudDesignation.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.cmbudDesignation.Location = new System.Drawing.Point(454, 271);
-            this.cmbudDesignation.Name = "cmbudDesignation";
-            this.cmbudDesignation.Size = new System.Drawing.Size(249, 21);
-            this.cmbudDesignation.TabIndex = 58;
             // 
             // Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1259, 675);
+            this.ClientSize = new System.Drawing.Size(1368, 680);
+            this.ControlBox = false;
             this.Controls.Add(this.tabControl1);
             this.Name = "Users";
             this.Text = "Users";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Users_Load);
             this.tabPage3.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);

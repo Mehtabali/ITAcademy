@@ -77,6 +77,16 @@ namespace ITAcademy.WinForms
 
         }
 
+        private void grpWholeAdmissionForm_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFatherName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     
     }
 }

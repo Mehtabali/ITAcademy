@@ -63,5 +63,10 @@ namespace ITAcademy.WinForms
         {
 
         }
+
+        private void txtudEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
