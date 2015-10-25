@@ -12,12 +12,11 @@ namespace ITAcademy.Repository
    public interface ITestRepository:IRepository<Test>
     {
        IEnumerable<Batch> GetAllBatches();
-       IEnumerable<TestTransition> GetAllTests();
+       IEnumerable<TestTransition> GetTestList { get; }
         //Test specific methods can be declared here
         //It is because the the Interface segregation principle of SOLID oops states so
-
-
-
-       TestTransition GetBatchDetails(int id);
+        TestTransition GetBatchDetails(int id);
+        IEnumerable<Course> GetAllCourses();
+        IEnumerable<User> GetAllTeachers(); 
     }
 }

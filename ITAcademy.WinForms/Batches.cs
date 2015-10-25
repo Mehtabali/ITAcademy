@@ -29,7 +29,7 @@ namespace ITAcademy.WinForms
         {
             batchServices = _batchService;
             InitializeComponent();
-            dgvList.AutoGenerateColumns = false;
+           dgvList.AutoGenerateColumns = false;
         }
         private void Batches_Load(object sender, EventArgs e)
         {

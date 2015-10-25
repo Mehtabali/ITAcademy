@@ -13,23 +13,22 @@ namespace ITAcademy.Repository
         [Dependency]
         public IDbConnection _database { get; set; }
 
-        public IEnumerable<Test> List
+        public IEnumerable<TestTransition> GetTestList
         {
-            //will get all tests from db
-            //yes th masla kya hai kya smjh nhi aa rha tha
-            // like apny student wala jo bhi banaya us mai ik relationship nazer araha hai ..
-
-            // winfrom m ik function h jo servive class m hai ,, service class m ik function h jo repository m haia nd reposity m database ka function hai .. ik link h sb mai
-            // mere pass winform sai direct database m functio h bs :(
-            get { throw new NotImplementedException(); }
+            get
+            {
+                return _database.GetAll("sp_ShowTestDetails").ToList<TestTransition>();
+            }
+        
         }
 
         public int Create(Test entity)
         {
             Dictionary<String, string> _parameters = new Dictionary<string, string>();
-
-            _parameters.Add("Courses_Id",  entity.Courses_Id.ToString());
+            _parameters.Add("Name", entity.Name);
+            _parameters.Add("Courses_Id", entity.Courses_Id.ToString());
             _parameters.Add("Batches_Id", entity.Batches_Id.ToString());
+            _parameters.Add("TestDate", entity.TestDate.ToString());
             _parameters.Add("Teacher_Id", entity.Teachers_Id.ToString());
             _parameters.Add("Description", entity.Description);
             _parameters.Add("PassingMarks", entity.PassingMarks.ToString());
@@ -43,12 +42,23 @@ namespace ITAcademy.Repository
 
         public int Delete(int id)
         {
-            throw new NotImplementedException();
+            return _database.Delete("sp_DeleteTest", id);
         }
 
         public int Update(Test entity)
         {
-            throw new NotImplementedException();
+
+            Dictionary<String, string> _parameters = new Dictionary<string, string>();
+            _parameters.Add("Id", entity.Id.ToString());
+            _parameters.Add("Name", entity.Name);
+            _parameters.Add("Courses_Id", entity.Courses_Id.ToString());
+            _parameters.Add("Batches_Id", entity.Batches_Id.ToString());
+          //  _parameters.Add("TestDate", entity.TestDate.ToString());
+            _parameters.Add("Teacher_Id", entity.Teachers_Id.ToString());
+            _parameters.Add("PassingMarks", entity.PassingMarks.ToString());
+            _parameters.Add("TotalMarks", entity.TotalMarks.ToString());
+           
+            return _database.Update("sp_UpdateTest", _parameters);
         }
 
         public Test FindById(int Id)
@@ -68,9 +78,29 @@ namespace ITAcademy.Repository
         }
 
 
-        public IEnumerable<TestTransition> GetAllTests()
+    //    public IEnumerable<TestTransition> GetAllTests()
+    //    {
+    //        return _database.GetAll("sp_ShowTestDetails").ToList<TestTransition>();
+    //    }
+
+
+      
+        IEnumerable<Test> IRepository<Test>.List
         {
-            return _database.GetAll("sp_ShowTestDetails").ToList<TestTransition>();
+            get { throw new NotImplementedException(); }
+        }
+
+
+        public IEnumerable<Course> GetAllCourses()
+        {
+            return _database.GetAll("sp_GetAllCourses").ToList<Course>();
+            
+        }
+
+
+        public IEnumerable<User> GetAllTeachers()
+        {
+            return _database.GetAll("sp_GetAllTeachers").ToList<User>();
         }
     }
 }

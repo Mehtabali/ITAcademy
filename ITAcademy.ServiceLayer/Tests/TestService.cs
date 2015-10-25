@@ -16,9 +16,9 @@ namespace ITAcademy.ServiceLayer
         [Dependency]
         public ITestRepository _testRespository { get; set; }
 
-        public IEnumerable<Test> GetAllTest()
+        public IEnumerable<TestTransition> GetAllTest()
         {
-            throw new NotImplementedException();
+            return _testRespository.GetTestList;
         }
 
         public int CreateTest(Test test)
@@ -33,12 +33,12 @@ namespace ITAcademy.ServiceLayer
 
         public int Update(Test test)
         {
-            throw new NotImplementedException();
+            return _testRespository.Update(test);
         }
 
         public int Delete(int id)
         {
-            throw new NotImplementedException();
+            return _testRespository.Delete(id);
         }
 
 
@@ -54,9 +54,21 @@ namespace ITAcademy.ServiceLayer
             
         }
 
-          public IEnumerable<TestTransition> GetAllTests()
+
+
+
+        public IEnumerable<Course> GetAllCourses()
         {
-            return _testRespository.GetAllTests();
+            return _testRespository.GetAllCourses();
         }
+
+
+        public IEnumerable<User> GetAllTeachers()
+        {
+            return _testRespository.GetAllTeachers();
+        }
+
+
+      
     }
 }
