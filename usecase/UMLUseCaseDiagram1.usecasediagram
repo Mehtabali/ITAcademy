@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="d6cff658-450f-49e0-bcc6-24dd63b9f2e3" name="UMLUseCaseDiagram1" linkedPackageId="9b39ed7b-6e2e-42ee-bc2c-5515f4b3e519" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="bb0d3236-d210-4450-9f19-875cc7d4cdb7">
+      <profileInstance Id="92d972dc-e110-4996-87d0-2c15f17c2430" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="978aed70-2670-4dc2-801e-0ba5b62f5a2a">
+      <profileInstance Id="2542504d-6021-46ba-90f2-963d19bec2dc" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="3900728c-7cb3-46c6-a6d6-938f9d135719" name="Teacher " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="98eacfb7-698d-4b7f-965c-bda97b28998c" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="29b1e1b5-f6ff-4317-b8af-4d9e7cfb2c9d" name="UseCase1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8efd28bc-1447-4497-b839-cd684db54729" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ebc9b47a-3df8-458d-b49f-16293cc19dec" name="UseCase11" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d252e92f-85d9-4a65-942f-b3a5015142c8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="30b3e3f6-76f6-4296-b510-c9f4589ee88d" name="UseCase12" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0e662b3f-25c8-4010-945d-37292ca9225e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="9b39ed7b-6e2e-42ee-bc2c-5515f4b3e519" name="usecase">
+    <elementDefinition Id="f9528e94-951e-48f1-8589-afc4faa11dfc" />
+  </package>
+</useCaseModelRoot>

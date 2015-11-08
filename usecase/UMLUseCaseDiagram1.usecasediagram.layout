@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagram1">
+  <useCaseModelRootMoniker Id="d6cff658-450f-49e0-bcc6-24dd63b9f2e3" />
+  <nestedChildShapes>
+    <actorShape Id="03e5464f-c314-4cae-b7c6-7ad8138fcbcc" absoluteBounds="1.5, 1.5, 0.875, 0.875" isReference="false" heightOffset="0">
+      <actorMoniker Id="3900728c-7cb3-46c6-a6d6-938f9d135719" LastKnownName="Teacher " />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="3a65b5d2-f661-4636-ba1e-83de86421af0" absoluteBounds="4.25, 1, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="29b1e1b5-f6ff-4317-b8af-4d9e7cfb2c9d" LastKnownName="UseCase1" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="1049163e-8461-49dc-92fc-1b70b2fc6ac7" absoluteBounds="4.25, 3.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="ebc9b47a-3df8-458d-b49f-16293cc19dec" LastKnownName="UseCase11" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="12e3fe54-4d9b-476a-992c-59faa6510915" absoluteBounds="4.25, 2, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="30b3e3f6-76f6-4296-b510-c9f4589ee88d" LastKnownName="UseCase12" />
+      <relativeChildShapes />
+    </useCaseShape>
+  </nestedChildShapes>
+</useCaseDiagram>
