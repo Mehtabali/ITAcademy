@@ -13,27 +13,28 @@ using ITAcademy.DataModels;
 using System.ComponentModel.DataAnnotations;
 namespace ITAcademy.WinForms
 {
-    public partial class AdmissionForm : Form
+    public partial class Admissions : Form
     {
-        [Dependency]
+        [Dependency]        //DI 
         public IStudentService _studentService { get; set; }
         Student student;
-        public AdmissionForm()
+        public Admissions()
         {
             InitializeComponent();
 
         }
 
         //Constructor Injection
-        public AdmissionForm(IStudentService studentService)
+        public Admissions(IStudentService studentService ,Student _student)
         {
             _studentService = studentService;
+            student = _student;
             InitializeComponent();
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
             //Ta1ke data from user 
-          
+            student = new Student(); //data model   //save data in object 
             student.Name = txtName.Text;
             student.Mobile = txtContactNumber.Text;
             student.Email = txtEmail.Text;
@@ -42,7 +43,8 @@ namespace ITAcademy.WinForms
             student.Address = txtAddress.Text;
             student.City = txtCity.Text;
             student.PIN= txtPin.Text;
-            student.DOB = Convert.ToDateTime(txtDob.Text);
+          //  student.DOB =  DateTime.TryParseExact(txtDob.Text,
+            student.DOB =  Convert.ToDateTime(dtpDob.Text);
        
 
             ValidationContext context = new ValidationContext(student, null, null);
@@ -56,7 +58,7 @@ namespace ITAcademy.WinForms
             else
             {
                 MessageBox.Show("Validated");
-                _studentService.CreateStudent(student);
+                _studentService.CreateStudent(student); //  
             }
         }
 

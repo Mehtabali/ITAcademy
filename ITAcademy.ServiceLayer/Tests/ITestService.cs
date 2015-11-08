@@ -18,9 +18,8 @@ namespace ITAcademy.ServiceLayer
         TestTransition GetBatchDetails(int batchId);
          IEnumerable<Course> GetAllCourses();
          IEnumerable<User> GetAllTeachers();
-       
+         IEnumerable<Notification> GetStudentInfoForMail();
 
-
-
+         void Send(Mail _mail);
     }
 }

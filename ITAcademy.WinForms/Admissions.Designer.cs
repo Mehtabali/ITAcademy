@@ -1,6 +1,6 @@
 ﻿namespace ITAcademy.WinForms
 {
-    partial class AdmissionForm
+    partial class Admissions
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,6 @@
             this.grpWholeAdmissionForm = new System.Windows.Forms.GroupBox();
             this.txtRegistrationNumber = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.txtDob = new System.Windows.Forms.TextBox();
             this.cmbGender = new System.Windows.Forms.ComboBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPin = new System.Windows.Forms.TextBox();
@@ -57,6 +56,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.dtpDob = new System.Windows.Forms.DateTimePicker();
             this.grpButtons.SuspendLayout();
             this.grpWholeAdmissionForm.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -101,9 +101,9 @@
             // 
             // grpWholeAdmissionForm
             // 
+            this.grpWholeAdmissionForm.Controls.Add(this.dtpDob);
             this.grpWholeAdmissionForm.Controls.Add(this.txtRegistrationNumber);
             this.grpWholeAdmissionForm.Controls.Add(this.txtName);
-            this.grpWholeAdmissionForm.Controls.Add(this.txtDob);
             this.grpWholeAdmissionForm.Controls.Add(this.cmbGender);
             this.grpWholeAdmissionForm.Controls.Add(this.txtEmail);
             this.grpWholeAdmissionForm.Controls.Add(this.txtPin);
@@ -137,7 +137,7 @@
             // txtRegistrationNumber
             // 
             this.txtRegistrationNumber.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegistrationNumber.ForeColor = System.Drawing.Color.White;
+            this.txtRegistrationNumber.ForeColor = System.Drawing.Color.Black;
             this.txtRegistrationNumber.Location = new System.Drawing.Point(34, 73);
             this.txtRegistrationNumber.Name = "txtRegistrationNumber";
             this.txtRegistrationNumber.Size = new System.Drawing.Size(234, 28);
@@ -147,25 +147,16 @@
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.ForeColor = System.Drawing.Color.White;
+            this.txtName.ForeColor = System.Drawing.Color.Black;
             this.txtName.Location = new System.Drawing.Point(33, 123);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(234, 28);
             this.txtName.TabIndex = 1;
             // 
-            // txtDob
-            // 
-            this.txtDob.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDob.ForeColor = System.Drawing.Color.White;
-            this.txtDob.Location = new System.Drawing.Point(34, 177);
-            this.txtDob.Name = "txtDob";
-            this.txtDob.Size = new System.Drawing.Size(234, 28);
-            this.txtDob.TabIndex = 2;
-            // 
             // cmbGender
             // 
             this.cmbGender.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbGender.ForeColor = System.Drawing.Color.White;
+            this.cmbGender.ForeColor = System.Drawing.Color.Black;
             this.cmbGender.FormattingEnabled = true;
             this.cmbGender.Items.AddRange(new object[] {
             "Male",
@@ -179,7 +170,7 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.ForeColor = System.Drawing.Color.White;
+            this.txtEmail.ForeColor = System.Drawing.Color.Black;
             this.txtEmail.Location = new System.Drawing.Point(33, 402);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(234, 28);
@@ -188,7 +179,7 @@
             // txtPin
             // 
             this.txtPin.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPin.ForeColor = System.Drawing.Color.White;
+            this.txtPin.ForeColor = System.Drawing.Color.Black;
             this.txtPin.Location = new System.Drawing.Point(454, 236);
             this.txtPin.Name = "txtPin";
             this.txtPin.Size = new System.Drawing.Size(249, 28);
@@ -197,7 +188,7 @@
             // txtCity
             // 
             this.txtCity.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCity.ForeColor = System.Drawing.Color.White;
+            this.txtCity.ForeColor = System.Drawing.Color.Black;
             this.txtCity.Location = new System.Drawing.Point(454, 348);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(249, 28);
@@ -206,7 +197,7 @@
             // txtGuardianNumber
             // 
             this.txtGuardianNumber.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGuardianNumber.ForeColor = System.Drawing.Color.White;
+            this.txtGuardianNumber.ForeColor = System.Drawing.Color.Black;
             this.txtGuardianNumber.Location = new System.Drawing.Point(454, 402);
             this.txtGuardianNumber.Name = "txtGuardianNumber";
             this.txtGuardianNumber.Size = new System.Drawing.Size(249, 28);
@@ -336,7 +327,7 @@
             // txtContactNumber
             // 
             this.txtContactNumber.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContactNumber.ForeColor = System.Drawing.Color.White;
+            this.txtContactNumber.ForeColor = System.Drawing.Color.Black;
             this.txtContactNumber.Location = new System.Drawing.Point(34, 294);
             this.txtContactNumber.Name = "txtContactNumber";
             this.txtContactNumber.Size = new System.Drawing.Size(234, 28);
@@ -345,7 +336,7 @@
             // txtFatherName
             // 
             this.txtFatherName.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFatherName.ForeColor = System.Drawing.Color.White;
+            this.txtFatherName.ForeColor = System.Drawing.Color.Black;
             this.txtFatherName.Location = new System.Drawing.Point(33, 348);
             this.txtFatherName.Name = "txtFatherName";
             this.txtFatherName.Size = new System.Drawing.Size(234, 28);
@@ -355,7 +346,7 @@
             // txtAddress
             // 
             this.txtAddress.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.ForeColor = System.Drawing.Color.White;
+            this.txtAddress.ForeColor = System.Drawing.Color.Black;
             this.txtAddress.Location = new System.Drawing.Point(34, 236);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(234, 28);
@@ -366,7 +357,7 @@
             this.groupBox1.Controls.Add(this.linkLabel2);
             this.groupBox1.Controls.Add(this.linkLabel1);
             this.groupBox1.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(454, 50);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(249, 160);
@@ -394,7 +385,14 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Browse Photo";
             // 
-            // AdmissionForm
+            // dtpDob
+            // 
+            this.dtpDob.Location = new System.Drawing.Point(34, 182);
+            this.dtpDob.Name = "dtpDob";
+            this.dtpDob.Size = new System.Drawing.Size(234, 28);
+            this.dtpDob.TabIndex = 48;
+            // 
+            // Admissions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -403,7 +401,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.grpWholeAdmissionForm);
             this.Controls.Add(this.grpButtons);
-            this.Name = "AdmissionForm";
+            this.Name = "Admissions";
             this.Text = "IT Academy";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AdmissionForm_Load);
@@ -424,7 +422,6 @@
         private System.Windows.Forms.GroupBox grpWholeAdmissionForm;
         private System.Windows.Forms.TextBox txtRegistrationNumber;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtDob;
         private System.Windows.Forms.ComboBox cmbGender;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPin;
@@ -447,5 +444,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.DateTimePicker dtpDob;
       }
 }

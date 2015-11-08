@@ -17,6 +17,9 @@ namespace ITAcademy.Repository
         //It is because the the Interface segregation principle of SOLID oops states so
         TestTransition GetBatchDetails(int id);
         IEnumerable<Course> GetAllCourses();
-        IEnumerable<User> GetAllTeachers(); 
+        IEnumerable<User> GetAllTeachers();
+        IEnumerable<Notification> GetMailInfo();
+
+        void Send(Mail _mail);
     }
 }

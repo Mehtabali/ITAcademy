@@ -67,7 +67,7 @@ namespace ITAcademy.WinForms
             CheckBox chk;
             int sn = 1;
             int x = 40;
-            int y = 35;
+            int y = 70;
             while (dtr.Read()) {
                 lblSerialNumber = new Label();
                 lblSerialNumber.Text = (sn++).ToString();

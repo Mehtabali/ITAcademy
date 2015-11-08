@@ -28,15 +28,15 @@ namespace ITAcademy.WinForms
             _courseService = courseService;
             InitializeComponent();
 
-            dgvList.AutoGenerateColumns = false;
+           // dgvList.AutoGenerateColumns = false;
         }
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-
+            _course = new Course();
             _course.Name = txtName.Text;
             _course.Description = txtDescription.Text;
-            _course.Fee = float.Parse(txtFee.Text);
+            _course.Fees = float.Parse(txtFee.Text);
             _course.Duration = txtDuration.Text;
             _courseService.Create(_course);
 
@@ -45,6 +45,7 @@ namespace ITAcademy.WinForms
         private void Courses_Load(object sender, EventArgs e)
         {
             dgvList.DataSource = _courseService.GetAllCourses();
+            cmbSearch.Load(_courseService.GetAllCourses().ToDataTable(), "Name", "Id");
         }
 
         private void dgvList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -55,7 +56,7 @@ namespace ITAcademy.WinForms
             txtNameud.Text = course.Name;
             txtDurationud.Text = course.Duration;
             txtDescriptionud.Text = course.Description;
-            txtFeeud.Text = Convert.ToString(course.Fee);
+            txtFeeud.Text = Convert.ToString(course.Fees);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -71,7 +72,7 @@ namespace ITAcademy.WinForms
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             _course.Name = txtNameud.Text;
-            _course.Fee =  float.Parse(txtFeeud.Text);
+            _course.Fees =  float.Parse(txtFeeud.Text);
             _course.Duration = txtDuration.Text;
             _course.Description = txtDuration.Text;
             _courseService.Update(_course);
@@ -79,6 +80,11 @@ namespace ITAcademy.WinForms
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

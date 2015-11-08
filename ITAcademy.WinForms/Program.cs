@@ -26,7 +26,7 @@ namespace ITAcademy.WinForms
             //container.RegisterType<IStudentService, StudentService>();
             //container.Resolve<IStudentService>();
 
-            var container = Bootstrapper.BuildUnityContainer();
+            var container = Bootstrapper.BuildUnityContainer();//
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(container.Resolve<MDIContanier>());

@@ -2,11 +2,13 @@
 using ITAcademy.Repository;
 using ITAcademy.ServiceLayer;
 using Microsoft.Practices.Unity;
+using Notification;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace ITAcademy.WinForms
 {
@@ -44,6 +46,9 @@ namespace ITAcademy.WinForms
             container.RegisterType<IAttendanceService, AttendanceService>();
             container.RegisterType<ICourseRepository, CourseRepository>();
             container.RegisterType<ICourseService, CourseService>();
+            container.RegisterType<INotification,Notification.Notification >();
+            container.RegisterType<ILoginRepository,LoginRepository>();
+            container.RegisterType<ILoginService,LoginService>();
           
             //container.RegisterType<I>
 

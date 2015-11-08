@@ -57,7 +57,11 @@
     <Compile Include="Courses\CourseRepository.cs" />
     <Compile Include="Courses\ICourseRepository.cs" />
     <Compile Include="DataTableExtention.cs" />
+    <Compile Include="Fee\FeeRepository.cs" />
+    <Compile Include="Fee\IFeeRepository.cs" />
     <Compile Include="IRepository.cs" />
+    <Compile Include="Login\ILoginRepository.cs" />
+    <Compile Include="Login\LoginRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student\IStudentRepository.cs" />
     <Compile Include="Student\StudentRepository.cs" />

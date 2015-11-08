@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using ITAcademy.DataModels;
 using ITAcademy.DataAccessLayer;
 using Microsoft.Practices.Unity;
+using System.Net.Mail;
+using System.Net;
 namespace ITAcademy.Repository
 {
     public class TestRepository : ITestRepository
@@ -101,6 +103,35 @@ namespace ITAcademy.Repository
         public IEnumerable<User> GetAllTeachers()
         {
             return _database.GetAll("sp_GetAllTeachers").ToList<User>();
+        }
+
+
+        public IEnumerable<Notification> GetMailInfo()
+        {
+            return _database.GetAll("sp_SendMail").ToList<Notification>();
+        }
+
+
+        public void Send(Mail _mail)
+        {
+            using (MailMessage mail = new MailMessage()) //class exist in system.net
+            {
+                mail.From = new MailAddress(_mail.EmailFrom);//
+                mail.To.Add(_mail.EmailTo);
+                mail.Subject = _mail.Subject;
+                mail.Body = _mail.Message;
+                mail.IsBodyHtml = true;
+
+                using (SmtpClient smtp = new SmtpClient(_mail.SmtpAddress, _mail.PortNumber))
+                {
+                    smtp.Credentials = new NetworkCredential(_mail.EmailFrom, _mail.Password);
+                    smtp.EnableSsl = true;
+                    smtp.Send(mail);
+                   
+                }
+                _database.SendMail(true);
+
+            }
         }
     }
 }

@@ -52,7 +52,7 @@ namespace ITAcademy.Repository
             throw new NotImplementedException();
         }
 
-        private Dictionary<String, String> Mapper(Student entity)
+        private Dictionary<String, String> Mapper(Batch entity)       //reflection rule 
         {
             Dictionary<String, String> _parameters = new Dictionary<string, string>();
             PropertyInfo[] properties = typeof(Batch).GetProperties();

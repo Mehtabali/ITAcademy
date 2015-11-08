@@ -11,7 +11,7 @@ namespace ITAcademy.ServiceLayer
 {
     public class StudentService : IStudentService
     {
-        [Dependency]
+        [Dependency]    //DI
         public IStudentRepository _studentRepository { get; set; }
 
         public IEnumerable<Student> GetAllStudents()
@@ -21,6 +21,10 @@ namespace ITAcademy.ServiceLayer
 
         public int CreateStudent(Student student)
         {
+
+            // we can apply any specific business rule here a/c to requirmnts
+            //we can apply some modification too in student object too..
+            //cus this layer is responsilble for business rules 
             return _studentRepository.Create(student);
         }
 

@@ -69,6 +69,18 @@ namespace ITAcademy.ServiceLayer
         }
 
 
-      
+
+
+
+        public IEnumerable<Notification> GetStudentInfoForMail()
+        {
+            return _testRespository.GetMailInfo();
+        }
+
+
+        public void Send(Mail _mail)
+        {
+            _testRespository.Send(_mail);
+        }
     }
 }

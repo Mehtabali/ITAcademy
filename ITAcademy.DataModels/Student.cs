@@ -9,7 +9,7 @@ namespace ITAcademy.DataModels
 {
     public class Student
     {
-            [Key]
+        [Key]
         public int Id { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "First name is required")]

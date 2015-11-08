@@ -7,9 +7,13 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
+using System.Net.Mail;
+using System.Net;
 
 namespace ITAcademy.DataAccessLayer
 {
+
+    //this layer ll only insert and take data from Database
     public class DbConnection : IDbConnection
     {
         private enum MethodType
@@ -38,7 +42,7 @@ namespace ITAcademy.DataAccessLayer
         {
             try
             {
-                AddParameters(parameters);
+                AddParameters(parameters); //to add para
                 return Execute(storedProcedure, parameters);
             }
             catch (Exception exception)
@@ -75,7 +79,7 @@ namespace ITAcademy.DataAccessLayer
                 OpenConnection();
                 _status = _command.ExecuteNonQuery();
                 _connection.Close();
-                return _status;
+                return _status;//num of records inserted // ths no of rcds can be multiple .(trigger *)
             }
             catch (Exception exception)
             {
@@ -129,6 +133,8 @@ namespace ITAcademy.DataAccessLayer
         //        throw exception;
         //    }
         //}
+
+        //ar
 
         public string Getsinglecolumn(String storedProcedure,int id) {
             try
@@ -239,6 +245,12 @@ namespace ITAcademy.DataAccessLayer
         ListView IDbConnection.GetList(string storedProcedure)
         {
             throw new NotImplementedException();
+        }
+
+
+        public bool SendMail(bool result)
+        {
+            return true;
         }
     }
 }

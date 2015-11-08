@@ -62,6 +62,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(1370, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // administratorToolStripMenuItem
             // 
@@ -78,35 +79,35 @@
             // admissionToolStripMenuItem
             // 
             this.admissionToolStripMenuItem.Name = "admissionToolStripMenuItem";
-            this.admissionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.admissionToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.admissionToolStripMenuItem.Text = "Admission";
             this.admissionToolStripMenuItem.Click += new System.EventHandler(this.admissionToolStripMenuItem_Click);
             // 
             // batchToolStripMenuItem
             // 
             this.batchToolStripMenuItem.Name = "batchToolStripMenuItem";
-            this.batchToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.batchToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.batchToolStripMenuItem.Text = "Batches";
             this.batchToolStripMenuItem.Click += new System.EventHandler(this.batchToolStripMenuItem_Click);
             // 
             // coursesToolStripMenuItem
             // 
             this.coursesToolStripMenuItem.Name = "coursesToolStripMenuItem";
-            this.coursesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.coursesToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.coursesToolStripMenuItem.Text = "Courses";
             this.coursesToolStripMenuItem.Click += new System.EventHandler(this.coursesToolStripMenuItem_Click);
             // 
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.usersToolStripMenuItem.Text = "Users";
             this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
             // studentsToolStripMenuItem
             // 
             this.studentsToolStripMenuItem.Name = "studentsToolStripMenuItem";
-            this.studentsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.studentsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.studentsToolStripMenuItem.Text = "Students";
             this.studentsToolStripMenuItem.Click += new System.EventHandler(this.studentsToolStripMenuItem_Click);
             // 
@@ -144,7 +145,7 @@
             // scheduleTestToolStripMenuItem
             // 
             this.scheduleTestToolStripMenuItem.Name = "scheduleTestToolStripMenuItem";
-            this.scheduleTestToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.scheduleTestToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.scheduleTestToolStripMenuItem.Text = "Schedule Test";
             this.scheduleTestToolStripMenuItem.Click += new System.EventHandler(this.scheduleTestToolStripMenuItem_Click);
             // 

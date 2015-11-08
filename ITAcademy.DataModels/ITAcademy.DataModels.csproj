@@ -44,9 +44,12 @@
     <Compile Include="Attendance.cs" />
     <Compile Include="Batch.cs" />
     <Compile Include="Course.cs" />
-    <Compile Include="Fees.cs" />
+    <Compile Include="Fee.cs" />
+    <Compile Include="Login.cs" />
+    <Compile Include="Notification.cs" />
     <Compile Include="PayRoll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Mail.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="StudentTransition.cs" />
     <Compile Include="Test.cs" />

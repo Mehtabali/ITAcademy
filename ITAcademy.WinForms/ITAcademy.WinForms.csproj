@@ -62,11 +62,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admission.cs">
+    <Compile Include="Admissions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admission.Designer.cs">
-      <DependentUpon>Admission.cs</DependentUpon>
+    <Compile Include="Admissions.Designer.cs">
+      <DependentUpon>Admissions.cs</DependentUpon>
     </Compile>
     <Compile Include="Attendence.cs">
       <SubType>Form</SubType>
@@ -89,23 +89,17 @@
       <DependentUpon>Courses.cs</DependentUpon>
     </Compile>
     <Compile Include="Extenders.cs" />
-    <Compile Include="Fees.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Fees.Designer.cs">
-      <DependentUpon>Fees.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Logins.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Logins.Designer.cs">
+      <DependentUpon>Logins.cs</DependentUpon>
     </Compile>
     <Compile Include="MDIContanier.cs">
       <SubType>Form</SubType>
@@ -145,8 +139,8 @@
     <Compile Include="Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Admission.resx">
-      <DependentUpon>Admission.cs</DependentUpon>
+    <EmbeddedResource Include="Admissions.resx">
+      <DependentUpon>Admissions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Attendence.resx">
       <DependentUpon>Attendence.cs</DependentUpon>
@@ -157,14 +151,11 @@
     <EmbeddedResource Include="Courses.resx">
       <DependentUpon>Courses.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fees.resx">
-      <DependentUpon>Fees.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Logins.resx">
+      <DependentUpon>Logins.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIContanier.resx">
       <DependentUpon>MDIContanier.cs</DependentUpon>
@@ -205,7 +196,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\bg.jpg" />
@@ -231,6 +224,10 @@
     <ProjectReference Include="..\ITAcademy.ServiceLayer\ITAcademy.ServiceLayer.csproj">
       <Project>{40de71b6-24ba-4e59-ab29-6d448c5930d3}</Project>
       <Name>ITAcademy.ServiceLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Notification\ITAcademy.Notification.csproj">
+      <Project>{fe50e6f8-9d60-4fa0-bb83-1011b5eb771c}</Project>
+      <Name>ITAcademy.Notification</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

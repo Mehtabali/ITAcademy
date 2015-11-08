@@ -13,13 +13,13 @@ namespace ITAcademy.Repository
     public class StudentRepository : IStudentRepository
     {
         [Dependency]
-        public IDbConnection _database { get; set; }
+        public IDbConnection _database { get; set; }    //DI 
 
         public IEnumerable<Student> List
         {
             get
             {
-                return _database.GetAll("sp_GetStudents").ToList<Student>();
+                return _database.GetAll("sp_GetTest").ToList<Student>();
             }
         }
 
@@ -27,7 +27,7 @@ namespace ITAcademy.Repository
         {
             Dictionary<String, string> _parameters = new Dictionary<string, string>();
 
-            _parameters.Add("Mobile", entity.Mobile);
+            _parameters.Add("Mobile", entity.Mobile); // key ,value 
             _parameters.Add("Name", entity.Name);
             _parameters.Add("City", entity.City);
             _parameters.Add("Email", entity.Email);
@@ -36,7 +36,7 @@ namespace ITAcademy.Repository
             _parameters.Add("Gender", entity.Gender);
             _parameters.Add("DOB", entity.DOB.ToString());
             _parameters.Add("Address", entity.Address);
-            return _database.Create("sp_CreateStudent", _parameters);
+            return _database.Create("sp_CreateStudent", _parameters); 
 
         }
 

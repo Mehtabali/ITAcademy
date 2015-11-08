@@ -14,21 +14,21 @@ namespace ITAcademy.Repository
     {
        [Dependency]
          public IDbConnection _database { get; set; }
-        public IEnumerable<Course> List
+        public IEnumerable<Course>List
         {
             get {
-                return _database.GetAll("sp_GetCourses").ToList<Course>(); 
+                return _database.GetAll("sp_GetAllCourses").ToList<Course>(); 
             }
         }
 
         public int Create(Course entity)
         {
 
-             Dictionary<String, string> _parameters = new Dictionary<string, string>();
-             _parameters.Add("Id",  Convert.ToString(entity.Id));
+             Dictionary<String, string> _parameters = new Dictionary<String, string>();
+            // _parameters.Add("Id",  Convert.ToString(entity.Id));
              _parameters.Add("Name", entity.Name);
              _parameters.Add("Duration", entity.Duration);
-             _parameters.Add("Fee", Convert.ToString(entity.Fee));
+             _parameters.Add("Fee", Convert.ToString(entity.Fees));
              _parameters.Add("Description", entity.Description);
 
 
@@ -46,7 +46,7 @@ namespace ITAcademy.Repository
             _parameters.Add("Id", Convert.ToString(entity.Id));
             _parameters.Add("Name", entity.Name);
             _parameters.Add("Duration", entity.Duration);
-            _parameters.Add("Fee", Convert.ToString(entity.Fee));
+            _parameters.Add("Fee", Convert.ToString(entity.Fees));
             _parameters.Add("Description", entity.Description);
             return _database.Update("sp_UpdateCourse", _parameters);
 
@@ -57,10 +57,10 @@ namespace ITAcademy.Repository
             throw new NotImplementedException();
         }
 
-        private Dictionary<String, String> Mapper(Student entity)
+        private Dictionary<String, String> Mapper(Course entity)
         {
             Dictionary<String, String> _parameters = new Dictionary<string, string>();
-            PropertyInfo[] properties = typeof(Student).GetProperties();
+            PropertyInfo[] properties = typeof(Course).GetProperties();
             foreach (PropertyInfo property in properties)
             {
                 _parameters.Add(property.Name, Convert.ToString(property.GetValue(entity)));

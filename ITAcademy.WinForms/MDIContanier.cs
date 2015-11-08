@@ -80,11 +80,7 @@ namespace ITAcademy.WinForms
         
         private void feeInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Fees _child = new Fees();
-            _child.MdiParent = this;
-
-            _child.WindowState = FormWindowState.Maximized;
-            _child.Show();
+         
         }
 
         private void scheduleTestToolStripMenuItem_Click(object sender, EventArgs e)
@@ -98,9 +94,13 @@ namespace ITAcademy.WinForms
 
         private void admissionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AdmissionForm _child = new AdmissionForm();
+            //Admissions _child = new Admissions();
+            //_child.MdiParent = this;
+            //_child.Show();
+            Admissions _child = new Admissions();
             _child.MdiParent = this;
             _child.Show();
+           
            
         }
 
@@ -134,6 +134,11 @@ namespace ITAcademy.WinForms
         }
 
         private void cancelTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }

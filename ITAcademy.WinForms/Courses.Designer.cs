@@ -31,6 +31,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabCourse = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnCreate = new System.Windows.Forms.Button();
             this.CreateBatch = new System.Windows.Forms.GroupBox();
             this.txtDuration = new System.Windows.Forms.TextBox();
             this.txtDescription = new System.Windows.Forms.TextBox();
@@ -42,19 +44,15 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.dgvList = new System.Windows.Forms.DataGridView();
-            this.clmId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmTimings = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmCourseName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblEnableSearch = new System.Windows.Forms.Label();
             this.btnSearchf = new System.Windows.Forms.Button();
             this.cmbSearch = new System.Windows.Forms.ComboBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtDurationud = new System.Windows.Forms.TextBox();
             this.txtDescriptionud = new System.Windows.Forms.TextBox();
             this.txtFeeud = new System.Windows.Forms.TextBox();
@@ -62,22 +60,24 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.txtNameud = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnCreate = new System.Windows.Forms.Button();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.dgvList = new System.Windows.Forms.DataGridView();
+            this.clmId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmDuration = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmFee = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabCourse.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.CreateBatch.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvList)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvList)).BeginInit();
             this.SuspendLayout();
             // 
             // tabCourse
@@ -103,6 +103,28 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Create Course";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnCreate);
+            this.groupBox2.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(319, 401);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(823, 57);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Actions";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // btnCreate
+            // 
+            this.btnCreate.Location = new System.Drawing.Point(697, 22);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(75, 29);
+            this.btnCreate.TabIndex = 5;
+            this.btnCreate.Text = "Create";
+            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
             // CreateBatch
             // 
             this.CreateBatch.Controls.Add(this.txtDuration);
@@ -125,29 +147,29 @@
             // txtDuration
             // 
             this.txtDuration.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDuration.ForeColor = System.Drawing.Color.White;
+            this.txtDuration.ForeColor = System.Drawing.Color.Black;
             this.txtDuration.Location = new System.Drawing.Point(78, 155);
             this.txtDuration.Name = "txtDuration";
             this.txtDuration.Size = new System.Drawing.Size(249, 28);
-            this.txtDuration.TabIndex = 12;
+            this.txtDuration.TabIndex = 2;
             // 
             // txtDescription
             // 
             this.txtDescription.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescription.ForeColor = System.Drawing.Color.White;
+            this.txtDescription.ForeColor = System.Drawing.Color.Black;
             this.txtDescription.Location = new System.Drawing.Point(523, 95);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(249, 28);
-            this.txtDescription.TabIndex = 11;
+            this.txtDescription.TabIndex = 3;
             // 
             // txtFee
             // 
             this.txtFee.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFee.ForeColor = System.Drawing.Color.White;
+            this.txtFee.ForeColor = System.Drawing.Color.Black;
             this.txtFee.Location = new System.Drawing.Point(523, 155);
             this.txtFee.Name = "txtFee";
             this.txtFee.Size = new System.Drawing.Size(249, 28);
-            this.txtFee.TabIndex = 10;
+            this.txtFee.TabIndex = 4;
             // 
             // label4
             // 
@@ -196,11 +218,11 @@
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.ForeColor = System.Drawing.Color.White;
+            this.txtName.ForeColor = System.Drawing.Color.Black;
             this.txtName.Location = new System.Drawing.Point(78, 95);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(249, 28);
-            this.txtName.TabIndex = 0;
+            this.txtName.TabIndex = 1;
             // 
             // tabPage2
             // 
@@ -225,69 +247,6 @@
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Records";
-            // 
-            // dgvList
-            // 
-            this.dgvList.BackgroundColor = System.Drawing.Color.DimGray;
-            this.dgvList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvList.ColumnHeadersHeight = 25;
-            this.dgvList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clmId,
-            this.clmName,
-            this.clmTimings,
-            this.clmCourseName,
-            this.clmUserName});
-            this.dgvList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvList.GridColor = System.Drawing.Color.Black;
-            this.dgvList.Location = new System.Drawing.Point(28, 26);
-            this.dgvList.Name = "dgvList";
-            this.dgvList.RowHeadersWidth = 50;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dgvList.RowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvList.Size = new System.Drawing.Size(864, 229);
-            this.dgvList.TabIndex = 1;
-            // 
-            // clmId
-            // 
-            this.clmId.DataPropertyName = "Id";
-            this.clmId.DividerWidth = 2;
-            this.clmId.HeaderText = "Id";
-            this.clmId.Name = "clmId";
-            this.clmId.Visible = false;
-            this.clmId.Width = 150;
-            // 
-            // clmName
-            // 
-            this.clmName.DataPropertyName = "Name";
-            this.clmName.DividerWidth = 2;
-            this.clmName.HeaderText = "Name";
-            this.clmName.Name = "clmName";
-            this.clmName.Width = 150;
-            // 
-            // clmTimings
-            // 
-            this.clmTimings.DataPropertyName = "Duration";
-            this.clmTimings.DividerWidth = 2;
-            this.clmTimings.HeaderText = "Duration";
-            this.clmTimings.Name = "clmTimings";
-            this.clmTimings.Width = 150;
-            // 
-            // clmCourseName
-            // 
-            this.clmCourseName.DataPropertyName = "Fee";
-            this.clmCourseName.DividerWidth = 2;
-            this.clmCourseName.HeaderText = "Fee";
-            this.clmCourseName.Name = "clmCourseName";
-            this.clmCourseName.Width = 150;
-            // 
-            // clmUserName
-            // 
-            this.clmUserName.DataPropertyName = "Description";
-            this.clmUserName.DividerWidth = 2;
-            this.clmUserName.HeaderText = "Description";
-            this.clmUserName.Name = "clmUserName";
-            this.clmUserName.Width = 150;
             // 
             // groupBox1
             // 
@@ -341,6 +300,38 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Update/Delete";
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.btnDelete);
+            this.groupBox5.Controls.Add(this.btnUpdate);
+            this.groupBox5.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(319, 330);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(823, 70);
+            this.groupBox5.TabIndex = 14;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Actions";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(702, 34);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 30);
+            this.btnDelete.TabIndex = 5;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(621, 34);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 30);
+            this.btnUpdate.TabIndex = 4;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.txtDurationud);
@@ -360,38 +351,29 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Update/Delete Course";
             // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(702, 34);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 30);
-            this.btnDelete.TabIndex = 13;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
             // txtDurationud
             // 
-            this.txtDurationud.ForeColor = System.Drawing.Color.White;
+            this.txtDurationud.ForeColor = System.Drawing.Color.Black;
             this.txtDurationud.Location = new System.Drawing.Point(78, 122);
             this.txtDurationud.Name = "txtDurationud";
             this.txtDurationud.Size = new System.Drawing.Size(249, 28);
-            this.txtDurationud.TabIndex = 12;
+            this.txtDurationud.TabIndex = 1;
             // 
             // txtDescriptionud
             // 
-            this.txtDescriptionud.ForeColor = System.Drawing.Color.White;
+            this.txtDescriptionud.ForeColor = System.Drawing.Color.Black;
             this.txtDescriptionud.Location = new System.Drawing.Point(523, 62);
             this.txtDescriptionud.Name = "txtDescriptionud";
             this.txtDescriptionud.Size = new System.Drawing.Size(249, 28);
-            this.txtDescriptionud.TabIndex = 11;
+            this.txtDescriptionud.TabIndex = 2;
             // 
             // txtFeeud
             // 
-            this.txtFeeud.ForeColor = System.Drawing.Color.White;
+            this.txtFeeud.ForeColor = System.Drawing.Color.Black;
             this.txtFeeud.Location = new System.Drawing.Point(523, 122);
             this.txtFeeud.Name = "txtFeeud";
             this.txtFeeud.Size = new System.Drawing.Size(249, 28);
-            this.txtFeeud.TabIndex = 10;
+            this.txtFeeud.TabIndex = 3;
             // 
             // label5
             // 
@@ -433,55 +415,61 @@
             this.label8.TabIndex = 6;
             this.label8.Text = "Course Name";
             // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(621, 34);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 30);
-            this.btnUpdate.TabIndex = 5;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            // 
             // txtNameud
             // 
-            this.txtNameud.ForeColor = System.Drawing.Color.White;
+            this.txtNameud.ForeColor = System.Drawing.Color.Black;
             this.txtNameud.Location = new System.Drawing.Point(78, 62);
             this.txtNameud.Name = "txtNameud";
             this.txtNameud.Size = new System.Drawing.Size(249, 28);
             this.txtNameud.TabIndex = 0;
             // 
-            // groupBox2
+            // dgvList
             // 
-            this.groupBox2.Controls.Add(this.btnCreate);
-            this.groupBox2.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(319, 401);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(823, 57);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Actions";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            this.dgvList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clmId,
+            this.clmDescription,
+            this.clmName,
+            this.clmDuration,
+            this.clmFee});
+            this.dgvList.Location = new System.Drawing.Point(3, 24);
+            this.dgvList.Name = "dgvList";
+            this.dgvList.Size = new System.Drawing.Size(601, 150);
+            this.dgvList.TabIndex = 0;
+            this.dgvList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvList_CellContentClick);
             // 
-            // btnCreate
+            // clmId
             // 
-            this.btnCreate.Location = new System.Drawing.Point(697, 22);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(75, 29);
-            this.btnCreate.TabIndex = 6;
-            this.btnCreate.Text = "Create";
-            this.btnCreate.UseVisualStyleBackColor = true;
+            this.clmId.DataPropertyName = "Id";
+            this.clmId.HeaderText = "Id";
+            this.clmId.Name = "clmId";
             // 
-            // groupBox5
+            // clmDescription
             // 
-            this.groupBox5.Controls.Add(this.btnDelete);
-            this.groupBox5.Controls.Add(this.btnUpdate);
-            this.groupBox5.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(319, 330);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(823, 70);
-            this.groupBox5.TabIndex = 14;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Actions";
+            this.clmDescription.DataPropertyName = "Description";
+            this.clmDescription.HeaderText = "Description";
+            this.clmDescription.Name = "clmDescription";
+            // 
+            // clmName
+            // 
+            this.clmName.DataPropertyName = "Name";
+            this.clmName.HeaderText = "Name";
+            this.clmName.Name = "clmName";
+            // 
+            // clmDuration
+            // 
+            this.clmDuration.DataPropertyName = "Duration";
+            this.clmDuration.HeaderText = "Duration";
+            this.clmDuration.Name = "clmDuration";
+            // 
+            // clmFee
+            // 
+            this.clmFee.DataPropertyName = "Fees";
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.NullValue = "empty";
+            this.clmFee.DefaultCellStyle = dataGridViewCellStyle1;
+            this.clmFee.HeaderText = "Fee";
+            this.clmFee.Name = "clmFee";
             // 
             // Courses
             // 
@@ -497,18 +485,18 @@
             this.Load += new System.EventHandler(this.Courses_Load);
             this.tabCourse.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.CreateBatch.ResumeLayout(false);
             this.CreateBatch.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvList)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -529,12 +517,6 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.DataGridView dgvList;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmTimings;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmCourseName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmUserName;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblEnableSearch;
         private System.Windows.Forms.Button btnSearchf;
@@ -553,6 +535,12 @@
         private System.Windows.Forms.TextBox txtNameud;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.DataGridView dgvList;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmDescription;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmDuration;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmFee;
 
 
 

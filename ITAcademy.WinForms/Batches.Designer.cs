@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cmbTime = new System.Windows.Forms.ComboBox();
             this.cmbTeacher = new System.Windows.Forms.ComboBox();
             this.cmbCourse = new System.Windows.Forms.ComboBox();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnDelete = new System.Windows.Forms.Button();
             this.txtNameud = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -55,31 +56,30 @@
             this.btnSearchf = new System.Windows.Forms.Button();
             this.cmbSearch = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnCreate = new System.Windows.Forms.Button();
             this.CreateBatch = new System.Windows.Forms.GroupBox();
             this.lblDesignation = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnCreate = new System.Windows.Forms.Button();
             this.cmbCourseName = new System.Windows.Forms.ComboBox();
             this.cmbTimings = new System.Windows.Forms.ComboBox();
             this.cmbUsersName = new System.Windows.Forms.ComboBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.tabBatches = new System.Windows.Forms.TabControl();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.tabPage3.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvList)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.CreateBatch.SuspendLayout();
             this.tabBatches.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage3
@@ -94,6 +94,39 @@
             this.tabPage3.Size = new System.Drawing.Size(1348, 665);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Update/Delete";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.btnUpdate);
+            this.groupBox5.Controls.Add(this.btnDelete);
+            this.groupBox5.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.ForeColor = System.Drawing.Color.Black;
+            this.groupBox5.Location = new System.Drawing.Point(319, 359);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(823, 69);
+            this.groupBox5.TabIndex = 12;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Actions";
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(496, 27);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 36);
+            this.btnUpdate.TabIndex = 4;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(584, 27);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 36);
+            this.btnDelete.TabIndex = 5;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // groupBox2
             // 
@@ -119,7 +152,7 @@
             // cmbTime
             // 
             this.cmbTime.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTime.ForeColor = System.Drawing.Color.White;
+            this.cmbTime.ForeColor = System.Drawing.Color.Black;
             this.cmbTime.FormattingEnabled = true;
             this.cmbTime.Items.AddRange(new object[] {
             "11:00 to 1:00",
@@ -128,43 +161,34 @@
             this.cmbTime.Location = new System.Drawing.Point(78, 113);
             this.cmbTime.Name = "cmbTime";
             this.cmbTime.Size = new System.Drawing.Size(260, 28);
-            this.cmbTime.TabIndex = 17;
+            this.cmbTime.TabIndex = 1;
             // 
             // cmbTeacher
             // 
             this.cmbTeacher.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTeacher.ForeColor = System.Drawing.Color.White;
+            this.cmbTeacher.ForeColor = System.Drawing.Color.Black;
             this.cmbTeacher.FormattingEnabled = true;
             this.cmbTeacher.Items.AddRange(new object[] {
             "Select Course"});
             this.cmbTeacher.Location = new System.Drawing.Point(399, 118);
             this.cmbTeacher.Name = "cmbTeacher";
             this.cmbTeacher.Size = new System.Drawing.Size(260, 28);
-            this.cmbTeacher.TabIndex = 16;
+            this.cmbTeacher.TabIndex = 3;
             this.cmbTeacher.SelectedIndexChanged += new System.EventHandler(this.cmbTeacher_SelectedIndexChanged);
             // 
             // cmbCourse
             // 
+            this.cmbCourse.BackColor = System.Drawing.Color.Black;
             this.cmbCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCourse.ForeColor = System.Drawing.Color.White;
+            this.cmbCourse.ForeColor = System.Drawing.Color.Black;
             this.cmbCourse.FormattingEnabled = true;
             this.cmbCourse.Items.AddRange(new object[] {
             "Select Course"});
             this.cmbCourse.Location = new System.Drawing.Point(399, 62);
             this.cmbCourse.Name = "cmbCourse";
             this.cmbCourse.Size = new System.Drawing.Size(260, 28);
-            this.cmbCourse.TabIndex = 15;
+            this.cmbCourse.TabIndex = 2;
             this.cmbCourse.SelectedIndexChanged += new System.EventHandler(this.cmbCourse_SelectedIndexChanged);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(496, 27);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 36);
-            this.btnUpdate.TabIndex = 11;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label5
             // 
@@ -217,19 +241,9 @@
             this.label9.TabIndex = 6;
             this.label9.Text = "Batch Name";
             // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(584, 27);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 36);
-            this.btnDelete.TabIndex = 5;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
             // txtNameud
             // 
-            this.txtNameud.ForeColor = System.Drawing.Color.White;
+            this.txtNameud.ForeColor = System.Drawing.Color.Black;
             this.txtNameud.Location = new System.Drawing.Point(78, 62);
             this.txtNameud.Name = "txtNameud";
             this.txtNameud.Size = new System.Drawing.Size(260, 28);
@@ -277,9 +291,9 @@
             this.dgvList.Location = new System.Drawing.Point(34, 27);
             this.dgvList.Name = "dgvList";
             this.dgvList.RowHeadersWidth = 50;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5);
-            this.dgvList.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(5);
+            this.dgvList.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvList.Size = new System.Drawing.Size(826, 229);
             this.dgvList.TabIndex = 1;
@@ -381,6 +395,28 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Create New";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnCreate);
+            this.groupBox3.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.ForeColor = System.Drawing.Color.Black;
+            this.groupBox3.Location = new System.Drawing.Point(319, 364);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(823, 59);
+            this.groupBox3.TabIndex = 11;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Actions";
+            // 
+            // btnCreate
+            // 
+            this.btnCreate.Location = new System.Drawing.Point(584, 19);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(75, 32);
+            this.btnCreate.TabIndex = 4;
+            this.btnCreate.Text = "Create";
+            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
             // CreateBatch
             // 
             this.CreateBatch.Controls.Add(this.lblDesignation);
@@ -452,16 +488,6 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Batch Name";
             // 
-            // btnCreate
-            // 
-            this.btnCreate.Location = new System.Drawing.Point(584, 19);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(75, 32);
-            this.btnCreate.TabIndex = 5;
-            this.btnCreate.Text = "Create";
-            this.btnCreate.UseVisualStyleBackColor = true;
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
-            // 
             // cmbCourseName
             // 
             this.cmbCourseName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -472,7 +498,7 @@
             this.cmbCourseName.Location = new System.Drawing.Point(400, 77);
             this.cmbCourseName.Name = "cmbCourseName";
             this.cmbCourseName.Size = new System.Drawing.Size(260, 28);
-            this.cmbCourseName.TabIndex = 4;
+            this.cmbCourseName.TabIndex = 2;
             this.cmbCourseName.SelectedIndexChanged += new System.EventHandler(this.cmbCourseName_SelectedIndexChanged);
             // 
             // cmbTimings
@@ -488,7 +514,7 @@
             this.cmbTimings.Location = new System.Drawing.Point(78, 142);
             this.cmbTimings.Name = "cmbTimings";
             this.cmbTimings.Size = new System.Drawing.Size(249, 28);
-            this.cmbTimings.TabIndex = 3;
+            this.cmbTimings.TabIndex = 1;
             // 
             // cmbUsersName
             // 
@@ -500,12 +526,12 @@
             this.cmbUsersName.Location = new System.Drawing.Point(399, 142);
             this.cmbUsersName.Name = "cmbUsersName";
             this.cmbUsersName.Size = new System.Drawing.Size(260, 28);
-            this.cmbUsersName.TabIndex = 2;
+            this.cmbUsersName.TabIndex = 3;
             this.cmbUsersName.SelectedIndexChanged += new System.EventHandler(this.cmbUsersName_SelectedIndexChanged);
             // 
             // txtName
             // 
-            this.txtName.ForeColor = System.Drawing.Color.White;
+            this.txtName.ForeColor = System.Drawing.Color.Black;
             this.txtName.Location = new System.Drawing.Point(78, 77);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(249, 28);
@@ -523,31 +549,6 @@
             this.tabBatches.Size = new System.Drawing.Size(1356, 691);
             this.tabBatches.TabIndex = 3;
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.btnCreate);
-            this.groupBox3.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(319, 364);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(823, 59);
-            this.groupBox3.TabIndex = 11;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Actions";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.btnUpdate);
-            this.groupBox5.Controls.Add(this.btnDelete);
-            this.groupBox5.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.ForeColor = System.Drawing.Color.Black;
-            this.groupBox5.Location = new System.Drawing.Point(319, 359);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(823, 69);
-            this.groupBox5.TabIndex = 12;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Actions";
-            // 
             // Batches
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -562,6 +563,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Batches_Load);
             this.tabPage3.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabPage5.ResumeLayout(false);
@@ -570,11 +572,10 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.CreateBatch.ResumeLayout(false);
             this.CreateBatch.PerformLayout();
             this.tabBatches.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

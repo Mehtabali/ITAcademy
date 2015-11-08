@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
+
 namespace ITAcademy.DataAccessLayer
 {
     public interface IDbConnection
@@ -18,6 +19,8 @@ namespace ITAcademy.DataAccessLayer
         ListView GetList(String storedProcedure); 
         DataTable GetOne(String storedProcedure, int id);
         string Getsinglecolumn(string p, int userId);
+        bool SendMail(bool result);
+        
      //   DataTable GetAllOnId(String storedProcedure, int id);
        // DataTable Select(string storedProcedure, params string[] parameters);
     }

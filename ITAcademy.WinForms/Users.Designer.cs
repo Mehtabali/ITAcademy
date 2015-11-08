@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -485,9 +485,9 @@
             this.dgvUsersList.Location = new System.Drawing.Point(28, 26);
             this.dgvUsersList.Name = "dgvUsersList";
             this.dgvUsersList.RowHeadersWidth = 50;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(5);
-            this.dgvUsersList.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(5);
+            this.dgvUsersList.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvUsersList.Size = new System.Drawing.Size(864, 229);
             this.dgvUsersList.TabIndex = 1;
             this.dgvUsersList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsersList_CellDoubleClick);
@@ -626,7 +626,7 @@
             this.brnSave.Location = new System.Drawing.Point(500, 19);
             this.brnSave.Name = "brnSave";
             this.brnSave.Size = new System.Drawing.Size(88, 35);
-            this.brnSave.TabIndex = 27;
+            this.brnSave.TabIndex = 13;
             this.brnSave.Text = "Save";
             this.brnSave.UseVisualStyleBackColor = true;
             // 
@@ -635,7 +635,7 @@
             this.btnReset.Location = new System.Drawing.Point(619, 19);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(84, 35);
-            this.btnReset.TabIndex = 28;
+            this.btnReset.TabIndex = 14;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
             // 
@@ -684,14 +684,14 @@
             this.cmbDesignation.Location = new System.Drawing.Point(455, 276);
             this.cmbDesignation.Name = "cmbDesignation";
             this.cmbDesignation.Size = new System.Drawing.Size(249, 28);
-            this.cmbDesignation.TabIndex = 54;
+            this.cmbDesignation.TabIndex = 10;
             // 
             // dtpHiring
             // 
             this.dtpHiring.Location = new System.Drawing.Point(452, 330);
             this.dtpHiring.Name = "dtpHiring";
             this.dtpHiring.Size = new System.Drawing.Size(249, 28);
-            this.dtpHiring.TabIndex = 53;
+            this.dtpHiring.TabIndex = 11;
             // 
             // cmbUserType
             // 
@@ -701,7 +701,7 @@
             this.cmbUserType.Location = new System.Drawing.Point(455, 387);
             this.cmbUserType.Name = "cmbUserType";
             this.cmbUserType.Size = new System.Drawing.Size(249, 28);
-            this.cmbUserType.TabIndex = 52;
+            this.cmbUserType.TabIndex = 12;
             // 
             // label1
             // 
@@ -729,7 +729,7 @@
             this.txtRegistrationNumber.Location = new System.Drawing.Point(34, 73);
             this.txtRegistrationNumber.Name = "txtRegistrationNumber";
             this.txtRegistrationNumber.Size = new System.Drawing.Size(234, 28);
-            this.txtRegistrationNumber.TabIndex = 32;
+            this.txtRegistrationNumber.TabIndex = 0;
             // 
             // txtName
             // 
@@ -737,7 +737,7 @@
             this.txtName.Location = new System.Drawing.Point(34, 123);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(234, 28);
-            this.txtName.TabIndex = 2;
+            this.txtName.TabIndex = 1;
             // 
             // txtQualification
             // 
@@ -745,7 +745,7 @@
             this.txtQualification.Location = new System.Drawing.Point(34, 177);
             this.txtQualification.Name = "txtQualification";
             this.txtQualification.Size = new System.Drawing.Size(234, 28);
-            this.txtQualification.TabIndex = 30;
+            this.txtQualification.TabIndex = 3;
             // 
             // cmbGender
             // 
@@ -758,7 +758,7 @@
             this.cmbGender.Location = new System.Drawing.Point(455, 222);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(249, 28);
-            this.cmbGender.TabIndex = 1;
+            this.cmbGender.TabIndex = 9;
             // 
             // txtEmail
             // 
@@ -766,7 +766,7 @@
             this.txtEmail.Location = new System.Drawing.Point(33, 387);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(234, 28);
-            this.txtEmail.TabIndex = 48;
+            this.txtEmail.TabIndex = 7;
             // 
             // label13
             // 
@@ -864,7 +864,7 @@
             this.txtContactNumber.Location = new System.Drawing.Point(33, 280);
             this.txtContactNumber.Name = "txtContactNumber";
             this.txtContactNumber.Size = new System.Drawing.Size(234, 28);
-            this.txtContactNumber.TabIndex = 31;
+            this.txtContactNumber.TabIndex = 5;
             // 
             // txtFatherName
             // 
@@ -872,7 +872,7 @@
             this.txtFatherName.Location = new System.Drawing.Point(33, 333);
             this.txtFatherName.Name = "txtFatherName";
             this.txtFatherName.Size = new System.Drawing.Size(234, 28);
-            this.txtFatherName.TabIndex = 29;
+            this.txtFatherName.TabIndex = 6;
             // 
             // txtSalary
             // 
@@ -880,7 +880,7 @@
             this.txtSalary.Location = new System.Drawing.Point(33, 226);
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.Size = new System.Drawing.Size(234, 28);
-            this.txtSalary.TabIndex = 28;
+            this.txtSalary.TabIndex = 4;
             // 
             // groupBox1
             // 
@@ -889,7 +889,7 @@
             this.groupBox1.Location = new System.Drawing.Point(452, 50);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(249, 146);
-            this.groupBox1.TabIndex = 26;
+            this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Student Photo";
             // 
